@@ -1,239 +1,31 @@
 <!doctype html>
 <html>
   <head>
+    <meta name="robots" content="noindex,nofollow" class="next-head" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>PurpleNix</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script>
-    window.Running = {
-    Models: {},
-    Collections: {},
-    Views: {},
-    Routers: {},
-    init: function () {
-        this.app = new this.Routers.App();
-     }
-    };
-
-    $(document).ready(function () {
-    'use strict';
-    Running.init();
-    });
-
-    </script>
+    <script src="javascripts/main.js"></script>
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-  <style>
 
-   body { background:#9BB4FF url(images/bluewave.jpeg) repeat-x; margin:1; }
-#pw1 { background-image:url(images/bluewave.jpeg); background-position:center top; background-repeat:repeat-y; }
-#pw2 { background-image:url(images/bluewave.jpeg); background-position:center top; background-repeat:no-repeat; text-align:center; }
-#pw3 { width:776px; margin:0px auto; padding:30 0 23 0; background-image:url(images/bluewave.jpeg); background-position:center bottom; background-repeat:no-repeat; text-align:left; }
-#pw4 { padding:0 13; min-height:600px; _height:600; }
-#pw5 { background-color:#FFF; width:100% }
-
-#fw1 { background-image:url(images/bluewave.jpeg); background-position:center top; background-repeat:repeat-y; text-align:center; }
-#fw2 { width:776px; margin:0px auto; background-image:url(images/bluewave.jpeg); background-position:center top; background-repeat:no-repeat; text-align:left; }
-#fw3 { padding:23 13; background-image:url(images/bluewave.jpeg); background-position:center bottom; background-repeat:no-repeat; }
-#fw4 { background:#0000FF; width:100%; }
-#ft1 { padding:0 10 10 10; }
-#fb1 { padding:10 10 0 10; }
-#ft2, #fb2 { width:730; }
-#fc1 { padding:10 20; background:#435729; }
-#fc2 { width:710; }
-
-/* Header */
-#header { background:#red; margin-bottom:5; padding-right:20; }
-#hdtxt { float:right; font-family:verdana; font-weight:bold; font-size:15px; color:#666; width:450; text-align:right; margin:0 0 10 0;  }
-#logo { float:left; }
-#hdtext { float:right; font-family:verdana; font-weight:bold; font-size:15px; color:#666; margin-bottom:10; }
-#hdimgs{ float:right; margin-bottom:10; }
-#hdimgs div { float:left; padding-left:15; }
-
-
-/* Nav Bar */
-#navbar { background:#81BEF7 url(images/bluewave.jpeg); width:750; }
-#navbar div.navbaroff, #navbar div.navbaron { float:left; display:block; }
-#navbar a { display:block; font-family:verdana,arial; color:#FFF; text-decoration:none; font-size:13px; background:#81BEF7 url(images/bluewave.jpeg); white-space:nowrap; }
-#navbar a span { display:block; padding:7 11 7 10; background:url() right top no-repeat; }
-#navbar div.navbaroff a:hover { background-color:#0174DF; background-position:left -50; }
-#navbar div.navbaron a { background-color:#3B6A1A; background-position:left -50; }
-
-.clear { clear:both; }
-.clear0 { clear:both; height:0; }
-
-/* Home */
-#hw1 { padding:20 20 10 20; }
-#hw2 { width:710; }
-
-.homebox { }
-.homebox1 { background:url(images/bluewave.jpeg) left top repeat-y; }
-.homebox2 { background:url(images/bluewave.jpeg) left top no-repeat; }
-.homebox3 { background:url(images/bluewave.jpeg) left bottom no-repeat; padding:10 10; }
-.homebox4 { width:690; }
-.homeboxw { background:white; height:15; }
-/* Forms */
-.promofieldgray { font-family:verdana; font-size:9px; color:#999; width:140; }
-.errMsg, .errMsg A { font-family:verdana,arial,helvetica; font-size:11px; color:#900; }
-.form-errors { margin-bottom:15px; }
-.form-error { padding:0 0 8 15; font-family:verdana,arial,helvetica; font-size:16px; color:#C00; background:url(images/bluewave.jpeg) no-repeat; background-position:0px 2px; }
-
-
-/* Content */
-#cw1 { width:100%; background:url(images/bluewave.jpeg) repeat-y; min-height:475; _height:475; }
-#cc1 { padding:20 30 20 0; float:right; }
-#cc2 { width:520; }
-
-
-/* Left Channel */
-#lc1 { width:150; padding:20 0 0 0; float:left; }
-.leftnav { width:150; }
-.leftnav div { margin-bottom:4; }
-.leftnav div a { display:block; font-family:verdana,arial; color:#666; text-decoration:none; font-size:11px; background:#E8E8E8 url(images/bluewave.jpeg) left top no-repeat; }
-.leftnav div a span { display:block; padding:8 10 8 35; background:url(images/bluewave.jpeg) left bottom no-repeat; }
-.leftnav div.off a:hover { background-color:#D8D8D8; background-position:-200 0; }
-.leftnav div.off a:hover span { background-position:-200 bottom; }
-
-.leftnav div.on a { color:#FFF; background-color:#4D92CD; background-image:url(images/bluewave.jpeg); }
-.leftnav div.on a span { background-image:url(images/bluewave.jpeg); }
-
-
-/** Content **/
-
-/* ColorText */
-.bluetext, .blueboldtext, .greentext, .greenboldtext { font-family:century gothic, arial, verdana, helvetica, sans-serif; font-weight:normal; }
-.bluetext { color:#0062B7; }
-.greentext { color:#60B112; }
-.blueboldtext { color:#0062B7; font-weight:bold; }
-.greenboldtext { color:#60B112; font-weight:bold; }
-
-.tquote1a { position:relative; }
-.tquote1b { position:absolute; left:-20; }
-.tquote2a { float:right; position:relative; }
-.tquote2b { position:absolute; left:-24; top:-24; }
-
-.testimonial     { padding:10 0;  }
-.testimonialcell { background-color:#2374BF; }
-.testimonialtext { font-family:verdana,arial; padding:8 25 8 25; font-size:10px; line-height:16px; color:white; }
-.testimonialname { font-family:verdana,arial; padding:5 25 0 25; font-size:10px; font-weight:bold; color:white;}
-.testimonialcity { font-family:verdana,arial; padding:2 25 10 25; font-size:10px; color:white; }
-
-
-.fgtop { padding-right:10px; }
-.fglasttop { padding-right:0px; }
-.fgcell, .fglastcell { background:url(images/bluewave.jpeg) repeat-y; padding-right:10px; }
-.fglastcell { padding-right:0px; }
-.fglabel { background:#B4D6F1; color:#00529B; margin:0 1; padding:4 10; font-family:century gothic,verdana,arial; font-size:14px; font-weight:bold; text-align:center; }
-.fgbox { padding:10 0; }
-.fgtext { padding:10; font-family:verdana,arial; font-size:10px; color:#666; background:url(images/bluewave.jpeg) 1 top no-repeat; }
-.fgbutton a { background:url(images/bluewave.jpeg) no-repeat top left; display:block; }
-.fgbutton a:hover { background-position:0 -30; }
-
-
-
-
-.linktree { margin-bottom:15; }
-.linktree2 { margin-bottom:20; }
-.linktree3 { margin-bottom:10; }
-.linktreetext1 { margin:0 0 5 0;  }
-.linktreetext2 { margin:0 0 5 20; }
-.linktreetext3 { margin:0 0 5 40; }
-.linktreetext1, .linktreetext1 a { font-family:verdana,arial; color:#333; font-size:13px; font-weight:bold; }
-.linktreetext2, .linktreetext2 a { font-family:verdana,arial; color:#333; font-size:13px; }
-.linktreetext3, .linktreetext3 a { font-family:verdana,arial; color:#333; font-size:11px; }
-.linktree a { color:#1D4F99; xtext-decoration:none; }
-
-
-
-.highlight .hll { background-color: #404040 }
-.highlight  { color: #d0d0d0 }
-.highlight .c { color: #999999; font-style: italic } /* Comment */
-.highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
-.highlight .g { color: #d0d0d0 } /* Generic */
-.highlight .k { color: #6ab825; font-weight: normal } /* Keyword */
-.highlight .l { color: #d0d0d0 } /* Literal */
-.highlight .n { color: #d0d0d0 } /* Name */
-.highlight .o { color: #d0d0d0 } /* Operator */
-.highlight .x { color: #d0d0d0 } /* Other */
-.highlight .p { color: #d0d0d0 } /* Punctuation */
-.highlight .cm { color: #999999; font-style: italic } /* Comment.Multiline */
-.highlight .cp { color: #cd2828; font-weight: normal } /* Comment.Preproc */
-.highlight .c1 { color: #999999; font-style: italic } /* Comment.Single */
-.highlight .cs { color: #e50808; font-weight: normal; background-color: #520000 } /* Comment.Special */
-.highlight .gd { color: #d22323 } /* Generic.Deleted */
-.highlight .ge { color: #d0d0d0; font-style: italic } /* Generic.Emph */
-.highlight .gr { color: #d22323 } /* Generic.Error */
-.highlight .gh { color: #ffffff; font-weight: normal } /* Generic.Heading */
-.highlight .gi { color: #589819 } /* Generic.Inserted */
-.highlight .go { color: #cccccc } /* Generic.Output */
-.highlight .gp { color: #aaaaaa } /* Generic.Prompt */
-.highlight .gs { color: #d0d0d0; font-weight: normal } /* Generic.Strong */
-.highlight .gu { color: #ffffff; text-decoration: underline } /* Generic.Subheading */
-.highlight .gt { color: #d22323 } /* Generic.Traceback */
-.highlight .kc { color: #6ab825; font-weight: normal } /* Keyword.Constant */
-.highlight .kd { color: #6ab825; font-weight: normal } /* Keyword.Declaration */
-.highlight .kn { color: #6ab825; font-weight: normal } /* Keyword.Namespace */
-.highlight .kp { color: #6ab825 } /* Keyword.Pseudo */
-.highlight .kr { color: #6ab825; font-weight: normal } /* Keyword.Reserved */
-.highlight .kt { color: #6ab825; font-weight: normal } /* Keyword.Type */
-.highlight .ld { color: #d0d0d0 } /* Literal.Date */
-.highlight .m { color: #3677a9 } /* Literal.Number */
-.highlight .s { color: #ff8 } /* Literal.String */
-.highlight .na { color: #bbbbbb } /* Name.Attribute */
-.highlight .nb { color: #24909d } /* Name.Builtin */
-.highlight .nc { color: #447fcf; text-decoration: underline } /* Name.Class */
-.highlight .no { color: #40ffff } /* Name.Constant */
-.highlight .nd { color: #ffa500 } /* Name.Decorator */
-.highlight .ni { color: #d0d0d0 } /* Name.Entity */
-.highlight .ne { color: #bbbbbb } /* Name.Exception */
-.highlight .nf { color: #447fcf } /* Name.Function */
-.highlight .nl { color: #d0d0d0 } /* Name.Label */
-.highlight .nn { color: #447fcf; text-decoration: underline } /* Name.Namespace */
-.highlight .nx { color: #d0d0d0 } /* Name.Other */
-.highlight .py { color: #d0d0d0 } /* Name.Property */
-.highlight .nt { color: #6ab825;} /* Name.Tag */
-.highlight .nv { color: #40ffff } /* Name.Variable */
-.highlight .ow { color: #6ab825; font-weight: normal } /* Operator.Word */
-.highlight .w { color: #666666 } /* Text.Whitespace */
-.highlight .mf { color: #3677a9 } /* Literal.Number.Float */
-.highlight .mh { color: #3677a9 } /* Literal.Number.Hex */
-.highlight .mi { color: #3677a9 } /* Literal.Number.Integer */
-.highlight .mo { color: #3677a9 } /* Literal.Number.Oct */
-.highlight .sb { color: #ff8 } /* Literal.String.Backtick */
-.highlight .sc { color: #ff8 } /* Literal.String.Char */
-.highlight .sd { color: #ff8 } /* Literal.String.Doc */
-.highlight .s2 { color: #ff8 } /* Literal.String.Double */
-.highlight .se { color: #ff8 } /* Literal.String.Escape */
-.highlight .sh { color: #ff8 } /* Literal.String.Heredoc */
-.highlight .si { color: #ff8 } /* Literal.String.Interpol */
-.highlight .sx { color: #ffa500 } /* Literal.String.Other */
-.highlight .sr { color: #ff8 } /* Literal.String.Regex */
-.highlight .s1 { color: #ff8 } /* Literal.String.Single */
-.highlight .ss { color: #ff8 } /* Literal.String.Symbol */
-.highlight .bp { color: #24909d } /* Name.Builtin.Pseudo */
-.highlight .vc { color: #40ffff } /* Name.Variable.Class */
-.highlight .vg { color: #40ffff } /* Name.Variable.Global */
-.highlight .vi { color: #40ffff } /* Name.Variable.Instance */
-.highlight .il { color: #3677a9 } /* Literal.Number.Integer.Long */
-
-
-  </style>
   </head>
   <body>
 
       <header>
-        <h1>Purplenix.com</h1>
-        <h2> Research & Development</h2>
-        <B>Opensource Research tools</B>
+        <h1>PurpleNix Research & Development</h1>
+        <p>Research Opensource Tools </p>
       </header>
 
       <div id="banner">
         <span id="logo"></span>
 
-        <a href="https://github.com/carlmart/CrawlWeb" Target="_blank" class="button fork"><strong>View On GitHub</strong></a>
+        <a href="https://github.com/carlmart" class="button fork"><strong>View On GitHub</strong></a>
 
         <div class="downloads">
 
@@ -247,29 +39,35 @@
 <p>
    Research and Development
  </p>
-<p>
-  <a href="https://purplenix.youcanbook.me/index.jsp" target_"blank">  Book me for Consultations </a><Br>
-   I can manage your downed Linux / Unix / Solaris server at all hours of the night, including weekends. <br>
-   Software development , shell scripting and automation using various languages. Integration and High Availability 
-setups for Solaris / Linux and Windows available. <br>
 
-Python,Shell,Perl - from backend development to front end QT /Tcl/TK  Windows / Linux / Remote GUI <br>
+<!-- -->
 
-<p>
+<!--
+<p><img src="chart.png" width="590" alt="Image" /></p>
 
-</p>
-
-
-
-<p>We're currently working on Machine Language Programming with Python</p>
+<h3>ImageTag v.01</h3>
+-->
+Projects :<br>
+<ul>
+<li> Current Projects - R language Statistical Modeling </li>
+<li> Previous Projects  <a href="https://developers.google.com/protocol-buffers/docs/proto" target="_blank">Googles Protobuff libraries</a></li>
+<li> Previous Projects  <a href="https://purplenix.visualstudio.com" target="_blank">QT-creator on Visual Studio</a></li>
+<li> Mathematical and Computational programming using Python / R <a href="http://info.asprs.org/publications/pers/96journal/april/1996_apr_401-402.pdf" target="_blank">Estimating Kappa Coefficient</a> </li>
+</ul>
 
 <h3>Authors and Contributors</h3>
 
-<a href="https://github.com/CarlMart" class="user-mention">Carlos Jorge Martinez</a>
+<p>ImageViewer developers: 
+<a href="https://github.com/CarlMart?tab=repositories" class="user-mention">CarlMart Repositories</a>, 
+
 <h3>Support or Contact</h3>
 
-purplenixfix @ gmail.com  <br>
+support @ purplenix.com <br>
+<a href="https://www.6ya.com/carlos_21181cb48c575572" target="_blank"> Software Support </a><br>
 <br>
+<center>
+<a href="http://info.flagcounter.com/HKzo"><img src="http://s03.flagcounter.com/count/HKzo/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_12/viewers_0/labels_1/pageviews_0/flags_0/" alt="Flag Counter" border="0"></a>
+</center>
 
       </section>
       <footer>
@@ -277,7 +75,6 @@ purplenixfix @ gmail.com  <br>
         <p><small>Hosted on Purplenix.com  &mdash;  <a href="http://twitter.com/purplenix1">twitter account</a></small></p>
       </footer>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
-    
+   </div> 
   </body>
 </html>
