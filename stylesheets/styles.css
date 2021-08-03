@@ -152,6 +152,7 @@ a:active {
  * Addresses font sizes within 'section' and 'article' in FF4+, Chrome, S5
  */
 h1 {
+  color: 8E33FF
   font-size: 2em;
   margin: 0.67em 0;
 }
