@@ -1,50 +1,118 @@
-html, body {
-  height: 100%;
-  background-color: lightblue;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	transform: perspective(1000px);
+	transform-style: preserve-3d;
+	height: 100vh;
+	display: grid;
+	place-content: center;
+	overflow: hidden;
+	background-image: linear-gradient(
+			to bottom right,
+			rgba(27, 24, 31, 0.5) 21.2%,
+			rgba(50, 4, 89, 0.5) 84.8%
+		),
+		url(https://wallpaperaccess.com/full/2217435.jpg);
+	background-size: cover;
+	background-position: center;
 }
 
-img.one {
-  height: auto;
-  width: auto;
+.ring {
+	height: 70%;
+	aspect-ratio: 1/1;
+	transform-style: preserve-3d;
+	position: relative;
+	display: grid;
+	place-items: center;
+	transform: rotateX(var(--rx)) rotateY(var(--ry));
+	animation: rotationAnim var(--d, 5s) infinite linear;
 }
-img.two {
-  height: 75%;
-  width: 75%;
+.ring1 {
+	height: 400px;
 }
-
-img.tre {
-  height: 50%;
-  width: 50%;
+.ring.ring1 {
+	--d: 6000ms;
+	--rx: 0deg;
+	--ry: 0deg;
+	--rxTo: 0deg;
+	--ryTo: 360deg;
 }
-
-img.qua {
-  height: 20%;
-  width: 20%;
+.ring.ring2 {
+	--d: 3500ms;
+	--rx: 90deg;
+	--ry: 0deg;
+	--rxTo: 450deg;
+	--ryTo: 0deg;
 }
-
-
-h3 {
-  color: black;
-  font-family: verdana;
-  margin-left: 20px;
-  font-size: 100%
-}
-
-
-h4 {
-  color: navy;
-  font-family: verdana;
-  margin-left: 20px;
-  font-size: 80%
-}
-
-p {
-  border: 5px solid blue;
-  padding: 30px;
-  margin: 50px;
+.ring.ring3 {
+	--d: 1500ms;
+	--rx: 0deg;
+	--ry: 90deg;
+	--rxTo: 0deg;
+	--ryTo: 450deg;
 }
 
-img {
-  border: 5px solid #555;
+@keyframes rotationAnim {
+	to {
+		transform: rotateX(var(--rxTo)) rotateY(var(--ryTo));
+	}
+}
+
+.ring > span {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	--borderWidth: 25px;
+	top: 0;
+	left: 0;
+	transform: translateZ(calc(var(--depth) * 2px));
+	border: var(--borderWidth) solid var(--ringColor);
+	border-radius: 50%;
+	filter: drop-shadow(5px 5px rgba(0, 0, 0, 0.5))
+		drop-shadow(-2px -2px rgba(255, 255, 255, 0.1));
+	outline: 2px solid transparent;
+}
+
+.pin {
+	position: absolute;
+	height: 10px;
+	width: 100%;
+	background: var(--ringColor);
+	clip-path: polygon(
+		0 0,
+		15% 0,
+		15% 100%,
+		85% 100%,
+		85% 0%,
+		100% 0,
+		100% 100%,
+		0% 100%
+	);
+	box-shadow: inset 2px 2px 5px black;
+}
+
+.ring2 .pin {
+	transform: rotate(90deg);
+}
+
+.center {
+	width: 100px;
+	top: calc(50% - 50px);
+	left: calc(50% - 50px);
+	aspect-ratio: 1/1;
+	background: radial-gradient(black 50%, transparent 70%);
+	border-radius: 50%;
+	position: absolute;
+	animation: center var(--d) linear infinite;
+	filter: drop-shadow(0 0 20px darkblue) drop-shadow(0 0 10px black)
+		drop-shadow(0 0 5px lightblue);
+}
+@keyframes center {
+	to {
+		transform: rotateY(-360deg);
+	}
 }
 

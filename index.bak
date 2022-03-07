@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="robots" content="noindex,nofollow" class="next-head" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>PurpleNix</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <header>
+        <h1>PurpleNix Research & Development</h1>
+        <p>Research Opensource Tools </p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/carlmart" class="button fork"><strong>View On GitHub</strong></a>
+
+        <div class="downloads">
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <h3>Welcome to PurpleNix</h3>
+
+<p>
+   Research and Development
+ </p>
+
+<!-- -->
+
+<!--
+<p><img src="chart.png" width="590" alt="Image" /></p>
+
+<h3>ImageTag v.01</h3>
+-->
+<br>Projects :</b> <br>
+<ul>
+<li> Current Projects - R language Statistical Modeling </li>
+<li> Previous Projects  <a href="https://developers.google.com/protocol-buffers/docs/proto" target="_blank">Googles Protobuff libraries</a></li>
+<li> Previous Projects  <a href="https://purplenix.visualstudio.com" target="_blank">QT-creator on Visual Studio</a></li>
+<li> Mathematical and Computational programming using Python / R <a href="http://info.asprs.org/publications/pers/96journal/april/1996_apr_401-402.pdf" target="_blank">Estimating Kappa Coefficient</a> </li>
+</ul>
+
+<h3>Authors and Contributors</h3>
+
+<p>ImageViewer developers: 
+<a href="https://github.com/CarlMart?tab=repositories" class="user-mention">CarlMart Repositories</a>, 
+
+<h3>Support or Contact</h3>
+
+panky149 @ gmail.com <br>
+<br>
+<center>
+</center>
+
+      </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/carlmart">CarlMart</a></p>
+        <p>Favorite Books <a href="books.html"> Books </p>
+        <p><small>Hosted on Purplenix.com  &mdash;  <a href="http://twitter.com/purplenix1">twitter account</a></small></p>
+      </footer>
+    </div>
+   </div> 
+  </body>
+</html>
