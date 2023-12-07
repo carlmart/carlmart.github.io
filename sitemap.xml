@@ -4,133 +4,13 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created  http://purplenix.com -->
+<!-- created  http://xdatadump.org -->
 
 <url>
-  <loc>http://purplenix.com/</loc>
+  <loc>http://xdatadump.org/</loc>
   <lastmod>2012-10-28T21:13:31+00:00</lastmod>
 </url>
 <url>
-  <loc>http://purplenix.com/.</loc>
+  <loc>http://xdatadump.org/.</loc>
   <lastmod>2012-10-28T21:13:31+00:00</lastmod>
 </url>
-<url>
-  <loc>http://purplenix.com/blog/archives.html</loc>
-  <lastmod>2012-09-24T03:11:24+00:00</lastmod>
-</url>
-<url>
-  <loc>http://purplenix.com/blog/category/misc.html</loc>
-  <lastmod>2012-09-24T03:11:24+00:00</lastmod>
-</url>
-<url>
-  <loc>http://purplenix.com/blog/category/Python%20Code.html</loc>
-  <lastmod>2012-09-24T03:11:24+00:00</lastmod>
-</url>
-<url>
-  <loc>http://purplenix.com/blog/category/PurpleNix.com.html</loc>
-  <lastmod>2012-09-24T03:11:24+00:00</lastmod>
-</url>
-<url>
-  <loc>http://purplenix.com/blog/</loc>
-  <lastmod>2012-09-24T03:11:24+00:00</lastmod>
-</url>
-<url>
-  <loc>http://purplenix.com/gallery/</loc>
-</url>
-<url>
-  <loc>http://purplenix.com/blog/tag/Python.html</loc>
-  <lastmod>2012-09-24T03:11:24+00:00</lastmod>
-</url>
-<url>
-  <loc>http://purplenix.com/blog/tag/python.html</loc>
-  <lastmod>2012-09-24T03:11:24+00:00</lastmod>
-</url>
-<url>
-  <loc>http://purplenix.com/blog/tag/scientific.html</loc>
-  <lastmod>2012-09-24T03:11:24+00:00</lastmod>
-</url>
-<url>
-  <loc>http://purplenix.com/blog/tag/statistical.html</loc>
-  <lastmod>2012-09-24T03:11:24+00:00</lastmod>
-</url>
-<url>
-  <loc>http://purplenix.com/index.html</loc>
-  <lastmod>2012-10-28T21:13:31+00:00</lastmod>
-</url>
-<url>
-  <loc>http://purplenix.com/blog/.</loc>
-  <lastmod>2012-09-24T03:11:24+00:00</lastmod>
-</url>
-<url>
-  <loc>http://purplenix.com/blog/category/projects.html</loc>
-  <lastmod>2012-09-24T03:11:24+00:00</lastmod>
-</url>
-<url>
-  <loc>http://purplenix.com/blog/category/Python.html</loc>
-  <lastmod>2012-09-24T03:11:24+00:00</lastmod>
-</url>
-<url>
-  <loc>http://purplenix.com/blog/tag/udp.html</loc>
-  <lastmod>2012-09-24T03:11:24+00:00</lastmod>
-</url>
-<url>
-  <loc>http://purplenix.com/blog/tag/syslog.html</loc>
-  <lastmod>2012-09-24T03:11:24+00:00</lastmod>
-</url>
-<url>
-  <loc>http://purplenix.com/blog/tag/Unix%20Administration.html</loc>
-  <lastmod>2012-09-24T03:11:24+00:00</lastmod>
-</url>
-<url>
-  <loc>http://purplenix.com/blog/tag/sockets.html</loc>
-  <lastmod>2012-09-24T03:11:24+00:00</lastmod>
-</url>
-<url>
-  <loc>http://purplenix.com/blog/carlos-martinez.html</loc>
-  <lastmod>2012-09-24T03:11:24+00:00</lastmod>
-</url>
-<url>
-  <loc>http://purplenix.com/blog/in-the-beginning.html</loc>
-  <lastmod>2012-09-24T03:11:24+00:00</lastmod>
-</url>
-<url>
-  <loc>http://purplenix.com/blog/python-official-website.html</loc>
-  <lastmod>2012-09-24T03:11:24+00:00</lastmod>
-</url>
-<url>
-  <loc>http://purplenix.com/blog/99-projects.html</loc>
-  <lastmod>2012-09-24T03:11:24+00:00</lastmod>
-</url>
-<url>
-  <loc>http://purplenix.com/blog/queue-threading-imports.html</loc>
-  <lastmod>2012-09-24T03:11:24+00:00</lastmod>
-</url>
-<url>
-  <loc>http://purplenix.com/blog/videos-from-pydata-workshop.html</loc>
-  <lastmod>2012-09-24T03:11:24+00:00</lastmod>
-</url>
-<url>
-  <loc>http://purplenix.com/blog/command-line-arguments.html</loc>
-  <lastmod>2012-09-24T03:11:24+00:00</lastmod>
-</url>
-<url>
-  <loc>http://purplenix.com/blog/carlos-j-martinez.html</loc>
-  <lastmod>2012-09-24T03:11:24+00:00</lastmod>
-</url>
-<url>
-  <loc>http://purplenix.com/blog/clear-screen.html</loc>
-  <lastmod>2012-09-24T03:11:24+00:00</lastmod>
-</url>
-<url>
-  <loc>http://purplenix.com/blog/read-write-csv-file.html</loc>
-  <lastmod>2012-09-24T03:11:24+00:00</lastmod>
-</url>
-<url>
-  <loc>http://purplenix.com/blog/threading.html</loc>
-  <lastmod>2012-09-24T03:11:24+00:00</lastmod>
-</url>
-<url>
-  <loc>http://purplenix.com/blog/python-udp-syslog-server.html</loc>
-  <lastmod>2012-09-24T03:11:24+00:00</lastmod>
-</url>
-</urlset>
