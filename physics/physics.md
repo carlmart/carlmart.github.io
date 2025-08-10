@@ -1,15 +1,4 @@
 
-## Local Physics Links
- - [ physics.md ](https://carlmart.github.io/physics/physics.md)
- - [ quantum-physics.md ](https://carlmart.github.io/physics/quantum-physics.md)
- - [ math.md ](https://carlmart.github.io/physics/math.md)
-
-
-## Advanced Math
-
-## Mechanics Lagrangian and Hamiltonian mechanics 
- - [ Lagrangian and Hamiltonian Mechanics in Under 20 Minutes](https://www.youtube.com/watch?v=0DHNGtsmmH8&ab_channel=PhysicswithElliot)
-
 ## Maxwells equations
  - [ curl of a curl more clearly explained ](https://youtu.be/tGc4gb8n7gM?t=857)
  - [ Div , Grad , Curl : Vector Calculus ](https://www.youtube.com/watch?v=lKXW7DRyyro)
@@ -18,6 +7,7 @@
  - [ Mathematics with Plymouth University ](https://www.youtube.com/@PlymUniMaths/videos)
 
 ## Math Links
+ - [ Lagrangian and Hamiltonian Mechanics in Under 20 Minutes](https://www.youtube.com/watch?v=0DHNGtsmmH8&ab_channel=PhysicswithElliot)
  - [ Integrals - currently studying ](https://www.youtube.com/watch?v=Ghb9v_TARMw&list=PLFFekKQwSI_08meRCkJ8GjOWpjr_53p92&index=2&ab_channel=BraverNewMath)
  - [ solving quadratic equation by extracting the square root - find the roots ](https://www.youtube.com/watch?v=Jiu2YGyruaM)
  - [ calculus for 5th graders! ](https://www.youtube.com/watch?v=TzDhdvVg9_c)
