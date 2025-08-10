@@ -1,3 +1,4 @@
+
 ## Experimental Quantum Mechanics
 
 
@@ -108,12 +109,6 @@ Ciao,
  - [ Bells Inequality Theoretical framework : ](bells-1.pdf)
  - [ Update bases for starting : ](PhysicsMath-11-2024.pdf)
 
-## Math Science Local Links
- - [  r-quantum.sh  www/quantum.md   ](quantum.md)
- - [  r-physics.sh  www/physics.md   ](physics.md)
- - [  r-calculus.sh www/calculus.md  ](calculus.md)
- - [  r-math.sh     www/math.md      ](math.md)
- - [  Math Directory    ](///Users/ceo/Desktop/md1/math/)
 
 ## Explore Online Computations
  - [ wolframalpha ](https://www.wolframalpha.com/)
@@ -139,8 +134,7 @@ Thought proceeds as if it is merely reporting objectively, but in fact, it is of
  - [ Holonomic brain theory ](https://en.wikipedia.org/wiki/Holonomic_brain_theory)
 
 
-## online PDF's
-## some are downloaded
+## pdfs
  - [ Problems and Solutions on Quantum Mechanics  compiled list ](https://www.astrosen.unam.mx/~posgrado/libros/03_quantum_lim.pdf)
  - [ Solved Problms and Quantum mechanics in one dimension ](https://phas.ubc.ca/~mcmillan/rqpdfs/5_qm_in_one_dimension.pdf)
  - [ Solved Quantum Mechanics : 500 problems with solutions ](https://quantumatlas.ir/uploads/a6f528c10606450b975a1c3c4a0eaf0a.pdf)

@@ -1,0 +1,50 @@
+html, body {
+  height: 100%;
+  background-color: lightblue;
+}
+
+img.one {
+  height: auto;
+  width: auto;
+}
+img.two {
+  height: 75%;
+  width: 75%;
+}
+
+img.tre {
+  height: 50%;
+  width: 50%;
+}
+
+img.qua {
+  height: 20%;
+  width: 20%;
+}
+
+
+h3 {
+  color: red;
+  font-family: verdana;
+  margin-left: 20px;
+  font-size: 100%
+}
+
+
+h4 {
+  color: navy;
+  font-family: verdana;
+  margin-left: 20px;
+  font-size: 80%
+}
+
+p {
+  border: 5px solid blue;
+  padding: 30px;
+  margin: 50px;
+}
+
+img {
+  border: 5px solid #555;
+}
+

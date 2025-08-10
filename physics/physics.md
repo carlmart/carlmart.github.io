@@ -1,14 +1,11 @@
 
-## Physics Links
- - [ quantum-physics.md ](https://xdatadump.org/physics/quantum-physics.md)
+## Local Physics Links
+ - [ physics.md ](https://carlmart.github.io/physics/physics.md)
+ - [ quantum-physics.md ](https://carlmart.github.io/physics/quantum-physics.md)
+ - [ math.md ](https://carlmart.github.io/physics/math.md)
 
-## Explore Online Computations
- - [ wolframalpha ](https://www.wolframalpha.com/)
- - [ online MATLAB - FREE 20 hours/month ](https://www.mathworks.com/products/matlab-online.html)
- - [ www.physicsforums.com/ dunnowhat2say Kr3@to8386  alumni.umn.edu](https://www.physicsforums.com/ )
- - [ www.physicsforums.com/insights/](https://www.physicsforums.com/insights/)
 
-# Advanced Math
+## Advanced Math
 
 ## Mechanics Lagrangian and Hamiltonian mechanics 
  - [ Lagrangian and Hamiltonian Mechanics in Under 20 Minutes](https://www.youtube.com/watch?v=0DHNGtsmmH8&ab_channel=PhysicswithElliot)
@@ -19,7 +16,6 @@
  - [ The Curl of the Curl tiny link ](tiny.cc/m501)
  - [ The Curl of the Curl on a vector field ](https://www.youtube.com/watch?app=desktop&v=JA6UqtSMXpc)
  - [ Mathematics with Plymouth University ](https://www.youtube.com/@PlymUniMaths/videos)
- - [ The Wave equation simplified - Ali the Dazzling - derives light wave equation from Maxwells equations ](https://www.youtube.com/watch?v=tGc4gb8n7gM)
 
 ## Math Links
  - [ Integrals - currently studying ](https://www.youtube.com/watch?v=Ghb9v_TARMw&list=PLFFekKQwSI_08meRCkJ8GjOWpjr_53p92&index=2&ab_channel=BraverNewMath)
