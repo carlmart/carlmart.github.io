@@ -1,4 +1,6 @@
 ## Experimental Quantum Mechanics
+
+
 August 2025
 
 Dear Fellow Researchers,
@@ -84,15 +86,24 @@ Ciao,
 
   CJM de Carreon 
 
+## References:
+ - [ Experimental loophhole-free violation of a Bell inequality using entangled electron spins separated by 1.3km ](https://arxiv.org/pdf/1508.05949)
 
-References:
+## Web Links:
+ - [ GitHub - dmidem/bell-test: Simulation of a quantum experiment with entangled particles to check Bell's theorem  javascript ](https://github.com/dmidem/bell-test)
+ - [ Double-slit experiment that proved the wave nature of light explored in time](https://www.imperial.ac.uk/news/244037/double-slit-experiment-that-proved-wave-nature/)
+ - [ 20 Quantum Physics Books for Free! - PDF ](https://www.infobooks.org/free-pdf-books/physics/quantum-physics-books/)
 
-Bells Inequality Theoretical framework : [bells-1.pdf](bells-1.pdf)
+## YouTube links
+ - [ Double Slit Experiment 02 youtube vid randomVids ](https://www.youtube.com/watch?v=ifkvMPajkMM&ab_channel=RandomVids) 
+ - [ Quantum Entanglement lab youtube link Scientific American](https://www.youtube.com/watch?v=Z34ugMy1QaA&ab_channel=ScientificAmerican)
+ - [ Zeilingers experiment with entangled photons (U1-11-03) ](https://www.youtube.com/watch?v=QY99JtCbnQA&ab_channel=QuantumVisions)
 
-Update bases for starting : [PhysicsMath-11-2024.pdf](PhysicsMath-11-2024.pdf)
-  
+## local notes:
+ - [ Notes on experiments: notes.txt](notes.txt)
+ - [ Sept 2024 email on quantum mechanics ](notes2.txt)
+ - [ Sept 2024 email on equipment required ](notes3.txt)
 
-
- 
-
-
+## pdf's
+ - [ Bells Inequality Theoretical framework : ](bells-1.pdf)
+ - [ Update bases for starting : ](PhysicsMath-11-2024.pdf)

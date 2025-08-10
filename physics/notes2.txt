@@ -1,0 +1,53 @@
+
+Bell's inequality paper and notes
+
+Sounds like we need one of these Diode lasers, said to be less
+expensive: (must operate in UV range. The resulting entangled
+photons are in Infra red range, which can be detected
+as individual photons. I'll check prices) :
+
+SPD can be thought of as a process in which a photon is split into
+two. Because of things like conservation of energy and momentum, there
+will be specific relations between the two output photons. The most
+obvious is that the output beams will not be the same color as the
+initial "pump" beam. So although it is almost as simple as "purchasing
+a laser and BBO," in reality it won't be a typical visible light laser
+pointer. You need higher energy photons from an ultraviolet laser,
+which can interact with the BBO and convert into two infrared photons.
+In addition, this process is very inefficient, so you generally need a
+very bright laser (which will typically allow you to see the beam even
+though it will generally be a UV source). Even with a bright laser,
+usually you will not be able to see the downconverted light with the
+naked eye (due to being so dim as well as being in the near IR).
+However, a decent CCD (i.e. digital camera) is enough to see this
+light.
+
+2) If you (a physicist) wanted two entangled laser streams what
+specific laser and what specific cut BBO would you purchase? Where
+would you buy these items?
+
+As said before, you'll need a UV laser. This used to mean an Argon-ion
+laser, but now there are much cheaper Diode lasers that work in the
+UV. There are dozens of companies selling optical equipment such as
+BBO crystals or diode lasers, any specialized optics company will
+
+
+>
+>
+> First, there are two things you need to know about laser light: it has a definite polarization (orientation of the electric field) and definite energy (or, equivalently, a definite wavelength). We'll be making pairs of photons that are entangled in their polarizations: that is, both have undefined polarization before they are measured but identical polarizations afterwards.
+>
+> Here's what a BBO crystal does: it has a special axis, such that if you shine in light that is polarized along this axis (light from what we call the pump laser), it sometimes turns one of these photons into two lower-energy photons that have the same polarization*, a process called downconversion. So, for example, if you have a BBO where this axis is horizontal, if you shine in vertically polarized light it just passes through, but if you shine in horizontally polarized light it can be downconverted.
+>
+> You asked about the details of the cut of the BBO: for the purposes of these experiments. This sets some of the properties of the outcoming photons, like: 1) the specific energies (which must sum up to the energy in the original photon), and 2) whether they exit the crystal in the same direction as the original photon or at different angles. So, the specific cut of BBO you want depends on details of the experimental design. For example: 1) some experiments have the pairs of photons come out at opposite angles from the central pump laser with the same energy, and 2) others might have the downconverted photons exit collinear to the pump, but with different energies so all the different kinds of light can be separated by more optics down the line.
+>
+> There is also some latitude in choosing the pump beam, but the choice I've used is a particularly familiar one: it is essentially a fancy Blue Ray laser, which has a wavelength of 405 nm. This leads to downconverted photons with about half as much energy, with a wavelength of 810 nm. In principle this would look like shining a blue laser at the BBO and getting out two barely-visible red beams. But in practice, only a tiny fraction of the photons that enter the crystal are downconverted, so you only ever see your blue pump and you have to use sensitive detectors to find the red photons.
+>
+> Now, with all that as setup, here is a way to make entangled photons: you need two thin pieces of BBO, and you orient them such that one has its downconversion axis horizontal and the other vertical. Then you shine your pump laser through both of them, but you set it up such that the polarization of your laser is at 45 degrees, neither horizontal nor vertical.
+>
+> Why does this make entangled photons? Well, in quantum physics a photon that has diagonal polarization can just as well be said to be both vertically and horizontally polarized, in the same sense that Schrodinger's Cat is said to be both alive and dead before you look at it (that is, it is a superposition of horizontally and vertically polarized). So if a photon that is both horizontally and vertically polarized is downconverted, it becomes two photons that are either both horizontally polarized or both vertically polarized - but neither has a definite polarization until it is measured, and each is guaranteed to have the same polarization as the other. And that's precisely what it means to be entangled.
+>
+> Regarding the experiment that you suggest, remember how I defined entanglement: the polarization of each photon looks individually random, and it is only when you compare photons from the same pair that you see anything interesting. Therefore, any experiment that measures each stream of photons individually won't see anything interesting. The interesting experiments have a form like this: you change something about one of the photons, and then measure its entangled partner. There are a lot of fun but similar ideas.
+>
+> *Pedantic note: I'm simplifying some of the geometry slightly here. In the setup I'm familiar with, the downconverted light was perpendicular to the nonlinear optic axis, and the downconverted light was itself perpendicular to the pump photons.
+>
+>
