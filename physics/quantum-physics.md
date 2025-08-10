@@ -82,7 +82,7 @@ What are your thoughts on electric oscillations in the brains dendritic webs ins
 
 Ciao,
 
-  Carlos Jorge Martinez de Carreon 
+  CJM de Carreon 
 
 
 Bells Inequality Theoretical framework : [bells-1.pdf](bells-1.pdf)
