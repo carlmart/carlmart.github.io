@@ -85,7 +85,10 @@ Ciao,
   CJM de Carreon 
 
 
+References:
+
 Bells Inequality Theoretical framework : [bells-1.pdf](bells-1.pdf)
+
 Update bases for starting : [PhysicsMath-11-2024.pdf](PhysicsMath-11-2024.pdf)
   
 
