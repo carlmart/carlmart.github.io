@@ -1,21 +1,12 @@
 
-## Weblink
+## Physics Links
  - [ quantum-physics.md ](https://xdatadump.org/physics/quantum-physics.md)
-
-## Math Science Local Links
- - [  r-quantum.sh  www/quantum.md   ](quantum.md)
- - [  r-physics.sh  www/physics.md   ](physics.md)
- - [  r-calculus.sh www/calculus.md  ](calculus.md)
- - [  r-math.sh     www/math.md      ](math.md) 
- - [  Math Directory    ](///Users/ceo/Desktop/md1/math/)
 
 ## Explore Online Computations
  - [ wolframalpha ](https://www.wolframalpha.com/)
  - [ online MATLAB - FREE 20 hours/month ](https://www.mathworks.com/products/matlab-online.html)
  - [ www.physicsforums.com/ dunnowhat2say Kr3@to8386  alumni.umn.edu](https://www.physicsforums.com/ )
  - [ www.physicsforums.com/insights/](https://www.physicsforums.com/insights/)
-
-## ----------------------
 
 # Advanced Math
 
