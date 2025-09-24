@@ -1,4 +1,51 @@
 
+## email notes
+
+Nov. 2024 JC/CJ 
+
+These are CMOS cameras?  or what did you call them?
+Anyways, I think we should get used to using them as photon detectors.
+For starters, I did this simple trick I thought up on my own.  Take
+your phone camera and a TV remote into a closet.  It doesn't have to
+be completely dark.  Start the camera on video with the direction
+reversed.  Point the phone-camera at its front and push buttons on the
+remote.  You see a white circle, maybe bluish or pink.  These remotes
+send out infrared, I think.
+
+Along similar DIY lines.  Maybe we can develop a source of ultraviolet
+light.  It's a component of sunlight, so maybe just a prism to refract
+sunlight enough, or a light bulb. Or a black-light like hippies use?
+
+Better yet, maybe you could modify a photo-electron diode (I mean the
+ones that emit, not detect.)
+so that it pushes out ultra-violet instead of visible light.  Then we
+need a way to detect ultraviolet light - it should be all over the
+place.
+
+...  from Copilot....
+Me: Is a black light, used by hipsters in the 1960's, giving off
+mainly ultra-violet light?
+
+Yes, a black light, which became quite popular in the 1960s for its
+psychedelic effects, emits primarily ultraviolet (UV) light.
+Specifically, it emits UVA light, which has a wavelength range of
+approximately 320 to 400 nanometers. This type of light is just beyond
+the visible spectrum, which is why it makes certain materials
+fluoresce and appear to glow in the dark while the light itself
+appears almost invisible to the naked eye.
+
+Black lights are commonly used in a variety of applications beyond
+their iconic use in the '60s, such as for detecting counterfeit
+currency, pet urine stains, and forensic purposes.
+
+
+Nov. 13, 2024
+Scientific American Youtube vid on Quantum Entanglement Lab https://www.youtube.com/watch?v=Z34ugMy1QaA
+
+
+
+Nov. 2024
+
 Bell's inequality paper and notes
 
 Sounds like we need one of these Diode lasers, said to be less
@@ -51,3 +98,26 @@ BBO crystals or diode lasers, any specialized optics company will
 > *Pedantic note: I'm simplifying some of the geometry slightly here. In the setup I'm familiar with, the downconverted light was perpendicular to the nonlinear optic axis, and the downconverted light was itself perpendicular to the pump photons.
 >
 >
+Sept.  2024
+
+I have UV laser pointer for my cat and glow in the dark objects
+and polarizing filters from an old pair of hippie sunglasses
+all I need is a beta barium borate crystal 
+ebay $40 https://www.ebay.com/itm/265761835586
+
+Im sure I can get one from a cheap Chinese supplier but I have to look for one
+
+References:
+
+https://en.wikipedia.org/wiki/Barium_borate
+
+Transparency: BBO crystals have a wide transparency range, from the ultraviolet (185 nm) to the near infrared (3.5 µm).
+Phase matching: BBO crystals have a broad phase-matching range.
+Nonlinear coefficient: BBO crystals have a large nonlinear coefficient.
+Damage threshold: BBO crystals have a high damage threshold.
+Thermal acceptance bandwidth: BBO crystals have a wide thermal acceptance bandwidth.
+Wavefront distortion: BBO crystals have low wavefront distortion.
+
+I am copying the setup at the UMN 
+
+
