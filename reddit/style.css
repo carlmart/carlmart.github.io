@@ -1,0 +1,4 @@
+    .container {
+        width: 960px; /* Or any other desired fixed width, e.g., max-width: 80%; */
+        margin: 0 auto; /* This is the key for horizontal centering */
+    }
