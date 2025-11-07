@@ -1,0 +1,29 @@
+# CALLING CQ
+1. CQ CQ CQ DE N7JIM N7JIM N7JIM PSE K
+
+2. K4HOT DE N7JIM  GE ES TNX FER CALL
+                          = UR RST 599 599
+                          = NAME IS DAVE DAVE QTH MN
+                          = HW? AR K4HOT_ DE N7JIM KN
+3. N7JIM DE K4HOT
+            = GA DAVE TNX FB RPT UR RST 579 579
+            = OP K4HOT ES QTH MYSTATE
+            AR N7JIM DE K4HOT KN
+3. K4HOT DE N7JIM = R TNX RPT ES INFO K4HOT
+                         = RIG IS IC-7300  PWR 100W ANT IS EFHW
+                         = WX IS COOL ES WARM 65F = HW?
+                         AR K4HOT DE N7JIM KN
+
+               them: N7JIM DE K4HOT
+               = RIG IS K4HOT  ES ANT IS EFHW
+            AR N7JIM DE K4HOT KN
+
+4. K4HOT DE N7JIM = MNI TNX INFO ES FB QSO = PSE QSL VIA QRZ
+        = 73 ES CUAGN AR K4HOT DE N7JIM SK
+
+               them: N7JIM DE K4HOT
+            = FB DAVE TNX FER NICE QSO
+            73 ES BCNU AR N7JIM DE K4HOT SK
+
+QRZ = who's calling? , QRL = is freq clear?
+
