@@ -1,6 +1,7 @@
 html, body {
   height: 100%;
-  background-color: lightblue;
+  background-color: black;
+  text-align:center;
 }
 
 img.one {
@@ -59,7 +60,6 @@ p {
   border: 5px solid blue;
   padding: 30px;
   margin: 50px;
-  text-align:center;
 }
 
 img {
