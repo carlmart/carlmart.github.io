@@ -1,6 +1,6 @@
 html, body {
   height: 100%;
-  background-color: lightblue;
+  background-color: black;
 }
 
 img.one {
@@ -22,9 +22,24 @@ img.qua {
   width: 20%;
 }
 
+h1 {
+  color: yellow;
+  font-family: verdana;
+  margin-left: 20px;
+  font-size: 100%
+}
+
+
+h2 {
+  color: yellow;
+  font-family: verdana;
+  margin-left: 20px;
+  font-size: 100%
+}
+
 
 h3 {
-  color: red;
+  color: white;
   font-family: verdana;
   margin-left: 20px;
   font-size: 100%
@@ -32,7 +47,7 @@ h3 {
 
 
 h4 {
-  color: navy;
+  color: lightblue;
   font-family: verdana;
   margin-left: 20px;
   font-size: 80%
