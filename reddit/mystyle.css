@@ -1,7 +1,7 @@
 html, body {
   height: 100%;
   background-color: black;
-  text-align:center;
+  text-align:left;
 }
 
 img.one {
@@ -66,3 +66,20 @@ img {
   border: 5px solid #555;
 }
 
+
+/* Unvisited link */
+a:link {
+   color: blue;
+}
+/* Visited link */
+a:visited {
+   color: purple;
+}
+/* Mouse over link */
+a:hover {
+   color: red;
+}
+/* Selected link */
+a:active {
+   color: yellow;
+}
