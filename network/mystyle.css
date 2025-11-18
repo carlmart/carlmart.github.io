@@ -1,7 +1,7 @@
 html, body {
   height: 100%;
-  background-color: black;
-  text-align:center;
+  background-color: white;
+  text-align:right;
 }
 
 img.one {
@@ -26,7 +26,7 @@ img.qua {
 
 
 h1 {
-  color: yellow;
+  color: white;
   font-family: verdana;
   margin-left: 20px;
   font-size: 100%
@@ -34,7 +34,7 @@ h1 {
 
 
 h2 {
-  color: yellow;
+  color: white;
   font-family: verdana;
   margin-left: 20px;
   font-size: 100%
@@ -42,7 +42,7 @@ h2 {
 
 
 h3 {
-  color: white;
+  color: black;
   font-family: verdana;
   margin-left: 20px;
   font-size: 100%
@@ -57,7 +57,7 @@ h4 {
 }
 
 p {
-  border: 5px solid blue;
+  border: 5px solid black;
   padding: 30px;
   margin: 50px;
 }
@@ -65,4 +65,23 @@ p {
 img {
   border: 5px solid #555;
 }
+
+
+/* Unvisited link */
+a:link {
+   color: blue;
+}
+/* Visited link */
+a:visited {
+   color: purple;
+}
+/* Mouse over link */
+a:hover {
+   color: red;
+}
+/* Selected link */
+a:active {
+   color: black;
+}
+
 
