@@ -85,7 +85,16 @@ a:active {
 }
 
 
-.border-right {
-    border-right: 1px solid black;
-  }
-
+.column {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: black;
+  padding: 5px;
+}
+.column div {
+  background-color: grey;
+  border: 2px solid black;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
