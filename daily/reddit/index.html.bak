@@ -20,23 +20,10 @@ a:active { color: yellow; /* Selected link */ }
     <div style="display: inline-block; width: 20%; vertical-align: top; background-color: #f0f0f0; padding: 10px; box-sizing: border-box;">
         <h2 style="margin-top: 0;"> A </h2>
         <p>
-<a href="https://old.reddit.com/r/news/" target="_blank"> News </a><br>  
-<a href="https://old.reddit.com/r/usnews/" target="_blank"> US News </a><br>  
-<a href="https://old.reddit.com/r/USpolitics/" target="_blank">USPolitics  </a><br>
-<a href="https://old.reddit.com/r/Americanpolitics/" target="_blank">AmericanPolitics  </a><br>
-<a href="https://old.reddit.com/r/AnythingGoesNews/" target="_blank">AnythingGoesNews  </a><br>
-<a href="https://old.reddit.com/r/WayOfTheBern/" target="_blank">WayOfTheBern  </a><br>
-<a href="https://old.reddit.com/r/ANormalDayInAmerica/" target="_blank"> ANormalDayInAmerica </a><br>
-<a href="https://old.reddit.com/r/NoFilterNews/" target="_blank"> NoFilterNews </a><br>  
-<a href="https://old.reddit.com/r/EconomicCollapse/" target="_blank">EconomicCollapse  </a><br>
-<a href="https://old.reddit.com/r/ForCuriousSouls/" target="_blank"> ForCuriousSouls  </a><br>
-<a href="https://old.reddit.com/r/Collapse/" target="_blank">Collapse  </a><br>
-<a href="https://old.reddit.com/r/StormComing/" target="_blank"> StormComing  </a><br>
-<a href="https://old.reddit.com/r/Economy/" target="_blank">Economy  </a><br>
-<a href="https://old.reddit.com/r/stockmarketcrash/" target="_blank"> StockMarketCrash </a><br>  
-<a href="https://old.reddit.com/r/NeoNews/" target="_blank"> NeoNews </a><br>  
-<a href="https://old.reddit.com/r/USEmpire" target="_blank"> USEmpire </a><br>
-<a href="https://old.reddit.com/r/WesternTerrorism" target="_blank"> WesternTerrorism </a><br>
+<a href="newslinks.html" target="_blank"> Newslinks </a><br>  
+<a href="videos.html" target="_blank"> Videos </a><br>  
+<a href="sewing.html" target="_blank"> sewing </a><br>  
+<a href="poor.html" target="_blank"> poor </a><br>  
         </p>
     </div>
 
@@ -233,10 +220,6 @@ a:active { color: yellow; /* Selected link */ }
 <a href="https://old.reddit.com/r/CursedAI/" target="_blank"> CursedAI </a><br>  
 <a href="https://old.reddit.com/r/WTF/" target="_blank"> WTF </a><br>  
 <a href="https://old.reddit.com/r/mildlyinfuriating/" target="_blank"> MildlyInfuriating   </a><br>  
-<a href="https://old.reddit.com/r/Whatcouldgowrong/" target="_blank"> Whatcouldgowrong  </a><br>  
-<a href="https://old.reddit.com/r/Whatcouldgowronger/" target="_blank"> Whatcouldgowronger  </a><br>  
-<a href="https://old.reddit.com/r/WinStupidPrizes/" target="_blank"> WinStupidPrizes   </a><br>  
-<a href="LINK" target="_blank">   </a><br>  
         </p>
     </div>
 
@@ -244,38 +227,18 @@ a:active { color: yellow; /* Selected link */ }
     <div style="display: inline-block; width: 20%; vertical-align: top; background-color: #d0eaff; padding: 10px; box-sizing: border-box;">
         <h2 style="margin-top: 0;"> K </h2>
         <p>
-<a href="https://old.reddit.com/r/EyesOnIce/" target="_blank"> EyesOnIce </a><br>
-<a href="https://old.reddit.com/r/Ice_Unmasked/" target="_blank"> Ice_Unmasked </a><br>  
-<a href="https://old.reddit.com/r/healthcare" target="_blank">healthcare  </a><br>
-<a href="https://old.reddit.com/r/healthinsurance" target="_blank"> healthinsurance  </a><br>
-<a href="https://old.reddit.com/r/health" target="_blank"> health  </a><br>
-<a href="https://old.reddit.com/r/LeopardsAteMyFace/" target="_blank"> LeopardsAteMyFace  </a><br>
-<a href="https://old.reddit.com/r/worldnewsvideo/" target="_blank"> WorldNewsVideo </a><br>  
-<a href="https://old.reddit.com/r/internationalnews/" target="_blank"> InternationalNews </a><br>  
-<a href="https://old.reddit.com/r/nottheonion/" target="_blank"> NotTheOnion </a><br>  
-<a href="https://old.reddit.com/r/EatTheRich/" target="_blank"> EatTheRich </a><br>  
-<a href="https://old.reddit.com/r/NewsOfTheStupid/" target="_blank"> NewsOfTheStupid </a><br>  
-<a href="https://old.reddit.com/r/NewsWorthPayingFor/" target="_blank"> NewsWorthPayingfor   </a><br>  
-<a href="https://old.reddit.com/r/WorldPolitics2/" target="_blank"> WorldPolitics2 </a><br>  
-<a href="https://old.reddit.com/r/NewsWithJingjing/" target="_blank"> NewsWithJingjing </a><br>  
-<a href="https://old.reddit.com/r/Crime" target="_blank">Crime  </a><br>
-<a href="https://old.reddit.com/r/crime_documentaries/" target="_blank"> Crime_documentaries   </a><br>  
-<a href="https://old.reddit.com/r/TrueWhiteCrime/" target="_blank"> TrueWhiteCrime  </a><br>  
-<a href="https://old.reddit.com/r/awfuleverything" target="_blank"> AwfulEverything  </a><br>
-<a href="https://old.reddit.com/r/WorldNewsVideo" target="_blank"> WorldNewsVideo  </a><br>
-<a href="https://old.reddit.com/r/Bad_Cop_No_Donut/" target="_blank"> Bad_Cop_No_Donut </a><br>  
-<a href="https://old.reddit.com/r/Good_Cop_Free_Donut/" target="_blank"> Good_Cop_Free_Donut  </a><br>  
-<a href="https://old.reddit.com/r/criminal_defense/" target="_blank"> criminal_defense </a><br>  
-<a href="https://old.reddit.com/r/prisons/" target="_blank"> prisons </a><br>  
-<a href="https://old.reddit.com/r/abolish/" target="_blank"> Abolish </a><br>  
-<a href="https://old.reddit.com/r/ExCons/" target="_blank"> ExCons </a><br>  
-<a href="https://old.reddit.com/r/AmIFreeToGo/" target="_blank"> AmIFreetoGo </a><br>  
-<a href="https://old.reddit.com/r/prisonreform/" target="_blank"> prisonreform </a><br>  
-<a href="https://old.reddit.com/r/forfeiture/" target="_blank"> forfeiture </a><br>  
-<a href="https://old.reddit.com/r/justiceporn" target="_blank"> justiceporn </a><br>  
-<a href="https://old.reddit.com/r/Intelligence/" target="_blank"> Intelligence </a><br>
-<a href="https://old.reddit.com/r/IntelligenceWorld/" target="_blank"> IntelligenceWorld </a><br>
-
+<a href="https://old.reddit.com/r/Whatcouldgowrong/" target="_blank"> Whatcouldgowrong  </a><br>  
+<a href="https://old.reddit.com/r/Whatcouldgowronger/" target="_blank"> Whatcouldgowronger  </a><br>  
+<a href="https://old.reddit.com/r/WinStupidPrizes/" target="_blank"> WinStupidPrizes   </a><br>  
+<a href="LINK" target="_blank">   </a><br>  
+<a href="LINK" target="_blank">   </a><br>  
+<a href="LINK" target="_blank">   </a><br>  
+<a href="LINK" target="_blank">   </a><br>  
+<a href="LINK" target="_blank">   </a><br>  
+<a href="LINK" target="_blank">   </a><br>  
+<a href="LINK" target="_blank">   </a><br>  
+<a href="LINK" target="_blank">   </a><br>  
+<a href="LINK" target="_blank">   </a><br>  
 <a href="LINK" target="_blank">   </a><br>  
        </p>
     </div>
@@ -310,13 +273,9 @@ a:active { color: yellow; /* Selected link */ }
         <h2 style="margin-top: 0;"> M </h2>
         <p>
 <a href="https://old.reddit.com/r/yourtaxdollarsatwork" target="_blank"> YourTaxDollarsAtWork </a><br>
-<a href="https://old.reddit.com/r/justicedemocrats/" target="_blank"> JusticeDemocrats </a><br>
-<a href="https://old.reddit.com/r/nyc/" target="_blank"> NYC </a><br>  
-<a href="https://old.reddit.com/r/ICE_Raids/" target="_blank"> ICE_Raids </a><br>
-<a href="https://old.reddit.com/r/LiveProtestUpdates/" target="_blank"> LiveProtestUpdates </a><br>
-<a href="https://old.reddit.com/r/EyesOnIce/" target="_blank"> IceOnIce </a><br>
-<a href="https://old.reddit.com/r/ChinaTechNews/" target="_blank"> ChinaTechNews </a><br>
-<a href="https://old.reddit.com/r/MURICA/" target="_blank"> Murica </a><br>  
+<a href="LINK" target="_blank">   </a><br>  
+<a href="LINK" target="_blank">   </a><br>  
+<a href="LINK" target="_blank">   </a><br>  
 <a href="https://old.reddit.com/r/worldnewsvideo/" target="_blank"> WorldNewsVideo </a><br>  
 <a href="https://old.reddit.com/r/nottheonion/" target="_blank"> NotTheOnion </a><br>  
 <a href="https://old.reddit.com/r/ANormalDayInAmerica/" target="_blank"> ANormalDayInAmerica </a><br>  
