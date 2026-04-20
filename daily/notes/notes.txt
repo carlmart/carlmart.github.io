@@ -1,2 +1,9 @@
 defaults write com.apple.SoftwareUpdate MajorOSUserNotificationDate -date "2030-02-07 23:22:47 +0000"
+defaults read com.apple.SoftwareUpdate MajorOSUserNotificationDate
+
+sudo defaults write /Library/Preferences/com.apple.SoftwareUpdate AutomaticDownload -boolean FALSE
+
+bashlaunchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist
+bashsudo softwareupdate –schedule off
+
 
