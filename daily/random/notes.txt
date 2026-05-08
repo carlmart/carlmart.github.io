@@ -1,4 +1,6 @@
 
+open -a "Brave Browser" -n --args --incognito --new-window file:///Users
+
 https://www.thatprivacyguy.com/blog/chrome-silent-nano-install/
 
 defaults write com.apple.SoftwareUpdate MajorOSUserNotificationDate -date "2030-02-07 23:22:47 +0000"
