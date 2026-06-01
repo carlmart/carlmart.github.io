@@ -1,0 +1,24 @@
+
+Bash Shell  stack LastInFirstOut
+-----------------
+pushd <path>      - pushes paths into stack
+pushd <path2>
+
+dirs -v           - view paths in stack  
+  0 <path>
+  1 <path2>
+
+dirs -c  - clear stack
+
+popd   - pops top of stack 0
+
+pushd   - cmd by itself swaps 0 and 1 
+
+
+-------------------------
+last command eg
+mkdir -p /some/long/path  && cd "$_"
+
+-------------------------
+-------------------------
+-------------------------
