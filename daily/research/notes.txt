@@ -1,16 +1,22 @@
 
-curl -fsSL https://ollama.com/install.sh | sh   
-ollama pull llama3.1:8b-instruct-fp16
-ollama run llama3.1:8b-instruct-fp16Copied!  
+---------------------------------------------------- 
+---------------------------------------------------- 
+linux 
 ---------------------------------------------------- 
 
 ---------------------------------------------------- 
+curl -fsSL https://ollama.com/install.sh | sh   
+ollama pull llama3.1:8b-instruct-fp16
+ollama run llama3.1:8b-instruct-fp16
+---------------------------------------------------- 
+
+stopping macos updates
 defaults write com.apple.SoftwareUpdate MajorOSUserNotificationDate -date "2030-02-07 23:22:47 +0000"
 defaults read com.apple.SoftwareUpdate MajorOSUserNotificationDate
 
 sudo defaults write /Library/Preferences/com.apple.SoftwareUpdate AutomaticDownload -boolean FALSE
 
-bashlaunchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist
-bashsudo softwareupdate –schedule off
+launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist
+sudo softwareupdate –schedule off
 
 
