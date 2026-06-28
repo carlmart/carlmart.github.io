@@ -1,4 +1,8 @@
 
+Setting up Ollama / Web Assistant and voice commands
+https://github.com/maxi1134/Home-Assistant-Config/blob/master/documentation/guides/voice_assistance_guide_open_webui.md
+https://oneuptime.com/blog/post/2026-02-08-how-to-run-llm-inference-with-llamacpp-in-docker/view
+
 **Ollama models are open-source large language models (LLMs) that run locally on your computer 
 categorized into four main types: 
  1. Source (base models like Mistral or Llama 
@@ -41,6 +45,15 @@ llama.cpp : gemma4:e4b coding + only 8 GB VRAM
    docker exec -it llama-gpu llama-gpu pull gemma4:e4b
    docker exec -it llama-gpu llama-gpu run  gemma4:e4b
 
+
+running coding  apps on cloud
+   docker exec -it ollama run kimi-k2.6:cloud
+   docker exec -it ollama launch claude --model kimi-k2.6:cloud 
+   docker exec -it ollama launch codex-app --model kimi-k2.6:cloud 
+   docker exec -it ollama launch openclaw  --model kimi-k2.6:cloud 
+   docker exec -it ollama launch hermes  --model kimi-k2.6:cloud 
+   docker exec -it ollama launch codex  --model kimi-k2.6:cloud 
+   docker exec -it ollama launch opencode  --model kimi-k2.6:cloud 
 
 
 
@@ -96,6 +109,11 @@ Coding Model
  docker exec -it ollama ollama pull gemma4:e4b   
  docker exec -it ollama ollama run gemma4:e4b 
 
+For web front end use Open WebUI
+docker run -d -p 3000:8080 --gpus=all -v ollama:/root/.ollama -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:ollamaCopied!   
+
+or separate Ollama server and Open WebUI container
+docker run -d -p 3000:8080 --gpus=all --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data -e OLLAMA_BASE_URL=http://host.docker.internal:11434 --name open-webui --restart always ghcr.io/open-webui/open-webui:cuda   
 ---------------------------------------------------- 
 
 
