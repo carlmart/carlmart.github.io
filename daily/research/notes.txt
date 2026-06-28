@@ -1,7 +1,9 @@
 
 Setting up Ollama / Web Assistant and voice commands
+https://github.com/ggml-org/llama.cpp
 https://github.com/maxi1134/Home-Assistant-Config/blob/master/documentation/guides/voice_assistance_guide_open_webui.md
 https://oneuptime.com/blog/post/2026-02-08-how-to-run-llm-inference-with-llamacpp-in-docker/view
+https://unsloth.ai/docs/models/tutorials/qwen3-coder-how-to-run-locally
 
 **Ollama models are open-source large language models (LLMs) that run locally on your computer 
 categorized into four main types: 
@@ -32,19 +34,33 @@ Microsoft          Phi-4 Mini (3.8B)                                      ~3-4 G
                    Qwen3.5 0.8B/2B                                        ~2 GB
                    Gemma 4 E4B                                            ~3 GB 
 -------------------------------------------------------------------------------------------
-ollama or llama.cpp
+Ollama or Llama.cpp
 
+Ollama : slower version  - Llama is best
 Ollama: phi4-mini test Microsoft + only 4 GB VRAM
    docker run -d --gpus all -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
 Then run for model:  phi4-mini is fast and good low VRAM 4 GB 
    docker exec -it ollama ollama pull phi4-mini   
    docker exec -it ollama ollama run phi4-mini
 
+## BEST ENGINE llama.cpp 
 llama.cpp : gemma4:e4b coding + only 8 GB VRAM
    docker run -d --name llama-gpu --gpus all -p 8080:8080 -v ~/models:/models ghcr.io/ggml-org/llama.cpp:server-cuda --model /models/mistral-7b-instruct-v0.2.Q4_K_M.gguf --host 0.0.0.0 --port 8080 --n-gpu-layers 99 --threads 4
-   docker exec -it llama-gpu llama-gpu pull gemma4:e4b
-   docker exec -it llama-gpu llama-gpu run  gemma4:e4b
 
+## then download model 
+## install hf
+   pip install hf
+## search models  - will bring up many models
+  hf models ls --search "tinyllama"
+
+## download model you want 
+  mkdir ~/models/
+  hf download karpathy/tinyllamas  --local-dir ~/models/
+  hf download TinyLlama/TinyLlama-1.1B-Chat-v1.0 --local-dir ~/models/   ** not available June 28, 2026
+ 
+## run llama
+
+  
 
 running coding  apps on cloud
    docker exec -it ollama run kimi-k2.6:cloud
@@ -54,9 +70,6 @@ running coding  apps on cloud
    docker exec -it ollama launch hermes  --model kimi-k2.6:cloud 
    docker exec -it ollama launch codex  --model kimi-k2.6:cloud 
    docker exec -it ollama launch opencode  --model kimi-k2.6:cloud 
-
-
-
 
 ___________________________________________________________________________________________
 Install llama in a container
