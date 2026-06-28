@@ -18,7 +18,6 @@ Multimodal         Llama 3.2 Vision 11B Image understanding               ~8 GB
 
 Using Docker on Linux : Pick network  port , I used 11434 
    docker run -d --gpus all -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
-
 Then run for model:  phi4-mini is fast and good low VRAM 4 GB 
    docker exec -it ollama ollama pull phi4-mini   
    docker exec -it ollama ollama run phi4-mini
@@ -72,6 +71,16 @@ Bare metal installs on Linux - not recommended for Ollama
 curl -fsSL https://ollama.com/install.sh | sh   
 ollama pull llama3.1:8b-instruct-fp16
 ollama run llama3.1:8b-instruct-fp16
+---------------------------------------------------- 
+docker commands
+ docker ps -a        // lists all running docker containers
+ docker stop  [ID]   // 
+ docker rm [ID]      // removes old container
+ docker run -d --gpus all -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
+ docker exec -it ollama ollama pull phi4-mini   
+ docker exec -it ollama ollama run phi4-mini
+
+
 ---------------------------------------------------- 
 
 stopping macos updates
