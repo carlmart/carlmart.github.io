@@ -75,13 +75,4 @@ docker commands
 
 ---------------------------------------------------- 
 
-stopping macos updates
-defaults write com.apple.SoftwareUpdate MajorOSUserNotificationDate -date "2030-02-07 23:22:47 +0000"
-defaults read com.apple.SoftwareUpdate MajorOSUserNotificationDate
-
-sudo defaults write /Library/Preferences/com.apple.SoftwareUpdate AutomaticDownload -boolean FALSE
-
-launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist
-sudo softwareupdate –schedule off
-
 
