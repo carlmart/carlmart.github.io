@@ -1,13 +1,15 @@
 
 **Ollama models are open-source large language models (LLMs) that run locally on your computer, categorized into four main types: Source (base models like Mistral or Llama), Fine-tuned (specialized versions like Vicuna), Embedding (for semantic search like Nomic Embed Text), and Multimodal (handling text and images like Llama 3.2 Vision).  These models are stored in a local library, typically at $HOME/.cache/ollama, and can be pulled using commands like ollama pull <model_name>
 
-Phi-4 Mini 3.8B for lightweight, fast inference on low-resource hardware.  
 Kimi K2.6 for frontier coding and gpt-oss:20b for efficient reasoning on 16GB GPUs. 
 
 Category                Top Model       Best Use Case                     VRAM Required
 -------------------------------------------------------------------------------------------
 General/Reasoning  Llama 3.3 70B        Complex reasoning, general tasks  ~40-43 GB
-Code               Qwen 2.5 Coder 32B   Code generation, refactoring      ~20-22 GB
+Code               Qwen 2.5 Coder 32B   code generation, refactoring      ~20-22 GB
+Code               Kimi K 2.6           code                              ~16 GB
+Code               gpt-oss:20b          code                              ~16 GB
+Google Deepmind    Gemma 4 E4B          code                              ~8 GB
 Efficient/Budget   Llama 3.1 8B         General purpose, entry-level      ~5-6 GB
 Embedding          Nomic Embed Text     Semantic search, RAG              ~0.5 GB
 Multimodal         Llama 3.2 Vision 11B Image understanding               ~8 GB
@@ -21,6 +23,7 @@ Microsoft          Phi-4 Mini (3.8B)                                      ~3-4 G
 -------------------------------------------------------------------------------------------
 Using Docker on Linux : Pick network  port , I used 11434 
    docker run -d --gpus all -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
+
 Then run for model:  phi4-mini is fast and good low VRAM 4 GB 
    docker exec -it ollama ollama pull phi4-mini   
    docker exec -it ollama ollama run phi4-mini
@@ -69,19 +72,15 @@ docker commands
  docker stop  [ID]   // 
  docker rm [ID]      // removes old container
  docker run -d --gpus all -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
+
+Windows Model
  docker exec -it ollama ollama pull phi4-mini   
  docker exec -it ollama ollama run phi4-mini
 
+Coding Model 
+ docker exec -it ollama ollama pull gemma4:e4b   
+ docker exec -it ollama ollama run gemma4:e4b 
 
 ---------------------------------------------------- 
-
-stopping macos updates
-defaults write com.apple.SoftwareUpdate MajorOSUserNotificationDate -date "2030-02-07 23:22:47 +0000"
-defaults read com.apple.SoftwareUpdate MajorOSUserNotificationDate
-
-sudo defaults write /Library/Preferences/com.apple.SoftwareUpdate AutomaticDownload -boolean FALSE
-
-launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist
-sudo softwareupdate –schedule off
 
 
