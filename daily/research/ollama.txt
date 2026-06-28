@@ -42,6 +42,15 @@ llama.cpp : gemma4:e4b coding + only 8 GB VRAM
    docker exec -it llama-gpu llama-gpu run  gemma4:e4b
 
 
+running coding  apps on cloud
+   docker exec -it ollama run kimi-k2.6:cloud
+   docker exec -it ollama launch claude --model kimi-k2.6:cloud 
+   docker exec -it ollama launch codex-app --model kimi-k2.6:cloud 
+   docker exec -it ollama launch openclaw  --model kimi-k2.6:cloud 
+   docker exec -it ollama launch hermes  --model kimi-k2.6:cloud 
+   docker exec -it ollama launch codex  --model kimi-k2.6:cloud 
+   docker exec -it ollama launch opencode  --model kimi-k2.6:cloud 
+
 
 
 
