@@ -1,31 +1,42 @@
 
 **Ollama models are open-source large language models (LLMs) that run locally on your computer, categorized into four main types: Source (base models like Mistral or Llama), Fine-tuned (specialized versions like Vicuna), Embedding (for semantic search like Nomic Embed Text), and Multimodal (handling text and images like Llama 3.2 Vision).  These models are stored in a local library, typically at $HOME/.cache/ollama, and can be pulled using commands like ollama pull <model_name>
 
-Current top-ranked models for June 2026 include Llama 3.3 70B for general reasoning (requiring ~40GB VRAM), Qwen 2.5 Coder 32B for high-performance coding tasks, and Phi-4 Mini 3.8B for lightweight, fast inference on low-resource hardware.  Newer additions include Kimi K2.6 for frontier coding and gpt-oss:20b for efficient reasoning on 16GB GPUs. 
+Current top-ranked models for June 2026 include 
+Llama 3.3 70B for general reasoning (requiring ~40GB VRAM) 
+Qwen 2.5 Coder 32B for high-performance coding tasks 
+Phi-4 Mini 3.8B for lightweight, fast inference on low-resource hardware.  
+Kimi K2.6 for frontier coding and gpt-oss:20b for efficient reasoning on 16GB GPUs. 
 
-Category        Top Model       Best Use Case   VRAM Required
-General/Reasoning       Llama 3.3 70B   Complex reasoning, general tasks        ~40-43 GB
-Coding  Qwen 2.5 Coder 32B      Code generation, refactoring    ~20-22 GB
-Efficient/Budget        Llama 3.1 8B    General purpose, entry-level    ~5-6 GB
-Embedding       Nomic Embed Text        Semantic search, RAG    ~0.5 GB
-Multimodal      Llama 3.2 Vision 11B    Image understanding     ~8 GB
+Category                Top Model       Best Use Case                     VRAM Required
+-------------------------------------------------------------------------------------------
+General/Reasoning  Llama 3.3 70B        Complex reasoning, general tasks  ~40-43 GB
+Coding             Qwen 2.5 Coder 32B   Code generation, refactoring      ~20-22 GB
+Efficient/Budget   Llama 3.1 8B         General purpose, entry-level      ~5-6 GB
+Embedding          Nomic Embed Text     Semantic search, RAG              ~0.5 GB
+Multimodal         Llama 3.2 Vision 11B Image understanding               ~8 GB
 
-from cli
-ollama pull [MODEL] 
-ollama run [MODEL]
 
-qwen3-vl:8b  vision language model
+Using Docker on Linux : Pick network  port , I used 11434 
+   docker run -d --gpus all -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
 
-The Ollama model with the absolute minimal memory requirement is Gemma 4 E2B, which requires only ~2 GB of VRAM/RAM and takes up approximately 2 GB on disk.  For systems with slightly more resources but still very constrained, Phi-4 Mini (3.8B) and Llama 3.2 3B are highly efficient alternatives, each requiring only ~2–3 GB of memory while offering significantly better performance and larger context windows (128K tokens) compared to older 1–2B models. 
+Then run for model:  phi4-mini is fast and good low VRAM 4 GB 
+   docker exec -it ollama ollama pull phi4-mini   
+   docker exec -it ollama ollama run phi4-mini
+
+
+The Ollama model with the absolute minimal memory requirement is 
+   Gemma 4 E2B, which requires only ~2 GB of VRAM/RAM and takes up approximately 2 GB on disk.  
+   For systems with slightly more resources but still very constrained, 
+   Phi-4 Mini (3.8B) and Llama 3.2 3B are highly efficient alternatives, 
+   each requiring only ~2–3 GB of memory while offering significantly better performance 
+   and larger context windows (128K tokens) compared to older 1–2B models. 
 
 Other minimal-footprint options include:
+   Orca-mini 3B: Viable for systems with as little as 4 GB RAM, though performance is limited. 
+   Gemma 3 1B and Qwen3.5 0.8B/2B: Extremely small models suitable for basic tasks on severely resource-constrained hardware. 
 
-Orca-mini 3B: Viable for systems with as little as 4 GB RAM, though performance is limited. 
-Gemma 3 1B and Qwen3.5 0.8B/2B: Extremely small models suitable for basic tasks on severely resource-constrained hardware. 
-For systems with 8 GB RAM, the recommended entry-level models are Gemma 4 E4B (~3 GB RAM) and Phi-4 Mini, which provide a comfortable balance of qualiceo@laptop1 ~/Desktop > vi ollama.txt 
-ceo@laptop1 ~/Desktop > cm-notes.sh 
-ceo@laptop1 ~/Desktop > vi ollama.txt
-
+For systems with 8 GB RAM, the recommended entry-level models are 
+   Gemma 4 E4B (~3 GB RAM) and Phi-4 Mini, which provide a comfortable balance 
 
 Install llama in a container
 # Install Docker
@@ -48,48 +59,12 @@ sudo systemctl restart docker
 
 Notes: ------------------------------------
 
-**Ollama models are open-source large language models (LLMs) that run locally on your computer, categorized into four main types:
-1. Source (base models like Mistral or Llama),
-2. Fine-tuned (specialized versions like Vicuna),
-3. Embedding (for semantic search like Nomic Embed Text),
-4. Multimodal (handling text and images like Llama 3.2 Vision).
-These models are stored in a local library, typically at $HOME/.cache/ollama, and can be pulled using commands like ollama pull <model_name>
-
-Current top-ranked models for June 2026 include :
-1. Llama 3.3 70B for general reasoning (requiring ~40GB VRAM),
-2. Qwen 2.5 Coder 32B for high-performance coding tasks,
-   qwen3-vl:8b  vision language model
-3. Phi-4 Mini 3.8B for  3-4 GB VRAM
-   ollama pull phi4-mini
-   ollama run phi40mini
-4. Kimi K2.6 for frontier coding and gpt-oss:20b for efficient reasoning on 16GB GPUs.
-
-Category        Top Model       Best Use Case   VRAM Required
-General/Reasoning       Llama 3.3 70B   Complex reasoning, general tasks        ~40-43 GB
-Coding  Qwen 2.5 Coder 32B      Code generation, refactoring    ~20-22 GB
-Efficient/Budget        Llama 3.1 8B    General purpose, entry-level    ~5-6 GB
-Embedding       Nomic Embed Text        Semantic search, RAG    ~0.5 GB
-Multimodal      Llama 3.2 Vision 11B    Image understanding     ~8 GB
-
-from cli
-ollama pull [MODEL]
-ollama run [MODEL]
-
-The Ollama model with the absolute minimal memory requirement is Gemma 4 E2B, which requires only ~2 GB of VRAM/RAM and takes up approximately 2 GB on disk.  For systems with slightly more resources but still very constrained, Phi-4 Mini (3.8B) and Llama 3.2 3B are highly efficient alternatives, each requiring only ~2–3 GB of memory while offering significantly better performance and larger context windows (128K tokens) compared to older 1–2B models.
-
-Other minimal-footprint options include:
-Orca-mini 3B: Viable for systems with as little as 4 GB RAM, though performance is limited.
-Gemma 3 1B and Qwen3.5 0.8B/2B: Extremely small models suitable for basic tasks on severely resource-constrained hardware.
-For systems with 8 GB RAM, the recommended entry-level models are Gemma 4 E4B (~3 GB RAM) and Phi-4 Mini, which provide a comfortable balance of quality and resource usage.  Models larger than 8B parameters generally require at least 16 GB of RAM/VRAM for comfortable operation.
-
 other models
 https://www.kaggle.com/models?query=gemma-4&publisher=google
 good for 8GB
 https://huggingface.co/google/gemma-4-E4B-it-qat-mobile-transformers
 https://www.gemma4.wiki/guide/gemma-4-e4b-ram-requirements
 
----------------------------------------------------- 
----------------------------------------------------- 
 ---------------------------------------------------- 
 
 ---------------------------------------------------- 
