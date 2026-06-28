@@ -1,7 +1,14 @@
 
-**Ollama models are open-source large language models (LLMs) that run locally on your computer, categorized into four main types: Source (base models like Mistral or Llama), Fine-tuned (specialized versions like Vicuna), Embedding (for semantic search like Nomic Embed Text), and Multimodal (handling text and images like Llama 3.2 Vision).  These models are stored in a local library, typically at $HOME/.cache/ollama, and can be pulled using commands like ollama pull <model_name>
+**Ollama models are open-source large language models (LLMs) that run locally on your computer 
+categorized into four main types: 
+ 1. Source (base models like Mistral or Llama 
+ 2. Fine-tuned specialized versions like Vicuna
+ 3. Embedding semantic search like Nomic Embed Text
+ 4. Multimodal handling text and images like Llama 3.2 Vision
 
-Kimi K2.6 for frontier coding and gpt-oss:20b for efficient reasoning on 16GB GPUs. 
+These models are stored in a local library, 
+typically at $HOME/.cache/ollama
+
 
 Category                Top Model       Best Use Case                     VRAM Required
 -------------------------------------------------------------------------------------------
@@ -21,12 +28,20 @@ Microsoft          Phi-4 Mini (3.8B)                                      ~3-4 G
                    Qwen3.5 0.8B/2B                                        ~2 GB
                    Gemma 4 E4B                                            ~3 GB 
 -------------------------------------------------------------------------------------------
-Using Docker on Linux : Pick network  port , I used 11434 
-   docker run -d --gpus all -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
+ollama or llama.cpp
 
+Ollama: phi4-mini test Microsoft + only 4 GB VRAM
+   docker run -d --gpus all -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
 Then run for model:  phi4-mini is fast and good low VRAM 4 GB 
    docker exec -it ollama ollama pull phi4-mini   
    docker exec -it ollama ollama run phi4-mini
+
+llama.cpp : gemma4:e4b coding + only 8 GB VRAM
+   docker run -d --name llama-gpu --gpus all -p 8080:8080 -v ~/models:/models ghcr.io/ggml-org/llama.cpp:server-cuda --model /models/mistral-7b-instruct-v0.2.Q4_K_M.gguf --host 0.0.0.0 --port 8080 --n-gpu-layers 99 --threads 4
+   docker exec -it llama-gpu llama-gpu pull gemma4:e4b
+   docker exec -it llama-gpu llama-gpu run  gemma4:e4b
+
+
 
 
 
