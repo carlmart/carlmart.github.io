@@ -5,6 +5,13 @@ https://github.com/maxi1134/Home-Assistant-Config/blob/master/documentation/guid
 https://oneuptime.com/blog/post/2026-02-08-how-to-run-llm-inference-with-llamacpp-in-docker/view
 https://unsloth.ai/docs/models/tutorials/qwen3-coder-how-to-run-locally
 
+lmstudio is used for privacy - download models and run them locally
+https://lmstudio.ai/    
+https://www.datacamp.com/tutorial/lm-studio
+
+running on linux / steps
+https://lindevs.com/run-llama-cpp-inside-docker-container-on-linux
+
 **Ollama models are open-source large language models (LLMs) that run locally on your computer 
 categorized into four main types: 
  1. Source (base models like Mistral or Llama 
@@ -14,6 +21,7 @@ categorized into four main types:
 
 These models are stored in a local library, 
 typically at $HOME/.cache/ollama
+
 
 
 Category                Top Model       Best Use Case                     VRAM Required
@@ -33,6 +41,13 @@ Microsoft          Phi-4 Mini (3.8B)                                      ~3-4 G
                    Gemma 3 1B                                             ~2 GB
                    Qwen3.5 0.8B/2B                                        ~2 GB
                    Gemma 4 E4B                                            ~3 GB 
+-------------------------------------------------------------------------------------------
+RAM         What models run comfortably
+----------------------------------------
+8 GB        Small models 1B - 4B
+16GB        Mid Size     7B - 9B
+32GB+       Large       13B + 
+___________________________________________________________________________________________
 -------------------------------------------------------------------------------------------
 Ollama or Llama.cpp
 
@@ -113,6 +128,7 @@ docker commands
  docker stop  [ID]   // 
  docker rm [ID]      // removes old container
  docker run -d --gpus all -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
+ docker exec -it <container> /bin/bash
 
 Windows Model
  docker exec -it ollama ollama pull phi4-mini   
