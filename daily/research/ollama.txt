@@ -59,7 +59,19 @@ Then run for model:  phi4-mini is fast and good low VRAM 4 GB
    docker exec -it ollama ollama run phi4-mini
 
 ## BEST ENGINE llama.cpp 
-llama.cpp : gemma4:e4b coding + only 8 GB VRAM
+## llama.cpp : gemma4:e4b coding + only 8 GB VRAM
+docker run --rm -it --gpus all \
+       --name llama_server \
+       -p 8080:8080 \
+       -v ~/models:/models \     # hostpath  --volume ~/models : docker path /models
+       ghcr.io/ggml-org/llama.cpp:server-cuda \
+       --model /models/karpathy/tinyllamas  \
+       --host 0.0.0.0 --port 8080 \
+       --ctx-size 4096 \
+       --threads 4 \
+       --verbose
+## Host Path: ~/models is mounted into container with --volume / -v
+## Container Path: /models       
    docker run -d --name llama-gpu --gpus all -p 8080:8080 -v ~/models:/models ghcr.io/ggml-org/llama.cpp:server-cuda --model /models/mistral-7b-instruct-v0.2.Q4_K_M.gguf --host 0.0.0.0 --port 8080 --n-gpu-layers 99 --threads 4
 
 ## then download model 
