@@ -1,9 +1,0 @@
-
-
-
-1. Install
-curl -fsSL https://ollama.com/install.sh | sh   
-
-2. pull and run 
-ollama pull llama3.1:8b-instruct-fp16
-ollama run llama3.1:8b-instruct-fp16   

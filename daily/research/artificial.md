@@ -1,5 +1,7 @@
 
-# Local  AI on Linux
+# Local ollama  
+[ Linux Step by step guide ](https://medium.com/open-webui-mastery/build-your-local-ai-from-zero-to-a-custom-chatgpt-interface-with-ollama-open-webui-6bee2c5abba3)
+[ MacOS ](https://pahautelman.github.io/pahautelman-blog/tutorials/build-your-local-ai/build-your-local-ai/) 
 
 # Apps : 
   Lmstudio (commercial)
@@ -11,6 +13,7 @@
 [ llama.cpp](https://github.com/ggml-org/llama.cpp)
 [ Voice Assistance + WebUI ](https://github.com/maxi1134/Home-Assistant-Config/blob/master/documentation/guides/voice_assistance_guide_open_webui.md)
 [ Running QWEN3-coder  ](https://unsloth.ai/docs/models/tutorials/qwen3-coder-how-to-run-locally)
+[ koboldcpp gguf and ggml (.bin) models ](https://koboldai.com/)
 [ kolosalai ](https://github.com/KolosalAI/Kolosal)
 
 [ Linux Docker llama.cpp setup](https://lindevs.com/run-llama-cpp-inside-docker-container-on-linux)
