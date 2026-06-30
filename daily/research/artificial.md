@@ -1,47 +1,59 @@
 
+# Youtube Channels
+ - [ IBM Technoloty YT Channel ](https://www.youtube.com/@IBMTechnology/videos)
+ - [ Julia Turc advanced YT Channel ](https://www.youtube.com/@juliaturc1/playlists)
+ - [ Llama.cpp  IBM Technoloty YT ](https://www.youtube.com/watch?v=P8m5eHAyrFM)
+
 # Local ollama  
 [ Linux Step by step guide ](https://medium.com/open-webui-mastery/build-your-local-ai-from-zero-to-a-custom-chatgpt-interface-with-ollama-open-webui-6bee2c5abba3)
 [ MacOS ](https://pahautelman.github.io/pahautelman-blog/tutorials/build-your-local-ai/build-your-local-ai/) 
+[ YT - Reverse Engineering GGUF - Quantization ](https://www.youtube.com/watch?v=vW30o4U9BFE)
+
+```
+Chinese open models
+
+npx @qwen-code/qwen-code@latest
+```
 
 # Apps : 
   Lmstudio (commercial)
   GPT4ALL , Koboldcpp , LocalAI , Ollama , Open-WebUI , llama.cpp , Jan.ai, koboldcpp (opensource)
 
-[ LMStudio](https://lmstudio.ai/)
-[ LMStudio Tutorial](https://www.datacamp.com/tutorial/lm-studio)
-
-[ llama.cpp](https://github.com/ggml-org/llama.cpp)
-[ Voice Assistance + WebUI ](https://github.com/maxi1134/Home-Assistant-Config/blob/master/documentation/guides/voice_assistance_guide_open_webui.md)
-[ Running QWEN3-coder  ](https://unsloth.ai/docs/models/tutorials/qwen3-coder-how-to-run-locally)
-[ koboldcpp gguf and ggml (.bin) models ](https://koboldai.com/)
-[ kolosalai ](https://github.com/KolosalAI/Kolosal)
-
-[ Linux Docker llama.cpp setup](https://lindevs.com/run-llama-cpp-inside-docker-container-on-linux)
+ - [ LMStudio](https://lmstudio.ai/)
+ - [ LMStudio Tutorial](https://www.datacamp.com/tutorial/lm-studio)
+ - [ llama.cpp](https://github.com/ggml-org/llama.cpp)
+ - [ Voice Assistance + WebUI ](https://github.com/maxi1134/Home-Assistant-Config/blob/master/documentation/guides/voice_assistance_guide_open_webui.md)
+ - [ Running QWEN3-coder  ](https://unsloth.ai/docs/models/tutorials/qwen3-coder-how-to-run-locally)
+ - [ koboldcpp gguf and ggml (.bin) models ](https://koboldai.com/)
+ - [ kolosalai ](https://github.com/KolosalAI/Kolosal)
+ - [ Linux Docker llama.cpp setup](https://lindevs.com/run-llama-cpp-inside-docker-container-on-linux)
 
 ```
-Category                Best Use Case                     VRAM 
-----------------------------------------------------------------
-Llama 3.3 70B        Complex reasoning, general tasks  ~40-43 GB
-Qwen 2.5 Coder 32B   code generation, refactoring      ~20-22 GB
-Kimi K 2.6           code                              ~16 GB
-gpt-oss:20b          code                              ~16 GB
-Gemma 4 E4B          code                              ~8 GB
-Qwen3.5 9b           code                              ~8 GB
-OmniCoder 9b         code                              ~8 GB
-Llama 3.1 8B         General purpose, entry-level      ~5-6 GB
-Nomic Embed Text     Semantic search, RAG              ~0.5 GB
-Llama 3.2 Vision 11B Image understanding               ~8 GB
-Orca-mini 3B                                           ~8 GB
-Phi-4 Mini (3.8B)                                      ~3-4 GB 
-Llama 3.2 3B                                           ~3-4 GB
-Gemma 4 E2B                                            ~2 GB
-Gemma 3 1B                                             ~2 GB
-Qwen3.5 0.8B/2B      code                              ~2 GB
-Gemma 4 E4B                                            ~3 GB 
-----------------------------------------------------------------
+
+# Table 1.a
+Category             Best Use Case  VRAM 
+---------------------------------------------
+Llama 3.3 70B        general tasks  ~40-43 GB
+Qwen 2.5 Coder 32B   code           ~20-22 GB
+Kimi K 2.6           code           ~16 GB
+gpt-oss:20b          code           ~16 GB
+Gemma 4 E4B          code           ~8 GB
+Qwen3.5 9b           code           ~8 GB
+OmniCoder 9b         code           ~8 GB
+Llama 3.1 8B         General        ~5-6 GB
+Nomic Embed Text     RAG            ~0.5 GB
+Llama 3.2 Vision 11B Image          ~8 GB
+Orca-mini 3B                        ~8 GB
+Phi-4 Mini (3.8B)                   ~3-4 GB 
+Llama 3.2 3B                        ~3-4 GB
+Gemma 4 E2B                         ~2 GB
+Gemma 3 1B                          ~2 GB
+Qwen3.5 0.8B/2B      code           ~2 GB
+Gemma 4 E4B                         ~3 GB 
+---------------------------------------------
 ```
 
-# Name conventions
+Table 1.b
 ```
 RAM         What models run comfortably
 ----------------------------------------
@@ -50,18 +62,18 @@ RAM         What models run comfortably
 32GB+       Large       13B + 
 ```
 
-# Ollama on docker
+ Ollama on docker
 ```
    docker run -d --gpus all -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
 ```
 
-# Running Phi4-mini  model:  phi4-mini is fast and good low VRAM 4 GB 
+Running Phi4-mini  model:  phi4-mini is fast and good low VRAM 4 GB 
 ```
    docker exec -it ollama ollama pull phi4-mini   
    docker exec -it ollama ollama run phi4-mini
 ```
 
-# llama.cpp : gemma4:e4b coding + only 8 GB VRAM
+llama.cpp : gemma4:e4b coding + only 8 GB VRAM
 ```
 docker run --rm -it --gpus all \
        --name llama_server \
@@ -75,21 +87,21 @@ docker run --rm -it --gpus all \
        --verbose
 ```
 
-# Host Path: ~/models is mounted into container with --volume / -v  Container Path: /models       
+Host Path: ~/models is mounted into container with --volume / -v  Container Path: /models       
 ```
    docker run -d --name llama-gpu --gpus all -p 8080:8080 -v ~/models:/models ghcr.io/ggml-org/llama.cpp:server-cuda --model /models/mistral-7b-instruct-v0.2.Q4_K_M.gguf --host 0.0.0.0 --port 8080 --n-gpu-layers 99 --threads 4
 ```
 
-#  hf app for downloading models
+hf app for downloading models
 ```
    pip install hf
 ```
-## search models  - will bring up many models
+search models  - will bring up many models
 ```
   hf models ls --search "tinyllama"
 ```
 
-## download model you want 
+download model you want 
 ```
   mkdir ~/models/
   hf download karpathy/tinyllamas  --local-dir ~/models/
@@ -120,7 +132,7 @@ sudo apt-get update
 sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
 ```
 
-# Install NVIDIA Container Toolkit
+Install NVIDIA Container Toolkit
 ```
 curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | sudo apt-key add -
 curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.list | sudo tee /etc/apt/sources.list.d/nvidia-docker.list
@@ -129,26 +141,26 @@ sudo apt-get install -y nvidia-container-toolkit
 sudo systemctl restart docker
 ```
 
-# Windows Model phi4-mini on ollama
+Windows Model phi4-mini on ollama
 ```
  docker exec -it ollama ollama pull phi4-mini   
  docker exec -it ollama ollama run phi4-mini
 ```
 
-# Coding Model gemma4:e4b on ollama
+Coding Model gemma4:e4b on ollama
 ```
  docker exec -it ollama ollama pull gemma4:e4b   
  docker exec -it ollama ollama run gemma4:e4b 
 ```
 
-# For web front end use Open WebUI
+For web front end use Open WebUI
 ```
   docker run -d -p 3000:8080 --gpus=all \
      -v ollama:/root/.ollama -v open-webui:/app/backend/data \
      --name open-webui --restart always  ghcr.io/open-webui/open-webui:ollama
 ```
 
-# Ollama server and Open WebUI container
+Ollama server and Open WebUI container
 ```
   docker run -d -p 3000:8080 --gpus=alli \
    --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data \
@@ -156,9 +168,7 @@ sudo systemctl restart docker
    --restart always ghcr.io/open-webui/open-webui:cuda   
 ```
 
-# Notes: ------------------------------------
-
-# Bare metal installs on Linux - not recommended for Ollama
+Bare metal installs on Linux - not recommended for Ollama
 ```
 curl -fsSL https://ollama.com/install.sh | sh   
 ollama pull llama3.1:8b-instruct-fp16
