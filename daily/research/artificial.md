@@ -5,13 +5,18 @@
  - [ Llama.cpp  IBM Technoloty YT ](https://www.youtube.com/watch?v=P8m5eHAyrFM)
 
 # Local ollama  
-[ Linux Step by step guide ](https://medium.com/open-webui-mastery/build-your-local-ai-from-zero-to-a-custom-chatgpt-interface-with-ollama-open-webui-6bee2c5abba3)
-[ MacOS ](https://pahautelman.github.io/pahautelman-blog/tutorials/build-your-local-ai/build-your-local-ai/) 
-[ YT - Reverse Engineering GGUF - Quantization ](https://www.youtube.com/watch?v=vW30o4U9BFE)
+ - [ Linux Step by step guide ](https://medium.com/open-webui-mastery/build-your-local-ai-from-zero-to-a-custom-chatgpt-interface-with-ollama-open-webui-6bee2c5abba3)
+ - [ Pahautelman.github.io Linux Ollama - OpenWebUI](https://pahautelman.github.io/pahautelman-blog/tutorials/build-your-local-ai/build-your-local-ai/)
+ - [ MacOS ](https://pahautelman.github.io/pahautelman-blog/tutorials/build-your-local-ai/build-your-local-ai/) 
+ - [ YT - Reverse Engineering GGUF - Quantization ](https://www.youtube.com/watch?v=vW30o4U9BFE)
 
+# Chinese open model
 ```
-Chinese open models
-
+sudo apt install npm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.5/install.sh | bash   
+source ~/.bashrc 
+nvm install 22
+nvm --version
 npx @qwen-code/qwen-code@latest
 ```
 
