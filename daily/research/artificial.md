@@ -10,6 +10,18 @@
  - [ MacOS ](https://pahautelman.github.io/pahautelman-blog/tutorials/build-your-local-ai/build-your-local-ai/) 
  - [ YT - Reverse Engineering GGUF - Quantization ](https://www.youtube.com/watch?v=vW30o4U9BFE)
 
+## Linux 16GB Ram w/ NVIDIA 8GB card
+```
+ollama run deepseek-r1:32b       - too little memory
+ollama run deepseek-r1:14b       - testing
+
+```
+## Error : not running with gpu
+ - [ reddit: ollam w/ gpu ](https://old.reddit.com/r/LocalLLaMA/comments/1cew9fb/is_ollama_supposed_to_run_on_your_gpu/)
+```
+```
+
+
 # Chinese open model
 ```
 sudo apt install npm
