@@ -5,6 +5,17 @@
  - [ Llama.cpp  IBM Technoloty YT ](https://www.youtube.com/watch?v=P8m5eHAyrFM)
 
 # Local ollama  
+ - [ llama.cpp with Llamaswap ](https://github.com/mostlygeek/llama-swap)
+```
+See git repo for config details.
+   llama-swap --listen :9091 --config config.yml
+
+Next, under Admin Panel > Settings > Connections in openwebui 
+add an OpenAI API connection Make sure to add a model ID that matches exactly the model name defined in config.yml
+   http://localhost:9091/v1. 
+
+Don't forget to save! Now you can select the model and chat with it! Llama-swap will detect that the requested model isn't loaded, load it and proxy the request to llama-server behind the scenes.
+```
  - [ Linux Step by step guide ](https://medium.com/open-webui-mastery/build-your-local-ai-from-zero-to-a-custom-chatgpt-interface-with-ollama-open-webui-6bee2c5abba3)
  - [ Pahautelman.github.io Linux Ollama - OpenWebUI](https://pahautelman.github.io/pahautelman-blog/tutorials/build-your-local-ai/build-your-local-ai/)
  - [ MacOS ](https://pahautelman.github.io/pahautelman-blog/tutorials/build-your-local-ai/build-your-local-ai/) 
