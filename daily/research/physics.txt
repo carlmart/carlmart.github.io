@@ -1,0 +1,19 @@
+
+
+
+Sabine / PBS Space time
+
+--------------------------
+Quantum superposition is a fundamental principle of quantum mechanics stating that a physical system can exist in multiple states or configurations simultaneously until it is measured.  Unlike classical bits in traditional computing, which are strictly 0 or 1, a qubit (quantum bit) can exist in a linear combination of both states, represented mathematically as ∣ψ⟩=α∣0⟩+β∣1⟩, where $\alpha$ and $\beta$ are complex probability amplitudes.
+--------------------------
+
+What causes quantum state collapse
+The cause of quantum state collapse is a central unresolved issue in physics known as the measurement problem, with no single consensus mechanism established. 
+
+Interaction and Decoherence is the most widely accepted practical explanation: interaction with the environment or a macroscopic measurement apparatus causes the system to lose quantum coherence.  This process, called decoherence, entangles the quantum system with its surroundings, effectively "collapsing" the superposition into a definite state by dispersing information into the environment. 
+
+Alternative interpretations offer different causal mechanisms:
+
+Objective Collapse Theories (e.g., GRW, CSL) propose that collapse is a real, spontaneous physical process triggered by gravity or intrinsic randomness, independent of observation. 
+Many-Worlds Interpretation argues that no collapse actually occurs; instead, all possible outcomes exist in branching parallel universes, and the appearance of collapse is an illusion due to the observer becoming entangled with one specific branch. 
+Pilot-Wave Theory suggests particles always have definite positions guided by a wave, meaning collapse is merely the revelation of pre-existing hidden variables rather than a physical change. 

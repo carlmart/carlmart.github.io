@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+a:link {
+color: blue; /* Unvisited link */
+}
+a:visited {
+color: yellow; /* Visited link */
+}
+a:hover {
+color: red; /* Mouse over link */
+}
+a:active {
+color: yellow; /* Selected link */
+}
+</style>
+
+    <title> Leather Craft </title>
+</head>
+
+<center>
+<body bgcolor=black>
+<!--   
+ <h1 style="color:white;" >   TitleLinks </h1>
+ <a href="LINK" target="_blank"> TITLE </a><br>   
+ <img class="qua"  src="img/yourpic"  style="width: 25%; height: auto;" alt="altimg" > yourpic <br> <br>
+-->
+
+<h2 style="color:white;" >   Mukluk / Moccassin's </h2>
+
+<a href="measure.html" target="_blank"> Measureing Adult and Kid Mocs </a><br>   
+<a href="https://lureofthenorth.com/instructional-booklets/">Lure of the North instruction booklets</a><br>
+<a href="https://www.youtube.com/watch?v=rLEZdFmHnUI&amp;list=PL2UbkPNThIBh-7po75nHLsVLMUcspsfbS">Lure of the North playlist Lowers </a><br>
+<a href="https://www.youtube.com/watch?v=z901uId4ib0&amp;list=PL2UbkPNThIBhPBA8EbiTqKnQeqV5e9RCu">Lure of the North playlist Leather Uppers </a><br>
+<a href="https://www.youtube.com/watch?v=qx3lCCMznVw">Lure of the North canvas upper 1/2</a><br>
+<a href="https://www.youtube.com/watch?v=OnJNuxyevzY">Lure of the North canvas upper 2/2</a><br>
+<br>
+<a href="https://lureofthenorth.com/instructional-booklets/">Lure of the North pdf instructions</a><br>
+<a href="https://lotnoutfitters.com/collections/mocassins-mittens/products/diy-moccasin-kit-hide-uppers">Lure of the North outfitters</a><br>
+<a href="https://www.youtube.com/watch?v=iKkfz9rR1mk">Urban Aboriginal 1-18 Mukluk</a><br>
+<a href="https://www.youtube.com/watch?v=ecMkPzFtgrw">TheWildYam: Making Mukluks</a><br>
+<a href="https://www.youtube.com/watch?v=GfzD1Al3xbk">Elk hide to shoes complete buildglue / tire shreds</a><br>
+
+<h2 style="color:white;" >   Mukluk Moccassin kits </h2>
+<a href="https://lotnoutfitters.com/products/diy-moccasin-kit-canvas-uppers">Lure of the North KITs</a><br>
+<a href="https://www.macpheeworkshop.com/blogs/news/mukluks-kit-everything-you-need-for-making-mukluks">mukluk kits MacPhee Workshop</a><br>
+<a href="https://www.northernheartdesigns.com/product/mukluk-making-diy-kit">mukluk kits Northern Heart designs</a><br>
+<a href="https://www.ambersleathercreations.com/product-page/diy-mukluk-kit-adult-sizes">mukluk/mocassin kits ambers leather</a><br>
+<a href="https://leatherunltd.com/products/make-your-own-moccasins-diy-leather-moccasin-craft-project-men-women-children-infant-handmade-moccasins-kit">mukluk/mocassin kit</a><br>
+<a href="https://www.youtube.com/watch?v=FkVenxeGhVI">leather mocassin kit realeather youtube</a><br>
+<a href="https://www.amazon.com/Realeather-Leather-Moccasin-Saddle-Brown/dp/B0CP68TQXS">leather mocassin kit realeather amazon</a><br>
+<a href="LINK" target="_blank"> TITLE </a><br>  
+
+<h2 style="color:white;" >   Leather Tooling Repairs </h2>
+<a href="https://www.leatherlearn.com/" target="_blank"> LeatherLearn Roseville </a><br>  
+<a href="https://www.youtube.com/@leatherworker/videos" target="_blank"> Johan Potgieter Roseville Youtube </a><br>  
+<a href="https://www.youtube.com/@joemeling3216/videos" target="_blank"> Joe Meling </a><br>  
+<a href="https://www.youtube.com/watch?v=SFx-NZP49d8">Using a sewing awl</a><br>
+<a href="https://www.lostcreekadventures.org/post/2017/03/05/repairing-steger-and-other-mukluk-soles" target="_blank"> Repair Soles 1 </a><br>  
+<a href="https://relativesomething.com/2022/01/10/mukluk-retread/" target="_blank"> Repair soles 2 </a><br>  
+<a href="https://www.youtube.com/watch?v=g0n4y7lAFfU">Add Rubber to your moccasins or Mukluks!</a><br>
+<a href="https://www.youtube.com/watch?v=nqOYN-XdgpY">resole boots</a><br>
+<a href="https://www.youtube.com/watch?v=ZU0HL6_KoDU">replacing moccassin soles heat, barge cement, 2 mm crepe rubber</a><br>
+<a href="https://www.ebay.com/itm/302636688187?_skw=crepe+rubber+sheet+2+mm">crepe rubber ebay</a><br>
+<a href="https://www.amazon.com/3-2mm-Crepe-Rubber-Sheets-Natural/dp/B076FDQB2Y/ref=sr_1_3">Amazon rubber crepe</a><br>
+<a href="https://www.amazon.com/Ringsun-Leather-Straps-Tooling-Bourbon/dp/B0C1S4X2J7/" target="_blank"> 1/2in straps </a><br>  
+<a href="https://www.amazon.com/GORGECRAFT-Genuine-Leather-Projects-Keychains/dp/B099ZK2XPS/ref=sr_1_2" target="_blank"> 10mm strap </a><br>  
+<a href="LINK" target="_blank"> TITLE </a><br>  
+
+<h2 style="color:white;" >   Ideas </h2>
+<a href="https://www.youtube.com/watch?v=TysMDZBpVBk">Ideas mocs</a><br>
+<a href="https://billworbfurs.com/products/chiddens-wrap-around-moccasin-leather">Ideas childrens mocs</a><br>
+<a href="LINK" target="_blank"> TITLE </a><br>  
+
+
+<h2 style="color:white;" >   Canvas Sewing </h2>
+<a href="https://www.youtube.com/watch?v=VulqZ6Bophk"> singer.com getting started M1000 </a> <br>
+<a href="https://www.youtube.com/watch?v=Ghaxxbv8Qs0"> first here before sewing  </a><br>
+<a href="https://www.youtube.com/watch?v=ZaKvy9derMk"> settings M1000   </a>  <br>
+<a href="https://www.youtube.com/watch?v=KZzi-XLUx_Y"> finger guard needles M1000 </a><br>
+<a href="https://www.youtube.com/watch?v=637j3Jzw078"> singer.com threading M1000 </a><br>
+<a href="https://www.youtube.com/watch?v=nXJ1uL1tsnw"> how to use singer m1000 </a><br>
+<a href="https://www.youtube.com/watch?v=5YORLz02gJc"> singer M1000 </a><br>
+
+
+<h2 style="color:white;" >   Commercial Boots </h2>
+<a href="https://mukluks.com/">Steger mukluks.com</a><br> 
+<a href="https://www.youtube.com/watch?v=dWwE4_DGfRA">Steger Camuk extremesreview</a><br>
+<a href="https://www.youtube.com/watch?v=e1w8plDyqNY">Steger Camuk extremesreview</a><br>
+<a href="https://www.youtube.com/watch?v=luNal72kucE">Steger reviews</a><br>
+<a href="https://mukluks.com/collections/liners-socks-insoles">Steger insoles</a><br>
+<a href="https://www.youtube.com/watch?v=mIAFtNMTOiM">Canadian laurentian chief ankle boots hunting</a><br>
+<a href="https://www.youtube.com/watch?v=kET2_w2dQ5c">Canadian laurentian chief ankle boots hunting</a><br>
+
+
+
+</center>
+<!--   <a href="LINK" target="_blank"> ITEM  </a><br>   -->
+<!--   <a href="LINK" target="_blank"> TITLE </a><br>   -->
+<!--- 
+mystyle.sh > mystyle.css
+<img class="qua"  src="winterJPG" alt="altimg" width="550" height="600" >3 <br> <br>
+--->
+
+</body>
+</html>
+

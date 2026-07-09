@@ -1,0 +1,47 @@
+## Updates and Notes
+
+Directions:
+
+```
+Heading West from OSJ: 10km=6miles
+Luis Munoz Airport  -> East to Ricon (154km : 2 hours)
+
+
+Old San Juan -> West to  Ocean Park (9km : 18 min)
+Ocean Park -> West Parque Isla Verde Carolina (4.5km : 15 min)
+Ocean Park -> West Carolina public beach  (22km : 24 min)
+Ocean Park -> West Yunque National Forest (41km:40 min)
+```
+
+Luquillo hotels in the towers and in  Dorado in Villa Plata. 
+Isabela/Aguadilla/Jobos beach area   - tourist heavy
+
+North is the Atlantic ocean the south is the Caribbean Sea. 
+Land in BQN.  Stay in Boqueron. Explore Cabo Rojo Lajas and Guanica from there.
+Boqueron is South West 
+
+Rincon for longer stays - West of the island
+
+You need a cistern for water for water shortages if staying over 30 days.
+
+Scooter or uber down to playa Escambrón for “try scuba diving” which was $95+tip IIRC. They (and other companies nearby) also have guided snorkeling, or rentals, at a lower cost. Couldn’t believe how fun (and easy) scuba was! (When you only go about 10 feet down.
+Balneario del Escambrón, San Juan, 00910, Puerto Rico
+
+Kaslata bakery. (Ocean Park)
+1966 Calle McLeary, San Juan, PR 00911
+
+
+With a large group I would suggest a Hotel in Isla Verde. Right next to the airport for Logistics. Fairmont has great nightlife. And Royal Sonesta is more family friendly. Do visit Fairmont though.
+
+For larger groups, these are among the best options in Isla Verde:
+
+Fairmont El San Juan Hotel – Luxury resort, multiple room types, several pools, restaurants, and excellent for weddings and group events.
+🌐 https://www.elsanjuanhotel.com
+The Royal Sonesta San Juan – Beachfront resort with spacious rooms, large pool, and great for families and groups.
+🌐 https://sanjuanroyal.sonesta.com
+Embassy Suites by Hilton San Juan Hotel & Casino – All-suite hotel with free breakfast, ideal for families and larger groups.
+🌐 https://www.hilton.com/en/hotels/sjueses-embassy-suites-san-juan-hotel-and-casino/
+Courtyard by Marriott Isla Verde Beach Resort – Beachfront, casino, and convenient for groups wanting to stay together.
+🌐 https://www.marriott.com
+Hampton Inn & Suites San Juan – One of the best value options, includes breakfast, and works well for budget-conscious groups.
+🌐 https://www.hilton.com/en/hotels/sjuhshx-hampton-san-juan/

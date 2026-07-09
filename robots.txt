@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: /download@/
+Disallow: /tmp/
+Disallow: /downloads/
+Disallow: /neighborhoodcrime/
+Disallow: /cgi-bin/
+Disallow: /blog/
+Disallow: /gallery/
+Disallow: /purplenixorg/
+Disallow: /scimod/
+Disallow: /xpython/
+Disallow: /projects/
