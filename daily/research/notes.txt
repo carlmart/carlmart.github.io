@@ -1,5 +1,7 @@
 
 
+
+
 what interace is wifi or ethernet
 networksetup -listallhardwareports | grep -C1 "Device: en0" 
 
