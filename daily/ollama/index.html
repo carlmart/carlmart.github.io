@@ -1,0 +1,852 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+<title>ollama-guide.md</title>
+<style type='text/css'>:root {
+  /* Base Light */
+  --textPrimary: #24292E;
+  --background: #ffffff;
+  --body-border-color: #dfdfdf;
+  --link: #0366d6;
+  --link-highlight: rgba(3, 102, 214, 0.08);
+  --code-background: #f7f7f9;
+  --hr-background: #e3e4e8;
+  --thead-background: #f7f7f9;
+  --thead-border: #e3e4e8;
+  --tr-border: #bfc1c9; /* unused variable */
+  --tr-alt-background: #f7f7f9;
+  --kbd-background: #f7f7f9;
+  --kbd-color: #4b4d58;
+  --kbd-border: #d6d7dc;
+  --blockquote-color: #6a6d7c;
+  --blockquote-border: #e3e4e8;
+  --heading-color: #17181a;
+  --header-bottom-border: #e3e4e8;
+  --h6-color: #6a6d7c;
+  --frame-border: #e3e4e8;
+  --frame-color: #242528;
+  --mention-color: #242528;
+  --email-toggle-color: #4b4d58; /* unused variable */
+  --email-toggle-background: #e3e4e8; /* unused variable */
+  --email-quoted-color: #6a6d7c; /* unused variable */
+  --keyword-color: #9194a1;
+  --code-font: ui-monospace, Menlo, monospace;
+  
+  /* Highlight Light */
+  --hl_Background: #F6F8FA ;
+  --hl_Number: #005cc5 ;
+  --hl_Escape: #032f62 ;
+  --hl_String: #032f62 ;
+  --hl_String_Pre_Processor: #549ef1 ;
+  --hl_Block_Comment: #6a737d ;
+  --hl_Line_Comment: #6a737d ;
+  --hl_Pre_Processor: #d73a49 ; /* #include */
+  --hl_Line_Number:  #52565C ;
+  --hl_Operator: #032f62 ; /* +,-,(){} */
+  --hl_Interpolation:  #79c0ff ;
+  --hl_Keyword-1: #d73a49 ; /* import | func */
+  --hl_Keyword-2: #d73a49 ; /* int | str */
+  --hl_Keyword-3: #24292e ; /* ??? */
+  --hl_Keyword-4: #6f42c1 ; /* ??? */
+  --hl_Keyword-5: #d73a49 ; /* ??? */
+  --hl_Keyword-6: #d73a49 ; /* ??? */
+}
+
+@media not all {
+  :root {
+    /* Base Dark */
+  --textPrimary: #c9d1d9;
+  --background: #0d1117;
+  --body-border-color: #31363C;
+  --link: #58a6ff;
+  --link-highlight: rgba(3, 102, 214, 0.08);
+  --code-background: #2f3438;
+  --hr-background: #30363d;
+  --thead-background: #f7f7f9;
+  --thead-border: #3b434b;
+  --tr-border: #3b434b; /* unused variable */
+  --tr-alt-background: #161c23;
+  --kbd-background: #f7f7f9;
+  --kbd-color: #4b4d58;
+  --kbd-border: #050505;
+  --blockquote-color: #8b949e;
+  --blockquote-border: #3D434A;
+  --heading-color: #17181a;
+  --header-bottom-border: #21272c;
+  --h6-color: #6a6d7c;
+  --frame-border: #ff08d6;
+  --frame-color: #242528;
+  --mention-color: #242528;
+  --email-toggle-color: #4b4d58;
+  --email-toggle-background: #e3e4e8;
+  --email-quoted-color: #6a6d7c;
+  --keyword-color: #9194a1;
+  --code-font: ui-monospace, Menlo, monospace;
+
+  /* Highlight Dark */
+  --hl_Background: #161b22 ;
+  --hl_Number: #79c0ff ;
+  --hl_Escape: #a5d6ff ;
+  --hl_String: #549ef1 ;
+  --hl_String_Pre_Processor: #549ef1 ;
+  --hl_Block_Comment: #8b949e ;
+  --hl_Line_Comment: #8b949e ;
+  --hl_Pre_Processor: #FF7B72 ; /* #include */
+  --hl_Line_Number:  #52565C ;
+  --hl_Operator: #79c0ff ; /* +,-,(){} */
+  --hl_Interpolation:  #79c0ff ;
+  --hl_Keyword-1: #FF7B72 ; /* import | func */
+  --hl_Keyword-2: #FF7B72 ; /* int | str */
+  --hl_Keyword-3: #c9d1d9 ; /* ??? */
+  --hl_Keyword-4: #eea8ff ; /* ??? */
+  --hl_Keyword-5: #FF7B72 ; /* ??? */
+  --hl_Keyword-6: #FF7B72 ; /* ??? */
+  }
+}
+
+/*Syntax Highlight*/
+pre.hl	{ background-color: var(--hl_Background);}
+.hl.num { color: var(--hl_Number); font-weight: normal;}
+.hl.esc { color: var(--hl_Escape); font-weight: normal;}
+.hl.str { color: var(--hl_String); font-weight: normal;}
+.hl.pps { color: var(--hl_String_Pre_Processor); font-weight: normal;}
+.hl.com { color: var(--hl_Block_Comment); font-weight: normal;}
+.hl.slc { color: var(--hl_Line_Comment); font-weight: normal;}
+.hl.ppc { color: var(--hl_Pre_Processor); font-weight: normal;}
+.hl.lin { color: var(--hl_Line_Number); font-weight: normal;}
+.hl.opt { color: var(--hl_Operator); font-weight: normal;}
+.hl.ipl { color: var(--hl_Interpolation); font-weight: normal;}
+.hl.kwa { color: var(--hl_Keyword-1); font-weight: normal;}
+.hl.kwb { color: var(--hl_Keyword-2); font-weight: normal;}
+.hl.kwc { color: var(--hl_Keyword-3); font-weight: normal;}
+.hl.kwd { color: var(--hl_Keyword-4); font-weight: normal;}
+.hl.kwe { color: var(--hl_Keyword-5); font-weight: normal;}
+.hl.kwf { color: var(--hl_Keyword-6); font-weight: normal;}
+
+
+pre {
+  max-width: 902px;
+}
+* {
+  box-sizing: border-box;
+}
+
+input:disabled {
+  touch-action: none;
+}
+
+html {
+  padding: 0;
+  margin: 0;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji, Segoe UI Emoji;
+}
+
+body {
+  margin: 0;
+  /* padding: 1rem; */
+  color: var(--textPrimary);
+  background-color: var(--background);
+}
+
+/* If the window is bigger than 902 pixels, the border will be visible. */
+@media (min-width: 902px) {
+  article {
+    border-radius: 8px;
+    border-width: 1px;  
+    border-style: solid;
+    border-color: var(--body-border-color);
+  }
+}
+
+article {
+  margin: auto;
+  max-width: 902px;
+  font-size: inherit;
+  line-height: 1.5;
+  word-wrap: break-word;
+  padding: 32px;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+  -webkit-tap-highlight-color: var(--link-highlight);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+details summary {
+  outline: 0;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+blockquote {
+  margin: 0;
+}
+
+table, table *, pre {
+  touch-action: pan-x;
+}
+
+.markdown-body ul.contains-task-list, .markdown-body li.task-list-item {
+  list-style: none;
+  padding-left: 0;
+}
+
+pre, code, kbd {
+  font-size: 1rem;
+  font-family: var(--code-font);
+}
+
+.issue-keyword {
+  border-bottom: 1px dotted var(--keyword-color);
+}
+
+.team-mention, .user-mention {
+  font-weight: 600;
+  color: var(--mention-color);
+  white-space: nowrap;
+}
+
+.email-hidden-toggle, .email-hidden-reply {
+  display: none;
+}
+
+@media not all {
+  input[type="checkbox"] {
+    filter: invert(85%) brightness(1.5);
+  }
+}
+/* Fix checkboxes looking cut off when they render larger than the default size */
+input[type="checkbox"] {
+  transform: translate(0px);
+  width: 14px; height: 14px;
+}
+
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 0.18rem 0.31rem;
+  font-size: 0.7rem;
+  line-height: 1.2rem;
+  color: var(--kbd-color);
+  vertical-align: middle;
+  background-color: var(--kbd-background);
+  border: 1px solid var(--kbd-border);
+  border-radius: 0.25rem;
+  box-shadow: inset 0 -1px 0 var(--kbd-border);
+  margin-right: 2px;
+}
+
+.markdown-body:after, .markdown-body:before {
+  display: table;
+  content: ""
+}
+
+.markdown-body:after {
+  clear: both;
+}
+
+.markdown-body > :first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body > :last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body .absent {
+  color: var(--red-600);
+}
+
+.markdown-body .anchor {
+  float: left;
+  padding-right: 4px;
+  margin-left: -20px;
+  line-height: 1;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body blockquote, .markdown-body details, .markdown-body dl, .markdown-body ol, .markdown-body p, .markdown-body pre, .markdown-body table, .markdown-body ul {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body table table {
+    margin-bottom: 0;
+}
+
+.markdown-body hr {
+  height: .25rem;
+  padding: 0;
+  margin: 24px 0;
+  background-color: var(--hr-background);
+  border: 0;
+}
+
+.markdown-body blockquote {
+  padding-left: 1rem;
+  color: var(--blockquote-color);
+  border-left: .25rem solid var(--blockquote-border);
+}
+
+.markdown-body blockquote > :first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4, .markdown-body h5, .markdown-body h6 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.markdown-body h1 .octicon-link, .markdown-body h2 .octicon-link, .markdown-body h3 .octicon-link, .markdown-body h4 .octicon-link, .markdown-body h5 .octicon-link, .markdown-body h6 .octicon-link {
+  color: var(--heading-color);
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor, .markdown-body h2:hover .anchor, .markdown-body h3:hover .anchor, .markdown-body h4:hover .anchor, .markdown-body h5:hover .anchor, .markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link, .markdown-body h2:hover .anchor .octicon-link, .markdown-body h3:hover .anchor .octicon-link, .markdown-body h4:hover .anchor .octicon-link, .markdown-body h5:hover .anchor .octicon-link, .markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body h1 code, .markdown-body h1 tt, .markdown-body h2 code, .markdown-body h2 tt, .markdown-body h3 code, .markdown-body h3 tt, .markdown-body h4 code, .markdown-body h4 tt, .markdown-body h5 code, .markdown-body h5 tt, .markdown-body h6 code, .markdown-body h6 tt {
+  font-size: inherit;
+}
+
+.markdown-body h1 {
+  font-size: 2rem;
+}
+
+.markdown-body h1, .markdown-body h2 {
+  padding-bottom: .3rem;
+  border-bottom: 1px solid var(--header-bottom-border);
+}
+
+.markdown-body h2 {
+  font-size: 1.5rem;
+}
+
+.markdown-body h3 {
+  font-size: 1.25rem;
+}
+
+.markdown-body h4 {
+  font-size: 1rem;
+}
+
+.markdown-body h5 {
+  font-size: .875rem;
+}
+
+.markdown-body h6 {
+  font-size: .85rem;
+  color: var(--h6-color);
+}
+
+.markdown-body ol, .markdown-body ul {
+  padding-left: 1.5rem;
+}
+
+.markdown-body ol.no-list, .markdown-body ul.no-list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.markdown-body ol ol, .markdown-body ol ul, .markdown-body ul ol, .markdown-body ul ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li {
+  word-wrap: break-all;
+}
+
+.markdown-body li > p {
+  margin-top: 16px;
+}
+
+.markdown-body li + li {
+  margin-top: .25rem;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+}
+
+.markdown-body table th {
+  font-weight: 600;
+}
+
+.markdown-body table td, .markdown-body table th {
+  padding: 6px 13px;
+  border: 1px solid var(--thead-border);
+}
+
+.markdown-body table tr {
+  background-color: var(--background);
+  border-top: 1px solid var(--tr-border); /* unused variable */
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: var(--tr-alt-background);
+}
+
+.markdown-body table img {
+  background-color: initial;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  height: auto;
+  box-sizing: initial;
+  background-color: var(--background);
+}
+
+.markdown-body img[align=right] {
+  padding-left: 20px;
+}
+
+.markdown-body img[align=left] {
+  padding-right: 20px;
+}
+
+.markdown-body .emoji {
+  max-width: none;
+  vertical-align: text-top;
+  background-color: initial;
+}
+
+.markdown-body img.emoji {
+    max-width: 18px;
+}
+
+.markdown-body span.frame {
+  display: block;
+  overflow: hidden;
+}
+
+.markdown-body span.frame > span {
+  display: block;
+  float: left;
+  width: auto;
+  padding: 7px;
+  margin: 13px 0 0;
+  overflow: hidden;
+  border: 1px solid var(--frame-border);
+}
+
+.markdown-body span.frame span img {
+  display: block;
+  float: left;
+}
+
+.markdown-body span.frame span span {
+  display: block;
+  padding: 5px 0 0;
+  clear: both;
+  color: var(--frame-color);
+}
+
+.markdown-body span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+
+.markdown-body span.align-center > span {
+  display: block;
+  margin: 13px auto 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+.markdown-body span.align-center span img {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.markdown-body span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+
+.markdown-body span.align-right > span {
+  display: block;
+  margin: 13px 0 0;
+  overflow: hidden;
+  text-align: right;
+}
+
+.markdown-body span.align-right span img {
+  margin: 0;
+  text-align: right;
+}
+
+.markdown-body span.float-left {
+  display: block;
+  float: left;
+  margin-right: 13px;
+  overflow: hidden;
+}
+
+.markdown-body span.float-left span {
+  margin: 13px 0 0;
+}
+
+.markdown-body span.float-right {
+  display: block;
+  float: right;
+  margin-left: 13px;
+  overflow: hidden;
+}
+
+.markdown-body span.float-right > span {
+  display: block;
+  margin: 13px auto 0;
+  overflow: hidden;
+  text-align: right;
+}
+
+.markdown-body code, .markdown-body tt {
+  padding: .2rem .4rem;
+  margin: 0;
+  font-size: 85%;
+  background-color: var(--code-background);
+  border-radius: 6px;
+}
+
+.markdown-body code br, .markdown-body tt br {
+  display: none;
+}
+
+.markdown-body del code {
+  text-decoration: inherit;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre > code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body .highlight pre, .markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: var(--hl_Background);
+  border-radius: 6px;
+}
+
+.markdown-body pre code, .markdown-body pre tt {
+  display: inline;
+  max-width: auto;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: initial;
+  border: 0;
+}
+
+.markdown-body .csv-data td, .markdown-body .csv-data th {
+  padding: 5px;
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 1;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.markdown-body .csv-data .blob-num {
+  padding: 10px 8px 9px;
+  text-align: right;
+  background: var(--background);
+  border: 0;
+}
+
+.markdown-body .csv-data tr {
+  border-top: 0;
+}
+
+.markdown-body .csv-data th {
+  font-weight: 600;
+  background: var(--thead-background);
+  border-top: 0;
+}
+
+.markdown-body mark {
+    padding: .2rem;
+    background-color: #fcf1b5;
+}
+
+@media not all {
+    .markdown-body mark {
+        padding: .2rem;
+        background-color: #fcf8e3;
+    }
+}
+
+/* Mermaid diagrams */
+.mermaid {
+    text-align: center;
+    margin: 16px 0;
+    background-color: transparent;
+}
+
+.mermaid svg {
+    max-width: 100%;
+    height: auto;
+}
+
+@media not all {
+    .mermaid {
+        background-color: transparent;
+    }
+}
+
+</style>
+
+
+</head>
+<body>
+<article class='markdown-body'>
+<h2 id="ollama-on-macos">ollama on macOS</h2>
+<p>With 8 GB RAM or less / 4 GB VRAM or less:
+Start with gemma3n or llama3.2:3b. Small but genuinely capable.
+16 GB RAM / 6–8 GB VRAM: llama3.1:8b or qwen2.5-coder:7b run well here.</p>
+<p>16 GB Intel Mac with an NVIDIA GPU, the best Ollama model is Llama 3.1 8B or Qwen 2.5 7B
+as these fit comfortably within your memory constraints while offering strong performance.
+avoid models larger than 8B to prevent severe slowdowns.</p>
+<p>Ensure you have an NVIDIA GPU with CUDA compute capability 5.0+ (GTX 900 series or newer) and install the latest NVIDIA drivers for Ollama to utilize GPU acceleration.</p>
+<p>If you want one model and one model only, that is it. Qwen 2.5 7B at Q4_K_M quantization uses roughly 5.2 GB of RAM, leaves 9 GB for your OS and apps, runs at 8-12 tokens/sec on CPU only and 35-50 tokens/sec on a midrange GPU, and benchmarks within 4% of Llama 3.1 8B on most tasks while being noticeably faster. The rest of this guide explains when to pick something else.</p>
+<h2 id="installation">Installation</h2>
+<p>On macOS, Ollama stores downloaded models by default in the hidden directory ~/.ollama/models within your user’s home folder.  This location contains two main subdirectories: blobs (which hold the actual model weights as binary files named by SHA256 hashes) and manifests (which contain JSON metadata linking model names to their corresponding blobs)</p>
+<p>If you need to change this storage location, you can set the OLLAMA_MODELS environment variable to a new path or use a symbolic link.</p>
+<p><a href="https://ollama.com/library/qwen2.5-coder"> coders ollama models </a></p>
+<h2 id="install">Install</h2>
+<pre class='hl'><code class="language-bash">curl <span class="hl kwb">-fsSL</span> https<span class="hl opt">://</span>ollama.com<span class="hl opt">/</span><span class="hl kwc">install</span>.sh <span class="hl opt">|</span> sh
+</code></pre>
+<h2 id="cli">CLI</h2>
+<pre class='hl'><code class="language-bash">ollama serve
+
+ollama pull qwen3<span class="hl opt">:</span><span class="hl num">8</span>b
+ollama pull Llama <span class="hl num">3.2</span><span class="hl opt">:</span><span class="hl num">3</span>B
+ollama pull qwen3<span class="hl opt">:</span><span class="hl num">8</span>b
+
+ollama pull qwen2.5<span class="hl opt">-</span>coder                  <span class="hl opt">-</span> Download <span class="hl opt">:</span> smaller version
+ollama pull qwen2.5<span class="hl opt">-</span>coder<span class="hl opt">:</span><span class="hl num">7</span>b               <span class="hl opt">-</span> Download <span class="hl opt">:</span> good <span class="hl kwa">for</span> <span class="hl num">16</span>GB  
+ollama pull qwen2.5<span class="hl opt">:</span><span class="hl num">7</span>b-instruct-q4_K_M     <span class="hl opt">-</span> Download <span class="hl opt">:</span> <span class="hl num">2026</span><span class="hl opt">-</span><span class="hl num">07</span><span class="hl opt">-</span><span class="hl num">25</span>
+
+ollama run  qwen2.5<span class="hl opt">:</span><span class="hl num">7</span>b-instruct-q4_K_M     <span class="hl opt">-</span> downloaded <span class="hl num">2026</span><span class="hl opt">-</span><span class="hl num">07</span><span class="hl opt">-</span><span class="hl num">25</span>
+ollama run <span class="hl opt">&lt;</span>model<span class="hl opt">&gt;</span>
+ollama run qwen3.5<span class="hl opt">:</span><span class="hl num">0.8</span>b <span class="hl sng">&quot;hello world&quot;</span> <span class="hl kwb">--think</span><span class="hl opt">=</span>false  
+     <span class="hl kwb">--</span> think false means just the answer <span class="hl opt">,</span> no rambling 
+  pip <span class="hl kwc">install</span> md2term  <span class="hl opt">|</span> use conda activate ollama on dev1
+
+ollama run qwen3.5<span class="hl opt">:</span><span class="hl num">0.8</span>b <span class="hl sng">&quot;hello world&quot;</span> <span class="hl kwb">--think</span><span class="hl opt">=</span>false  <span class="hl opt">|</span> md2term     
+     <span class="hl kwb">--</span> <span class="hl kwa">for</span> terminal formatted markdown
+
+ollama list                                <span class="hl opt">-</span> view downloaded models
+ollama <span class="hl kwc">rm</span> <span class="hl opt">&lt;</span>model<span class="hl opt">&gt;                          -</span> delete model
+ollama ps                                  <span class="hl opt">-</span> view whats running
+ollama <span class="hl kwb">--version</span>                           <span class="hl opt">-</span> self explanatory
+ollama stop <span class="hl opt">&lt;</span>model<span class="hl opt">&gt;                        -</span> to completely stop model
+</code></pre>
+<h2 id="ollama-interactive-commands">ollama interactive commands</h2>
+<pre class='hl'><code class="language-"> &gt; /?     - help
+ &gt; /bye   - to quit the interface , keeps running for 5 min unless you stop it
+</code></pre>
+<h2 id="other-interfaces-and-tools">Other Interfaces and tools</h2>
+<ul>
+<li><a href="https://github.com/obaraelijah/ollama-inquire"> ollama-inquire </a></li>
+</ul>
+<pre class='hl'><code class="language-">git clone https://github.com/obaraelijah/ollama-inquire.git
+cargo install ask-ollama 
+~/.cargo/bin/ask &quot;what is capitol of france&quot;     
+cp ~/.cargo/bin/ask ~/binapps/ 
+
+  default model is mistral so make sure you specify model
+      ask --model=qwen2.5:7b-instruct-q4_K_M  &quot;question&quot;
+      ask --version        
+      ask --help
+</code></pre>
+<h2 id="open-webui">open-webui</h2>
+<p>Used for uploading pdf + other doc files to summarize</p>
+<pre class='hl'><code class="language-">pip install open-webui md2term
+open-webui serve 
+</code></pre>
+<h2 id="interactive-mode-save-and-load">Interactive mode save and load</h2>
+<p>saved location : .ollama/models/manifests/registry.ollama.ai/library/rome.txt</p>
+<pre class='hl'><code class="language-">   /save &lt;filename&gt; 
+   /load &lt;filename&gt; 
+</code></pre>
+<p>–think=false  just spits the answer out</p>
+<pre class='hl'><code class="language-">ollama run qwen2.5:7b-instruct-q4_K_M &quot;hello world&quot;
+ollama run qwen2.5:7b-instruct-q4_K_M &quot;hello world&quot; --think=false 
+ollama run qwen2.5:7b-instruct-q4_K_M &quot;hello world&quot; --think=false | md2term
+</code></pre>
+<h2 id="ollama-libs">Ollama libs</h2>
+<ul>
+<li><a href="https://ollama.com/library/smollm2"> ollama smallest smollm2</a></li>
+</ul>
+<h2 id="web-gui-and-desktop-app">Web gui and Desktop app</h2>
+<ul>
+<li><a href="https://www.inkeybit.com/blog/open-webui-ollama-guide"> inkeybit blog openwebui-ollama guide</a></li>
+<li><a href="https://github.com/open-webui/desktop"> native desktop app </a></li>
+<li><a href="https://lobehub.com/skills/dabbler6900-hermes-config-duckduckgo-search"> internet search ddgs free </a></li>
+</ul>
+<p>WebUIs: Interfaces like Open WebUI automatically save chat histories to a database,
+allowing you to reload them later.
+When reloaded, the interface feeds the old messages back to the model to reconstruct the context.</p>
+<h2 id="install-docker-first-if-not-installed-for-web-gui">Install Docker first if not installed for web gui</h2>
+<ul>
+<li><a href="https://studyhub.net.in/techtools/ollama-open-webui-setup/"> ollama and webui </a></li>
+<li><a href="http://localhost:3000"> localhost:3000</a></li>
+</ul>
+<p>v1</p>
+<pre class='hl'><code class="language-">docker run -d \
+  -p 3000:8080 \
+  --add-host=host.docker.internal:host-gateway \
+  -v open-webui:/app/backend/data \
+  --name open-webui \
+  --restart always \
+  ghcr.io/open-webui/open-webui:main
+</code></pre>
+<p>v2</p>
+<pre class='hl'><code class="language-">docker run -d --network=host \
+  -e OLLAMA_BASE_URL=http://127.0.0.1:11434 \
+  -v open-webui:/app/backend/data \
+  -p 3000:8080 \
+  --name open-webui \
+  --restart always \
+  ghcr.io/open-webui/open-webui:main
+</code></pre>
+<h2 id="connecting-open-webui-to-ollama">connecting open-webui to ollama</h2>
+<ul>
+<li><a href="https://insiderllm.com/guides/open-webui-ollama-connection-fix/"> connection fix </a></li>
+</ul>
+<pre class='hl'><code class="language-"># Step 1: Is Ollama running at all?
+curl http://localhost:11434
+# Should print &quot;Ollama is running&quot;
+
+# Step 2: Does Ollama have models?
+curl http://localhost:11434/api/tags
+# Should print JSON with your model list
+
+# Step 3: Can Open WebUI&#39;s container reach Ollama?
+docker exec open-webui curl http://host.docker.internal:11434
+# Or if using --network=host:
+docker exec open-webui curl http://127.0.0.1:11434
+</code></pre>
+<h2 id="q">Q</h2>
+<p>Do ollama models grow and learn as you continue to interact with them?
+Ollama is an AI model based on the OpenAI’s Qwen language model. It works similarly to how a human model could interact with Ollama: it starts by asking for basic information, such as what type of question you want me to answer or provide some context about.</p>
+<p>However, when interacting with Ollama over time, Ollama will continue to learn and improve based on the data it receives. It can adapt its language patterns and responses, improving its ability to understand natural language queries and generate more relevant and accurate answers in future interactions. But this process is dynamic; what you say to it now may change later as it learns from your input.</p>
+<p>Additionally, Ollama uses algorithms like reinforcement learning to improve itself over time. It learns from past interactions with you, using the feedback to make its next interaction better than any
+previous one. This makes Ollama very intelligent in a sense that it can learn and adapt without direct human intervention.</p>
+<p>So while I am an AI model based on OpenAI’s Qwen language model, which is trained over time, Ollama specifically is an artificial intelligence designed to interact with humans like you described, answering
+questions and providing information.</p>
+<h2 id="smallest-ollama-models">smallest ollama models</h2>
+<p>Smallest Model Options</p>
+<p>Qwen2.5 (0.5B): General text, chat, and multilingual tasks. Download size is roughly 398 MB.
+Command: ollama run qwen2.5:0.5b</p>
+<p>Qwen2.5-Coder (0.5B): Lightweight programming and code completion support.
+Command: ollama run qwen2.5-coder:0.5b</p>
+<p>Llama 3.2 (1B): Slightly larger alternative by Meta, roughly 1.3 GB.
+Command: ollama run llama3.2:1b</p>
+<h2 id="free-cli-tools">Free CLI Tools</h2>
+<p>tgpt -   supports engines like Phind without requiring an API key or login.<br />
+tgpt and similar open-source projects provide free access to AI capabilities directly in the terminal.<br />
+Savvy is mentioned as a free CLI tool for individual developers that does not require API keys.
+chatGPT-shell-cli require an OpenAI API key,</p>
+<ul>
+<li><a href="https://medium.com/@shivashanker7337/free-alternatives-to-github-copilot-cli-3777f9c15fb7"> free alts to copilot cli </a></li>
+<li><a href="https://www.omglinux.com/chatgpt-command-line/"> chatgpt command line alt </a></li>
+<li><a href="https://github.com/0xacx/chatGPT-shell-cli"> chatgpt shell cli</a></li>
+</ul>
+<h2 id="installing-on-macos-and-windows">Installing on macOS and Windows</h2>
+<ul>
+<li><a href="https://lmsa.app/blog/how-to-install-and-configure-ollama-on-windows-and-mac-complete-2026-guide/"> Windows and Mac install </a></li>
+</ul>
+<div style='font-size: 72%; margin-top: 1.5em; padding-top: .5em; -webkit-user-select: none;'><hr style='height: 0; border: none; border-top: 1px solid rgba(0,0,0,.5); box-shadow: 0 1px 1px rgba(255, 255, 255, .5)'/><a href='https://github.com/sbarex/QLMarkdown'>QLMarkdown</a>, version 1.5.2 (53).<br />
+Developed by SBAREX 2020 - 2026 with <span style='font-style: normal'>❤️</span>.<br/>
+If you like this app, <a href='https://www.buymeacoffee.com/sbarex'><strong>buy me a coffee</strong></a>!</div>
+
+</article>
+
+<!--
+
+File generated with QLMarkdown [https://github.com/sbarex/QLMarkdown] - QLMarkdown, version 1.5.2 (53).
+Developed by SBAREX 2020 - 2026 with ❤️
+
+-->
+
+</body>
+</html>
