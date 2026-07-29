@@ -138,7 +138,7 @@ Used for uploading pdf + other doc files to summarize
 Use conda activate ollama. md2term is to display markdown to a terminal window nicely formatted
 Install in a python environment like conda or venv
 ```
-pip install open-webui md2term
+pip install open-webui md2term rich requests
 ```
 
 ## Starting open-webui
@@ -219,6 +219,8 @@ curl http://localhost:11434/api/tags
 
 ## Step 3: Can Open WebUI's container reach Ollama?
 docker exec open-webui curl http://host.docker.internal:11434
+## should print
+100    17  100    17    0     0   3839      0 --:--:-- --:--:-- --:--:--  4250Ollama is running 
 ## Or if using --network=host:
 docker exec open-webui curl http://127.0.0.1:11434
 ```
@@ -259,27 +261,48 @@ Note: Ensure the port 8081 does not conflict with other services.
 ## llama-server run 
 Running llama-server with model then connecting to open WebUI
 Point Open WebUI to llama.cpp server
+```
 Open WebUI -> Admin -> Settings -> Connections 
   add: URL: http://localhost:8081/v1
+```
 [ref OpenWebUI to llama.cpp ](https://docs.openwebui.com/alternatives/llama-cpp/)
- 
-```bash
-mkdir -p ~/.ollama/models/gguf/
-  cd ~/.ollama/models/gguf/
 
+ 
+
+## llama-server start
+With or Without API Key : --api-key "123"   - some demo key
+or docker
+```
 llama-cli -hf bartowski/Meta-Llama-3.1-8B-Instruct-GGUF:Q4_K_M   
 llama-server -m ~/.ollama/models/gguf/model.gguf  --port 8081
-llama-server -m ~/.ollama/models/gguf/smollm2/smollm2-1.7B-Q8_0.gguf --port 8081 --api-key "sk-llama-local-abc123" 
-
+llama-server -m ~/.ollama/models/gguf/smollm2/smollm2-1.7B-Q8_0.gguf --port 8081 --api-key "123" 
 docker run -d --network host -v open-webui:/app/backend/data --name open-webui ghcr.io/open-webui/open-webui:main   
 ```
-API Key : --api-key "sk-llama-local-abc123"  - some demo key
 
 ## Test Connection with curl
 ```bash
 curl http://127.0.0.1:8081/v1/models -H "Authorization: Bearer sk-llama-local-abc123"   
+  or without key
+curl http://127.0.0.1:8081/v1/models 
+
+  output should be  JSON format
+    ...smollm2-1.7B-Q8_0.gguf","model":"modified_at":"","size":"model","description"....
 ```
 
+## Actual test case and output
+```bash
+llama-server -m   ~/.ollama/models/gguf/smollm2/smollm2-1.7B-Q8_0.gguf    --port 8081
+
+curl -s http://127.0.0.1:8081/v1/chat/completions -d \
+     '{"model":"mistral","messages":[{"role":"user","content":"Hello"}]}' | \
+     jq '.choices[0].message.content'
+  
+    > output: "Hello! How can I assist you today?"
+
+http://localhost:3000/?temporary-chat=true   // open WebGUI interface
+```
+
+# Conversions and Downloads of gguf files
 ## Download file manually from Hugging Face repositories 
 eg. bartowski, TheBloke, or ggml-org then point llama.cpp  -m flag:
 -hf = hugging face
@@ -315,6 +338,11 @@ GGUF (GPT General Unified Format) file.
 reads model manifests and combines model layers stored in blob files to a GGUF file.
 
  - [ src: github OllamaToGGUF ](https://github.com/mattjamo/OllamaToGGUF)
+
+```bash
+mkdir -p ~/.ollama/models/gguf/
+  cd ~/.ollama/models/gguf/
+```
 
 ### You can also just use ollama to show you the exact file:
 ```
@@ -383,5 +411,26 @@ llama-server -m ~/.ollama/models/gguf/smollm2/smollm2-1.7B-Q8_0.gguf --port 8081
 http://localhost:8080/ to access open-webui  via browser
 ```
 
+## Import json files
+First install a few libraries
+```bash
+pip install pandas openpyxl
+```
+## Python code
+```python
+import pandas as pd
+df = pd.read_json('https://example.com/your-data.json')
 
+or 
+
+import pandas as pd
+df = pd.read_json('path/to/your/file.json')
+```
+
+
+
+
+# Token counts
+ - [ Understanding tokens ](https://medium.com/@manav.kumar87/understanding-tokens-in-chatgpt-32845987858d)
+ - [ what are tokens? ](https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them)
 	
