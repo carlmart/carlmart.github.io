@@ -8,36 +8,52 @@ Date: Monday, July 27, 2026
 Abstract: "A Quick User Guide to Running Open Gui with backend llama.cpp and ollama "
 ...
 
+# Ollama Guide
+
 ## TOC
 - [Chapters](#Chapters)
   - [ollama on macOS](#ollama-macOS)
   - [Installation   ](#ollama-installation)
   - [Models ](#ollama-models)
 
-## ollama on Inte)
-Ram and best suited models for MacOS / Windows or Linux
+## ollama on Intel
 <table>
-  <tr> <th> Max RAM </th> <th> Model  </th> Notes </tr>
-  <tr> <td> 8GB/4GB </td> <td> gemma3n </td> <td>  </td>  </tr>
-  <tr> <td> 8GB/4GB </td> <td> llama3.2:3b </td> <td>  </td>  </tr>
-  <tr> <td> 16GB/6-8GB </td> <td> llama3.1:8b </td> <td>  </td>  </tr>
-  <tr> <td> 16GB/6-8GB </td> <td> qwen2.5-coder:7b  </td> <td>  </td>  </tr>
-  <tr> <td> 16GB w/ NVIDIA </td> <td> Llama 3.1 8B  </td> <td>  </td>  </tr>
-  <tr> <td> 16GB w/ NVIDIA </td> <td> Qwen 2.5 7B  </td> <td>  </td>  </tr>
+  <tr> <th> Max RAM     </th> <th> Model             </th> <th> Notes  </th>  </tr>
+  <tr> <td> 8GB-4GB     </td> <td> gemma3n           </td> <td> -----  </td>  </tr>
+  <tr> <td> 8GB-4GB     </td> <td> llama3.2:3b       </td> <td> -----  </td>  </tr>
+  <tr> <td> 16GB-6-8GB  </td> <td> llama3.1:8b       </td> <td> -----  </td>  </tr>
+  <tr> <td> 16GB-6-8GB  </td> <td> qwen2.5-coder:7b  </td> <td> -----  </td>  </tr>
+  <tr> <td> 16GB NVIDIA </td> <td> Llama 3.1 8B      </td> <td> -----  </td>  </tr>
+  <tr> <td> 16GB NVIDIA </td> <td> Qwen 2.5 7B       </td> <td> -----  </td>  </tr>
 </table>   
 
-- [ ref. reddit:LocalLLaMa](https://www.reddit.com/r/LocalLLaMA/comments/18d8lgz/some_solutions_that_work_on_older_intel_macs/) 
+## smallest ollama models 
+<table>
+  <tr> <th> Model               </th> <th> Usage                 </th> <th> Notes  </th> </tr>
+  <tr> <td> qwen2.5:0.5b        </td> <td> txt,chat,multilingual </td> <td> 398MB  </td> </tr>
+  <tr> <td> qwen2.5-coder:0.5b  </td> <td> lightweight coder     </td> <td> -----  </td> </tr>
+  <tr> <td> llama3.2:1b         </td> <td> slightly large        </td> <td> 1.3GB  </td> </tr>
+</table>
 
 "Avoid models larger than 8B to prevent severe slowdowns.
 Qwen 2.5 7B at Q4_K_M quantization uses roughly 5.2 GB of RAM, 
 leaves 9 GB for your OS and apps, runs at 8-12 tokens/sec on CPU only 
 35-50 tokens/sec on a midrange GPU, and benchmarks within 4% of Llama 3.1 8B 
 on most tasks while being noticeably faster."
+- [ ref. reddit:LocalLLaMa](https://www.reddit.com/r/LocalLLaMA/comments/18d8lgz/some_solutions_that_work_on_older_intel_macs/) 
+
+
+## Model specs 
+ - [ smallest model: smollm2](https://ollama.com/library/smollm2)
+ - [ coder model: qwen2.5-coder ](https://ollama.com/library/qwen2.5-coder)
 
 ## Installation
-Installs can be direct app or in a terminal window
+Installs can be direct app or in a terminal window.
 Its a quick install since its only the wrapper app. 
-[ollama.com/download for all platforms](https://ollama.com/download)
+
+ - [ ollama.com/download](https://ollama.com/download)
+ - [ Windows and Mac install ](https://lmsa.app/blog/how-to-install-and-configure-ollama-on-windows-and-mac-complete-2026-guide/)
+
 ```bash
 curl -fsSL https://ollama.com/install.sh | sh  # mac /Linux
 irm https://ollama.com/install.ps1 | iex |  # Windows
@@ -60,12 +76,9 @@ Storage location:
      cd ~/.ollama/ ; mv models /mnt/NFS/ollama/
      ln -s /mnt/NFS/ollama/models/ ~/.ollama/models 
 ```
-## Models
- - [ smallest model: smollm2](https://ollama.com/library/smollm2)
- - [ coder model: qwen2.5-coder ](https://ollama.com/library/qwen2.5-coder)
 
 ## CLI 
-All you need is one pull to download a model.
+All you need is one model . The commands are shown below
 ```bash
 ollama serve
 ollama pull qwen3:8b
@@ -73,16 +86,17 @@ ollama pull Llama 3.2:3B
 ollama pull qwen3:8b
 ollama pull qwen2.5-coder                  - Download : smaller version
 ollama pull qwen2.5-coder:7b               - Download : good for 16GB  
-ollama pull qwen2.5:7b-instruct-q4_K_M     - Download : 2026-07-25
-
-ollama run  qwen2.5:7b-instruct-q4_K_M     - downloaded 2026-07-25
+ollama pull qwen2.5:7b-instruct-q4_K_M     -  
+ollama run  qwen2.5:7b-instruct-q4_K_M     -  
 ollama run <model>
 ollama run <model> | tee chat_history.txt
 ollama run qwen3.5:0.8b "hello world" --think=false  
      -- think false means just the answer , no rambling 
-  pip install md2term  | use conda activate ollama on dev1
+```
 
-ollama run qwen3.5:0.8b "hello world" --think=false  | md2term     
+
+```
+ollama run qwen3.5:0.8b "hello world" --think=false 
      -- for terminal formatted markdown
 
 ollama list                                - view downloaded models
@@ -96,19 +110,24 @@ ollama stop <model>                        - to completely stop model
 ```
  > /?     - help
  > /bye   - to quit the interface , keeps running for 5 min unless you stop it
-# saved PATH : 
-#  ~/.ollama/models/manifests/registry.ollama.ai/library/rome.txt
    /save <filedir> 
    /load <filedir> 
 ``` 
+When saving chat, files on macOS are stored at
+```
+~/.ollama/models/manifests/registry.ollama.ai/library/<filedir>
+```
 
 ## Ask-ollama
-  default model is mistral so make sure you specify model
+Installation
+
+cp ~/.cargo/bin/ask ~/binapps/ or create a shell script ask
 ```bash
 cargo install ask-ollama 
+```
+default model is mistral so make sure you specify model
+```
 ~/.cargo/bin/ask "what is capitol of france"     
-cp ~/.cargo/bin/ask ~/binapps/ or create a shell script ask
-
       ask --model=qwen2.5:7b-instruct-q4_K_M  "question"
       ask --version        
       ask --help
@@ -116,12 +135,30 @@ cp ~/.cargo/bin/ask ~/binapps/ or create a shell script ask
 
 ## open-webui
 Used for uploading pdf + other doc files to summarize
+Use conda activate ollama. md2term is to display markdown to a terminal window nicely formatted
+Install in a python environment like conda or venv
 ```
 pip install open-webui md2term
-open-webui serve 
 ```
 
+## Starting open-webui
+```
+screen -S ollama
+conda activate ollama
+open-webui serve            -- to start baremetal
+ or
+docker run -d -p 3000:8080 -v open-webui:/app/backend/data --name open-webui ghcr.io/open-webui/open-webui:main   
+ctrl-A , ctrl-D to leave screen
+pkill -f "open-webui serve" -- to stop server
+```
+## Once running access UI :
+```
+http://localhost:8080      - for open-webui serve  
+http://localhost:3000
+```
 
+## Ollama terminal interface
+md2term displays markdown text to formatted  terminal 
 ```
 ollama run qwen2.5:7b-instruct-q4_K_M "hello world"
 ollama run qwen2.5:7b-instruct-q4_K_M "hello world" --think=false 
@@ -137,14 +174,15 @@ ollama run qwen2.5:7b-instruct-q4_K_M "hello world" --think=false | md2term
 
 
 WebUIs: Interfaces like Open WebUI automatically save chat histories to a database, 
-        allowing you to reload them later. 
-        When reloaded, the interface feeds the old messages back to the model to reconstruct the context. 
+        allowing you to reload them later. Export is in JSON format
+        
+When reloaded, the interface feeds the old messages back to the model to reconstruct the context. 
 
 ## Install Docker first if not installed for web gui
  - [ ollama and webui ](https://studyhub.net.in/techtools/ollama-open-webui-setup/)
  - [ localhost:3000](http://localhost:3000)
 
-v1
+## Docker scripts v1
 ```
 docker run -d \
   -p 3000:8080 \
@@ -155,7 +193,7 @@ docker run -d \
   ghcr.io/open-webui/open-webui:main
 ```
 
-v2
+## Docker scripts v2
 ```
 docker run -d --network=host \
   -e OLLAMA_BASE_URL=http://127.0.0.1:11434 \
@@ -167,9 +205,10 @@ docker run -d --network=host \
 ```
 
 
-## connecting open-webui to ollama
+## open-webui to ollama connections
  - [ connection fix ](https://insiderllm.com/guides/open-webui-ollama-connection-fix/)
-```
+ 
+```bash
 ## Step 1: Is Ollama running at all?
 curl http://localhost:11434
 ## Should print "Ollama is running"
@@ -184,10 +223,9 @@ docker exec open-webui curl http://host.docker.internal:11434
 docker exec open-webui curl http://127.0.0.1:11434
 ```
 
-
-
 ## Q 
 Do ollama models grow and learn as you continue to interact with them?
+
 Ollama is an AI model based on the OpenAI's Qwen language model. It works similarly to how a human model could interact with Ollama: it starts by asking for basic information, such as what type of question you want me to answer or provide some context about.
 
 However, when interacting with Ollama over time, Ollama will continue to learn and improve based on the data it receives. It can adapt its language patterns and responses, improving its ability to understand natural language queries and generate more relevant and accurate answers in future interactions. But this process is dynamic; what you say to it now may change later as it learns from your input.
@@ -197,22 +235,6 @@ previous one. This makes Ollama very intelligent in a sense that it can learn an
 
 So while I am an AI model based on OpenAI's Qwen language model, which is trained over time, Ollama specifically is an artificial intelligence designed to interact with humans like you described, answering 
 questions and providing information.
-
-
-
-## smallest ollama models 
-Smallest Model Options
-
-Qwen2.5 (0.5B): General text, chat, and multilingual tasks. Download size is roughly 398 MB.
-    Command: ollama run qwen2.5:0.5b
-
-Qwen2.5-Coder (0.5B): Lightweight programming and code completion support.
-    Command: ollama run qwen2.5-coder:0.5b
-
-Llama 3.2 (1B): Slightly larger alternative by Meta, roughly 1.3 GB.
-    Command: ollama run llama3.2:1b
-
-
 
 
 ## Free CLI Tools 
@@ -225,10 +247,6 @@ Llama 3.2 (1B): Slightly larger alternative by Meta, roughly 1.3 GB.
  - [ chatgpt command line alt ](https://www.omglinux.com/chatgpt-command-line/)
  - [ chatgpt shell cli](https://github.com/0xacx/chatGPT-shell-cli)
 
-
-## Installing on macOS and Windows
-
- - [ Windows and Mac install ](https://lmsa.app/blog/how-to-install-and-configure-ollama-on-windows-and-mac-complete-2026-guide/)
 
 ## llama.cpp llama-server install
 Open-WebUI uses port 8080 
@@ -247,15 +265,17 @@ Open WebUI -> Admin -> Settings -> Connections
  
 ```bash
 mkdir -p ~/.ollama/models/gguf/
-cd ~/.ollama/models/gguf/
+  cd ~/.ollama/models/gguf/
+
 llama-cli -hf bartowski/Meta-Llama-3.1-8B-Instruct-GGUF:Q4_K_M   
 llama-server -m ~/.ollama/models/gguf/model.gguf  --port 8081
 llama-server -m ~/.ollama/models/gguf/smollm2/smollm2-1.7B-Q8_0.gguf --port 8081 --api-key "sk-llama-local-abc123" 
+
 docker run -d --network host -v open-webui:/app/backend/data --name open-webui ghcr.io/open-webui/open-webui:main   
 ```
 API Key : --api-key "sk-llama-local-abc123"  - some demo key
 
-Test Connection with curl
+## Test Connection with curl
 ```bash
 curl http://127.0.0.1:8081/v1/models -H "Authorization: Bearer sk-llama-local-abc123"   
 ```
@@ -270,7 +290,7 @@ llama-cli -m /path/to/your_model.gguf
 llama-server -hf bartowski/Llama-3.2-3B-Instruct-GGUF:Q8_0
 ```
 
-## curl to test huggingface
+## huggingface
 ```bash
 curl http://localhost:8080/v1/chat/completions \
 -H "Content-Type: application/json" \
@@ -293,10 +313,11 @@ curl http://localhost:8080/v1/chat/completions \
 OllamaToGGUF.py - script to convert from Ollama's split format to a single 
 GGUF (GPT General Unified Format) file. 
 reads model manifests and combines model layers stored in blob files to a GGUF file.
+
  - [ src: github OllamaToGGUF ](https://github.com/mattjamo/OllamaToGGUF)
 
-You can also just use ollama to show you the exact file:
-```bash
+### You can also just use ollama to show you the exact file:
+```
 ollama show qwen2.5-coder:7b --modelfile | grep -v \# | grep FROM
    FROM ~/.ollama/models/blobs/sha256-60e05f2100071479f596b964f89f510f057ce397ea22f2833a0cfe029bfc2463
 ## then just point llama.cpp to exact file
@@ -305,17 +326,62 @@ llama-cli -m ~/.ollama/models/blobs/sha256-60e05f2100071479f596b964f89f510f057ce
 ```
 
 
-Running llama.cpp with api key and gguf file
+## Running llama.cpp with api key and gguf file
 ```
 llama-server -m ~/.ollama/models/gguf/smollm2/smollm2-1.7B-Q8_0.gguf --port 8081 --api-key "sk-llama-local-abc123" 
 ```
 
-Running llama.cpp cli with ollama blobs
+## Running llama.cpp cli with ollama blobs
 ```
 llama-cli -m ~/.ollama/models/blobs/sha256-60e05f210064f89f510f057ce397ea22f2833a0cfe029bfc2463
 ```
-Running llama.cpp with openWebUI and docker
+## Running llama.cpp with openWebUI and docker
 ```
 docker run -d --network host -v open-webui:/app/backend/data --name open-webui ghcr.io/open-webui/open-webui:main 
 ```
 
+
+# Daily ollama startup
+ollama starts at startup boot
+## is ollama running?
+```
+  curl http://localhost:11434
+    output : ollama is running
+```
+
+## does ollama have models?
+```
+  curl http://localhost:11434/api/tags
+    output: {"models":[{"name":"smollm2:latest" ... jason file with model list
+```
+
+
+## ollama list
+```
+NAME                          ID              SIZE      MODIFIED     
+smollm2:latest                cef4a1e09247    1.8 GB    33 hours ago    
+qwen2.5-coder:7b              dae161e27b0e    4.7 GB    2 days ago      
+mistral:latest                6577803aa9a0    4.4 GB    3 days ago      
+qwen2.5:7b-instruct-q4_K_M    845dbda0ea48    4.7 GB    3 days ago     
+```
+
+## start open-webui
+```
+screen -S ollama
+conda activate ollama         - my python env
+open-webui serve              - starts baremetal
+```
+
+## start llama.cpp
+```
+screen -S llamacpp
+llama-server -m ~/.ollama/models/gguf/smollm2/smollm2-1.7B-Q8_0.gguf --port 8081 --api-key "sk-llama-local-abc123"
+```
+
+## access open-webui via browser. login 
+```
+http://localhost:8080/ to access open-webui  via browser
+```
+
+
+	
