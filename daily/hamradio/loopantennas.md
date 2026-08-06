@@ -5,4 +5,5 @@
 - 1 Ft box - enamled or standard wire 
 - 13 - 14 - 15 loops around box about 60 feet of wire (58 ft = 1/8 wave AM
 - variable capacitor -   2 wires connect to either side of the capacitor
- - tune to blank spot and turn variable capacitor
+- tune to blank spot and turn variable capacitor
+```
