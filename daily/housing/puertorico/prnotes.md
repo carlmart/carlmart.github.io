@@ -1,3 +1,9 @@
+
+# Random YT vids
+ - [ Living in  Puerto Rico : Best Travel ](https://www.youtube.com/watch?v=UnfFKYzgQD0) 
+ - [ one year after moving to Puerto Rico ](https://www.youtube.com/watch?v=fFRCBJlDRXY)
+ - [ hidden reality of Puerto Rico   ](https://www.youtube.com/watch?v=IYTnMP3qHhk)
+
 ## Updates and Notes
 
 Directions:
