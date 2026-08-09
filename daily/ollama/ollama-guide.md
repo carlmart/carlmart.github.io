@@ -1,14 +1,18 @@
----
-Title: Ollama llama.cpp Quick Guide
+# Ollama Guide
 
 Author: CarlMart
-
 Date: Monday, July 27, 2026
 
-Abstract: "A Quick User Guide to Running Open Gui with backend llama.cpp and ollama "
-...
+Abstract: A Step-by-step  User Guide for Installing and running Ollama using terminal window 
+---
 
-# Ollama Guide
+
+## Ollama Guide
+
+<center>
+**Work in Progress**
+<img  src="./img/wip-orange.png" alt="altimg" width=100 height=100" > 
+</center>
 
 ## TOC
 
@@ -16,14 +20,33 @@ Abstract: "A Quick User Guide to Running Open Gui with backend llama.cpp and oll
   - [ollama on macOS](#ollama-macOS)
   - [Installation   ](#ollama-installation)
   - [Models ](#ollama-models)
+  - [ **edit in progress** ]()
+ 
+ 
+Do ollama models grow and learn as they continue to interact with them?
+
+Ollama is an AI model based on the OpenAI's Qwen language model. It works similarly to how a human model could interact with Ollama: it starts by asking for basic information, such as what type of question you want  answered or provide some context about.
+
+However, when interacting with Ollama over time, Ollama will continue to learn and improve based on the data it receives. It can adapt its language patterns and responses, improving its ability to understand natural language queries and generate more relevant and accurate answers in future interactions. 
+
+Ollama uses algorithms like reinforcement learning to improve itself over time. It learns from past interactions with you, using the feedback to make its next interaction better than any previous one. 
+
+## Docker or No Docker
+Docker is an open-source platform that allows developers to build, ship, and run applications in standardized, lightweight units called containers.
+Installing and running it makes things somewhat easier to maintain but overall installing ollama without docker is simpler for daily use. 
+Both methods of deploying will be shown and choose the method that works best for you. 
 
 ## ollama on Intel
+A basic Model to run depends on the amount of Ram you currently run on your PC.
+The Table below will help you decide on which model to choose.
+If you run NVIDIA card , you can utilize your GPU to run faster queries.
+
 <table>
   <tr> <th> Max RAM     </th> <th> Model             </th> <th> Notes  </th>  </tr>
   <tr> <td> 8GB-4GB     </td> <td> gemma3n           </td> <td> -----  </td>  </tr>
   <tr> <td> 8GB-4GB     </td> <td> llama3.2:3b       </td> <td> -----  </td>  </tr>
   <tr> <td> 16GB-6-8GB  </td> <td> llama3.1:8b       </td> <td> -----  </td>  </tr>
-  <tr> <td> 16GB-6-8GB  </td> <td> qwen2.5-coder:7b  </td> <td> -----  </td>  </tr>
+  <tr> <td> 16GB-6-8GB  </td> <td> qwen2.5-coder:7b  </td> <td> for Programmers  </td>  </tr>
   <tr> <td> 16GB NVIDIA </td> <td> Llama 3.1 8B      </td> <td> -----  </td>  </tr>
   <tr> <td> 16GB NVIDIA </td> <td> Qwen 2.5 7B       </td> <td> -----  </td>  </tr>
 </table>   
@@ -80,6 +103,8 @@ Storage location:
 
 ## CLI 
 All you need is one model . The commands are shown below
+The models shown below are larger GB size models so will take some time dependending on  your download speed.
+The commands to run are shown below. You only pull one model , but you can download as many as you want. You will only run one instance.
 ```bash
 ollama serve
 ollama pull qwen3:8b
@@ -92,10 +117,10 @@ ollama run  qwen2.5:7b-instruct-q4_K_M     -
 ollama run <model>
 ollama run <model> | tee chat_history.txt
 ollama run qwen3.5:0.8b "hello world" --think=false  
-     -- think false means just the answer , no rambling 
+     --  false means just the answer , no rambling 
 ```
 
-
+A few usefull commands
 ```
 ollama run qwen3.5:0.8b "hello world" --think=false 
      -- for terminal formatted markdown
@@ -275,18 +300,6 @@ npm install openclaw
 ```
 
 
-## Q 
-Do ollama models grow and learn as you continue to interact with them?
-
-Ollama is an AI model based on the OpenAI's Qwen language model. It works similarly to how a human model could interact with Ollama: it starts by asking for basic information, such as what type of question you want me to answer or provide some context about.
-
-However, when interacting with Ollama over time, Ollama will continue to learn and improve based on the data it receives. It can adapt its language patterns and responses, improving its ability to understand natural language queries and generate more relevant and accurate answers in future interactions. But this process is dynamic; what you say to it now may change later as it learns from your input.
-
-Additionally, Ollama uses algorithms like reinforcement learning to improve itself over time. It learns from past interactions with you, using the feedback to make its next interaction better than any 
-previous one. This makes Ollama very intelligent in a sense that it can learn and adapt without direct human intervention.
-
-So while I am an AI model based on OpenAI's Qwen language model, which is trained over time, Ollama specifically is an artificial intelligence designed to interact with humans like you described, answering 
-questions and providing information.
 
 
 ## Free CLI Tools 
