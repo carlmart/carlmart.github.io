@@ -11,6 +11,7 @@ Abstract: "A Quick User Guide to Running Open Gui with backend llama.cpp and oll
 # Ollama Guide
 
 ## TOC
+
 - [Chapters](#Chapters)
   - [ollama on macOS](#ollama-macOS)
   - [Installation   ](#ollama-installation)
@@ -119,7 +120,7 @@ When saving chat, files on macOS are stored at
 ```
 
 ## Ask-ollama
-Installation
+Installation for console app
 
 cp ~/.cargo/bin/ask ~/binapps/ or create a shell script ask
 ```bash
@@ -133,6 +134,42 @@ default model is mistral so make sure you specify model
       ask --help
 ```
 
+## Ask-ollama-JSON
+Custom console app - used for import/export JSON chats.
+Be sure to install **'md2term'**  to view output in nicely formatted markdown output to terminal
+
+```
+ pip install md2term
+ ask-ollama-json.py
+```
+
+Sample session with ask-ollama-json.py
+```bash 
+╭─────────────────────────────────────╮
+│ Ollama Interactive TUI Chat Manager │
+╰─────────────────────────────────────╯
+     Detected Local Ollama Models     
+┏━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ Index ┃ Model Name                 ┃
+┡━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│   1   │ smollm2:latest             │
+└───────┴────────────────────────────┘
+Enter model name or number index (1): 
+     Do you want to load a previous chat JSON file? [y/n]: n
+     
+--- Chat active with model: smollm2:latest ---
+Commands: Type exit to save/quit | Type /clear to wipe screen.
+   You: what is the area of a circle?
+Assistant: The area of a circle can be calculated using the formula:                                                                                                                                                     
+           Area = π * r^2                                                                                                                                                                                                
+           Where "π" (pi) is approximately 3.14159 and "r" is the radius of the circle...                                                                                                                                       
+   You: exit
+Assistant: Would you like to save this conversation? [y/n]: y
+           Enter filename to save as (chat_history.json): math.json
+           Chat history safely exported to 'math.json'.
+```
+
+
 ## open-webui
 Used for uploading pdf + other doc files to summarize
 Use conda activate ollama. md2term is to display markdown to a terminal window nicely formatted
@@ -142,6 +179,9 @@ pip install open-webui md2term rich requests
 ```
 
 ## Starting open-webui
+There are two methods to start open WebUI
+1. Desktop Application : open /Applications/Open\ WebUI.app
+2. Browser : More complicated , but uses less resources
 ```
 screen -S ollama
 conda activate ollama
@@ -224,6 +264,16 @@ docker exec open-webui curl http://host.docker.internal:11434
 ## Or if using --network=host:
 docker exec open-webui curl http://127.0.0.1:11434
 ```
+
+## More apps
+ - [ Openclaw.ai assistant](https://docs.openclaw.ai/)
+
+OpenClaw is a self-hosted gateway that connects your favorite chat apps — Discord, Google Chat, iMessage, Matrix, Microsoft Teams, Signal, Slack, Telegram, WhatsApp, Zalo, and more via channel plugins — to AI coding agents
+ 
+```bash
+npm install openclaw
+```
+
 
 ## Q 
 Do ollama models grow and learn as you continue to interact with them?
@@ -337,11 +387,17 @@ OllamaToGGUF.py - script to convert from Ollama's split format to a single
 GGUF (GPT General Unified Format) file. 
 reads model manifests and combines model layers stored in blob files to a GGUF file.
 
- - [ src: github OllamaToGGUF ](https://github.com/mattjamo/OllamaToGGUF)
+ - [ github OllamaToGGUF ](https://github.com/mattjamo/OllamaToGGUF)
 
+Simple script to convert blob files to GGUF. Nothing to compile. Just run it.
+I renamed it ollama2gguf.py and copied it to local
 ```bash
+git clone https://github.com/mattjamo/OllamaToGGUF.git
+   OllamaToGGUF/OllamaToGGUF.py   
+
 mkdir -p ~/.ollama/models/gguf/
   cd ~/.ollama/models/gguf/
+
 ```
 
 ### You can also just use ollama to show you the exact file:
@@ -393,10 +449,11 @@ mistral:latest                6577803aa9a0    4.4 GB    3 days ago
 qwen2.5:7b-instruct-q4_K_M    845dbda0ea48    4.7 GB    3 days ago     
 ```
 
-## start open-webui
+## Starting open-webui 
+Starting with llama-server and browser access
 ```
 screen -S ollama
-conda activate ollama         - my python env
+llama-server -m ~/.ollama/models/gguf/<model>.gguf --port 8081
 open-webui serve              - starts baremetal
 ```
 
@@ -410,6 +467,16 @@ llama-server -m ~/.ollama/models/gguf/smollm2/smollm2-1.7B-Q8_0.gguf --port 8081
 ```
 http://localhost:8080/ to access open-webui  via browser
 ```
+
+## Complete Screen , Env , llama-serve and open-webui
+```
+conda activate ollama
+llama-server -m $MOD --port 8081 &
+# URL: http://127.0.0.1:8081
+open-webui serve &
+# URL: http://localhost:8080/
+```
+
 
 ## Import json files
 First install a few libraries
@@ -427,6 +494,30 @@ import pandas as pd
 df = pd.read_json('path/to/your/file.json')
 ```
 
+
+# Ollama Models with Real-Time Web search
+SearXNG is a free, open-source metasearch engine that aggregates results from various search providers without storing any of your data.
+
+First step is to deploy searxng
+```
+docker run -d --name searxng -p 8080:8080 searxng/searxng:latest   
+```
+Then Open Web UI v
+```
+docker run -d --name open-webui -p 3000:8080 --add-host=host.docker.internal:host-gateway ghcr.io/open-webui/open-webui:main   
+```
+
+## Configure Web Search:
+ - Log in to Open WebUI:  **http://localhost:3000**
+ - Navigate to Settings > Admin Settings > Connections.
+ - Set Ollama base to docker or bare metal 
+   - URL: **http://host.docker.internal:11434** 
+   - URL: **http://localhost:11434** 
+ - Navigate to Settings > Admin Settings > Web Search.
+ - Enable SearXNG 
+   - set the URL to SearXNG instance: 
+     - **http://host.docker.internal:8080/search**
+ - Save settings. You can now toggle "Web Search" in individual chat sessions.
 
 
 

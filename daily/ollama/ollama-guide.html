@@ -328,146 +328,6 @@ kbd {
 </style>
 
 <style type="text/css">
-/**
- * prism.js default theme for JavaScript, CSS and HTML
- * Based on dabblet (http://dabblet.com)
- * @author Lea Verou
- */
-
-code[class*="language-"],
-pre[class*="language-"] {
-	color: black;
-	background: none;
-	text-shadow: 0 1px white;
-	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-	text-align: left;
-	white-space: pre;
-	word-spacing: normal;
-	word-break: normal;
-	word-wrap: normal;
-	line-height: 1.5;
-
-	-moz-tab-size: 4;
-	-o-tab-size: 4;
-	tab-size: 4;
-
-	-webkit-hyphens: none;
-	-moz-hyphens: none;
-	-ms-hyphens: none;
-	hyphens: none;
-}
-
-pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
-code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
-	text-shadow: none;
-	background: #b3d4fc;
-}
-
-pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
-code[class*="language-"]::selection, code[class*="language-"] ::selection {
-	text-shadow: none;
-	background: #b3d4fc;
-}
-
-@media print {
-	code[class*="language-"],
-	pre[class*="language-"] {
-		text-shadow: none;
-	}
-}
-
-/* Code blocks */
-pre[class*="language-"] {
-	padding: 1em;
-	margin: .5em 0;
-	overflow: auto;
-}
-
-:not(pre) > code[class*="language-"],
-pre[class*="language-"] {
-	background: #f5f2f0;
-}
-
-/* Inline code */
-:not(pre) > code[class*="language-"] {
-	padding: .1em;
-	border-radius: .3em;
-	white-space: normal;
-}
-
-.token.comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
-	color: slategray;
-}
-
-.token.punctuation {
-	color: #999;
-}
-
-.namespace {
-	opacity: .7;
-}
-
-.token.property,
-.token.tag,
-.token.boolean,
-.token.number,
-.token.constant,
-.token.symbol,
-.token.deleted {
-	color: #905;
-}
-
-.token.selector,
-.token.attr-name,
-.token.string,
-.token.char,
-.token.builtin,
-.token.inserted {
-	color: #690;
-}
-
-.token.operator,
-.token.entity,
-.token.url,
-.language-css .token.string,
-.style .token.string {
-	color: #a67f59;
-	background: hsla(0, 0%, 100%, .5);
-}
-
-.token.atrule,
-.token.attr-value,
-.token.keyword {
-	color: #07a;
-}
-
-.token.function {
-	color: #DD4A68;
-}
-
-.token.regex,
-.token.important,
-.token.variable {
-	color: #e90;
-}
-
-.token.important,
-.token.bold {
-	font-weight: bold;
-}
-.token.italic {
-	font-style: italic;
-}
-
-.token.entity {
-	cursor: help;
-}
-</style>
-
-<style type="text/css">
 /* HTML Export & Screen Preview - Paragraph Text Wrapping
  *
  * This stylesheet provides universal text wrapping styles for HTML exports
@@ -598,10 +458,10 @@ svg[id^="mermaid_"] {
   <tr> <td> llama3.2:1b         </td> <td> slightly large        </td> <td> 1.3GB  </td> </tr>
 </table>
 
-<p>&quot;Avoid models larger than 8B to prevent severe slowdowns.
-Qwen 2.5 7B at Q4_K_M quantization uses roughly 5.2 GB of RAM, 
-leaves 9 GB for your OS and apps, runs at 8-12 tokens/sec on CPU only 
-35-50 tokens/sec on a midrange GPU, and benchmarks within 4% of Llama 3.1 8B 
+<p>&quot;Avoid models larger than 8B to prevent severe slowdowns.<br>
+Qwen 2.5 7B at Q4_K_M quantization uses roughly 5.2 GB of RAM, <br>
+leaves 9 GB for your OS and apps, runs at 8-12 tokens/sec on CPU only <br>
+35-50 tokens/sec on a midrange GPU, and benchmarks within 4% of Llama 3.1 8B <br>
 on most tasks while being noticeably faster.&quot;</p>
 
 <ul>
@@ -617,7 +477,7 @@ on most tasks while being noticeably faster.&quot;</p>
 
 <h2 id="installation">Installation</h2>
 
-<p>Installs can be direct app or in a terminal window.
+<p>Installs can be direct app or in a terminal window.<br>
 Its a quick install since its only the wrapper app. </p>
 
 <ul>
@@ -686,7 +546,7 @@ ollama stop &lt;model&gt;                        - to completely stop model</cod
 
 <h2 id="ask-ollama">Ask-ollama</h2>
 
-<p>Installation</p>
+<p>Installation for console app</p>
 
 <p>cp ~/.cargo/bin/ask ~/binapps/ or create a shell script ask</p>
 
@@ -700,15 +560,55 @@ ollama stop &lt;model&gt;                        - to completely stop model</cod
       ask --version        
       ask --help</code></pre></div>
 
+<h2 id="ask-ollama-json">Ask-ollama-JSON</h2>
+
+<p>Custom console app - used for import/export JSON chats.<br>
+Be sure to install <strong>&#39;md2term&#39;</strong>  to view output in nicely formatted markdown output to terminal</p>
+
+<div><pre><code class="language-none"> pip install md2term
+ ask-ollama-json.py</code></pre></div>
+
+<p>Sample session with ask-ollama-json.py</p>
+
+<div><pre><code class="language-bash">╭─────────────────────────────────────╮
+│ Ollama Interactive TUI Chat Manager │
+╰─────────────────────────────────────╯
+     Detected Local Ollama Models     
+┏━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ Index ┃ Model Name                 ┃
+┡━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│   1   │ smollm2:latest             │
+└───────┴────────────────────────────┘
+Enter model name or number index (1): 
+     Do you want to load a previous chat JSON file? [y/n]​: n
+     
+--- Chat active with model: smollm2:latest ---
+Commands: Type exit to save/quit | Type /clear to wipe screen.
+   You: what is the area of a circle?
+Assistant: The area of a circle can be calculated using the formula:                                                                                                                                                     
+           Area = π * r^2                                                                                                                                                                                                
+           Where &quot;π&quot; (pi) is approximately 3.14159 and &quot;r&quot; is the radius of the circle...                                                                                                                                       
+   You: exit
+Assistant: Would you like to save this conversation? [y/n]​: y
+           Enter filename to save as (chat_history.json): math.json
+           Chat history safely exported to &#39;math.json&#39;.</code></pre></div>
+
 <h2 id="open-webui">open-webui</h2>
 
-<p>Used for uploading pdf + other doc files to summarize
-Use conda activate ollama. md2term is to display markdown to a terminal window nicely formatted
+<p>Used for uploading pdf + other doc files to summarize<br>
+Use conda activate ollama. md2term is to display markdown to a terminal window nicely formatted<br>
 Install in a python environment like conda or venv</p>
 
-<div><pre><code class="language-none">pip install open-webui md2term</code></pre></div>
+<div><pre><code class="language-none">pip install open-webui md2term rich requests</code></pre></div>
 
 <h2 id="starting-open-webui">Starting open-webui</h2>
+
+<p>There are two methods to start open WebUI</p>
+
+<ol>
+<li>Desktop Application : open /Applications/Open\ WebUI.app</li>
+<li>Browser : More complicated , but uses less resources</li>
+</ol>
 
 <div><pre><code class="language-none">screen -S ollama
 conda activate ollama
@@ -741,7 +641,7 @@ ollama run qwen2.5:7b-instruct-q4_K_M &quot;hello world&quot; --think=false | md
 <li><a href="https://lobehub.com/skills/dabbler6900-hermes-config-duckduckgo-search"> internet search ddgs free </a></li>
 </ul>
 
-<p>WebUIs: Interfaces like Open WebUI automatically save chat histories to a database, 
+<p>WebUIs: Interfaces like Open WebUI automatically save chat histories to a database, <br>
         allowing you to reload them later. Export is in JSON format</p>
 
 <p>When reloaded, the interface feeds the old messages back to the model to reconstruct the context. </p>
@@ -789,8 +689,20 @@ curl http://localhost:11434/api/tags
 
 ## Step 3: Can Open WebUI&#39;s container reach Ollama?
 docker exec open-webui curl http://host.docker.internal:11434
+## should print
+100    17  100    17    0     0   3839      0 --:--:-- --:--:-- --:--:--  4250Ollama is running 
 ## Or if using --network=host:
 docker exec open-webui curl http://127.0.0.1:11434</code></pre></div>
+
+<h2 id="more-apps">More apps</h2>
+
+<ul>
+<li><a href="https://docs.openclaw.ai/"> Openclaw.ai assistant</a></li>
+</ul>
+
+<p>OpenClaw is a self-hosted gateway that connects your favorite chat apps — Discord, Google Chat, iMessage, Matrix, Microsoft Teams, Signal, Slack, Telegram, WhatsApp, Zalo, and more via channel plugins — to AI coding agents</p>
+
+<div><pre><code class="language-bash">npm install openclaw</code></pre></div>
 
 <h2 id="q">Q</h2>
 
@@ -800,17 +712,17 @@ docker exec open-webui curl http://127.0.0.1:11434</code></pre></div>
 
 <p>However, when interacting with Ollama over time, Ollama will continue to learn and improve based on the data it receives. It can adapt its language patterns and responses, improving its ability to understand natural language queries and generate more relevant and accurate answers in future interactions. But this process is dynamic; what you say to it now may change later as it learns from your input.</p>
 
-<p>Additionally, Ollama uses algorithms like reinforcement learning to improve itself over time. It learns from past interactions with you, using the feedback to make its next interaction better than any 
+<p>Additionally, Ollama uses algorithms like reinforcement learning to improve itself over time. It learns from past interactions with you, using the feedback to make its next interaction better than any <br>
 previous one. This makes Ollama very intelligent in a sense that it can learn and adapt without direct human intervention.</p>
 
-<p>So while I am an AI model based on OpenAI&#39;s Qwen language model, which is trained over time, Ollama specifically is an artificial intelligence designed to interact with humans like you described, answering 
+<p>So while I am an AI model based on OpenAI&#39;s Qwen language model, which is trained over time, Ollama specifically is an artificial intelligence designed to interact with humans like you described, answering <br>
 questions and providing information.</p>
 
 <h2 id="free-cli-tools">Free CLI Tools</h2>
 
-<p>tgpt -   supports engines like Phind without requiring an API key or login.<br>
-   tgpt and similar open-source projects provide free access to AI capabilities directly in the terminal.<br>
-   Savvy is mentioned as a free CLI tool for individual developers that does not require API keys. 
+<p>tgpt -   supports engines like Phind without requiring an API key or login.<br><br>
+   tgpt and similar open-source projects provide free access to AI capabilities directly in the terminal.<br><br>
+   Savvy is mentioned as a free CLI tool for individual developers that does not require API keys. <br>
    chatGPT-shell-cli require an OpenAI API key, </p>
 
 <ul>
@@ -821,9 +733,9 @@ questions and providing information.</p>
 
 <h2 id="llamacpp-llama-server-install">llama.cpp llama-server install</h2>
 
-<p>Open-WebUI uses port 8080 
-so for llama.cpp server port use 8081  : 
- http://127.0.0.1:8081
+<p>Open-WebUI uses port 8080 <br>
+so for llama.cpp server port use 8081  : <br>
+ http://127.0.0.1:8081<br>
 Note: Ensure the port 8081 does not conflict with other services. </p>
 
 <div><pre><code class="language-bash">/usr/local/bin/llama-server -m &lt;path&gt;/&lt;model&gt;.gguf --port 8081
@@ -831,32 +743,51 @@ Note: Ensure the port 8081 does not conflict with other services. </p>
 
 <h2 id="llama-server-run">llama-server run</h2>
 
-<p>Running llama-server with model then connecting to open WebUI
-Point Open WebUI to llama.cpp server
-Open WebUI -&gt; Admin -&gt; Settings -&gt; Connections 
-  add: URL: http://localhost:8081/v1
-<a href="https://docs.openwebui.com/alternatives/llama-cpp/">ref OpenWebUI to llama.cpp </a></p>
+<p>Running llama-server with model then connecting to open WebUI<br>
+Point Open WebUI to llama.cpp server</p>
 
-<div><pre><code class="language-bash">mkdir -p ~/.ollama/models/gguf/
-  cd ~/.ollama/models/gguf/
+<div><pre><code class="language-none">Open WebUI -&gt; Admin -&gt; Settings -&gt; Connections 
+  add: URL: http://localhost:8081/v1</code></pre></div>
 
-llama-cli -hf bartowski/Meta-Llama-3.1-8B-Instruct-GGUF:Q4_K_M   
+<p><a href="https://docs.openwebui.com/alternatives/llama-cpp/">ref OpenWebUI to llama.cpp </a></p>
+
+<h2 id="llama-server-start">llama-server start</h2>
+
+<p>With or Without API Key : --api-key &quot;123&quot;   - some demo key<br>
+or docker</p>
+
+<div><pre><code class="language-none">llama-cli -hf bartowski/Meta-Llama-3.1-8B-Instruct-GGUF:Q4_K_M   
 llama-server -m ~/.ollama/models/gguf/model.gguf  --port 8081
-llama-server -m ~/.ollama/models/gguf/smollm2/smollm2-1.7B-Q8_0.gguf --port 8081 --api-key &quot;sk-llama-local-abc123&quot; 
-
-docker run -d --network host -v open-webui:/app/backend/data --name open-webui ghcr.io/open-webui/open-webui:main   
-</code></pre></div>
-
-<p>API Key : --api-key &quot;sk-llama-local-abc123&quot;  - some demo key</p>
+llama-server -m ~/.ollama/models/gguf/smollm2/smollm2-1.7B-Q8_0.gguf --port 8081 --api-key &quot;123&quot; 
+docker run -d --network host -v open-webui:/app/backend/data --name open-webui ghcr.io/open-webui/open-webui:main   </code></pre></div>
 
 <h2 id="test-connection-with-curl">Test Connection with curl</h2>
 
-<div><pre><code class="language-bash">curl http://127.0.0.1:8081/v1/models -H &quot;Authorization: Bearer sk-llama-local-abc123&quot;   </code></pre></div>
+<div><pre><code class="language-bash">curl http://127.0.0.1:8081/v1/models -H &quot;Authorization: Bearer sk-llama-local-abc123&quot;   
+  or without key
+curl http://127.0.0.1:8081/v1/models 
+
+  output should be  JSON format
+    ...smollm2-1.7B-Q8_0.gguf&quot;,&quot;model&quot;:&quot;modified_at&quot;:&quot;&quot;,&quot;size&quot;:&quot;model&quot;,&quot;description&quot;....</code></pre></div>
+
+<h2 id="actual-test-case-and-output">Actual test case and output</h2>
+
+<div><pre><code class="language-bash">llama-server -m   ~/.ollama/models/gguf/smollm2/smollm2-1.7B-Q8_0.gguf    --port 8081
+
+curl -s http://127.0.0.1:8081/v1/chat/completions -d \
+     &#39;{&quot;model&quot;:&quot;mistral&quot;,&quot;messages&quot;:[{&quot;role&quot;:&quot;user&quot;,&quot;content&quot;:&quot;Hello&quot;}]}&#39; | \
+     jq &#39;.choices[0].message.content&#39;
+  
+    &gt; output: &quot;Hello! How can I assist you today?&quot;
+
+http://localhost:3000/?temporary-chat=true   // open WebGUI interface</code></pre></div>
+
+<h1 id="conversions-and-downloads-of-gguf-files">Conversions and Downloads of gguf files</h1>
 
 <h2 id="download-file-manually-from-hugging-face-repositories">Download file manually from Hugging Face repositories</h2>
 
-<p>eg. bartowski, TheBloke, or ggml-org then point llama.cpp  -m flag:
--hf = hugging face
+<p>eg. bartowski, TheBloke, or ggml-org then point llama.cpp  -m flag:<br>
+-hf = hugging face<br>
  - <a href="https://huggingface.co/docs/hub/en/gguf-llamacpp"> hugging face gguf-llamacpp </a></p>
 
 <div><pre><code class="language-bash">llama-cli -m /path/to/your_model.gguf   
@@ -882,13 +813,23 @@ llama-server -hf bartowski/Llama-3.2-3B-Instruct-GGUF:Q8_0</code></pre></div>
 
 <h2 id="converting-ollama-to-llamacpp-format-files">Converting ollama to llama.cpp format files</h2>
 
-<p>OllamaToGGUF.py - script to convert from Ollama&#39;s split format to a single 
-GGUF (GPT General Unified Format) file. 
+<p>OllamaToGGUF.py - script to convert from Ollama&#39;s split format to a single <br>
+GGUF (GPT General Unified Format) file. <br>
 reads model manifests and combines model layers stored in blob files to a GGUF file.</p>
 
 <ul>
-<li><a href="https://github.com/mattjamo/OllamaToGGUF"> src: github OllamaToGGUF </a></li>
+<li><a href="https://github.com/mattjamo/OllamaToGGUF"> github OllamaToGGUF </a></li>
 </ul>
+
+<p>Simple script to convert blob files to GGUF. Nothing to compile. Just run it.<br>
+I renamed it ollama2gguf.py and copied it to local</p>
+
+<div><pre><code class="language-bash">git clone https://github.com/mattjamo/OllamaToGGUF.git
+   OllamaToGGUF/OllamaToGGUF.py   
+
+mkdir -p ~/.ollama/models/gguf/
+  cd ~/.ollama/models/gguf/
+</code></pre></div>
 
 <h3 id="you-can-also-just-use-ollama-to-show-you-the-exact-file">You can also just use ollama to show you the exact file:</h3>
 
@@ -933,10 +874,12 @@ qwen2.5-coder:7b              dae161e27b0e    4.7 GB    2 days ago
 mistral:latest                6577803aa9a0    4.4 GB    3 days ago      
 qwen2.5:7b-instruct-q4_K_M    845dbda0ea48    4.7 GB    3 days ago     </code></pre></div>
 
-<h2 id="start-open-webui">start open-webui</h2>
+<h2 id="starting-open-webui">Starting open-webui</h2>
+
+<p>Starting with llama-server and browser access</p>
 
 <div><pre><code class="language-none">screen -S ollama
-conda activate ollama         - my python env
+llama-server -m ~/.ollama/models/gguf/&lt;model&gt;.gguf --port 8081
 open-webui serve              - starts baremetal</code></pre></div>
 
 <h2 id="start-llamacpp">start llama.cpp</h2>
@@ -948,15 +891,95 @@ llama-server -m ~/.ollama/models/gguf/smollm2/smollm2-1.7B-Q8_0.gguf --port 8081
 
 <div><pre><code class="language-none">http://localhost:8080/ to access open-webui  via browser</code></pre></div>
 
+<h2 id="complete-screen-env-llama-serve-and-open-webui">Complete Screen , Env , llama-serve and open-webui</h2>
+
+<div><pre><code class="language-none">conda activate ollama
+llama-server -m $MOD --port 8081 &amp;
+# URL: http://127.0.0.1:8081
+open-webui serve &amp;
+# URL: http://localhost:8080/</code></pre></div>
+
+<h2 id="import-json-files">Import json files</h2>
+
+<p>First install a few libraries</p>
+
+<div><pre><code class="language-bash">pip install pandas openpyxl
+</code></pre></div>
+
+<h2 id="python-code">Python code</h2>
+
+<div><pre><code class="language-python">import pandas as pd
+df = pd.read_json(&#39;https://example.com/your-data.json&#39;)
+
+or 
+
+import pandas as pd
+df = pd.read_json(&#39;path/to/your/file.json&#39;)</code></pre></div>
+
+<h1 id="ollama-models-with-real-time-web-search">Ollama Models with Real-Time Web search</h1>
+
+<p>SearXNG is a free, open-source metasearch engine that aggregates results from various search providers without storing any of your data.</p>
+
+<p>First step is to deploy searxng</p>
+
+<div><pre><code class="language-none">docker run -d --name searxng -p 8080:8080 searxng/searxng:latest   
+</code></pre></div>
+
+<p>Then Open Web UI v</p>
+
+<div><pre><code class="language-none">docker run -d --name open-webui -p 3000:8080 --add-host=host.docker.internal:host-gateway ghcr.io/open-webui/open-webui:main   </code></pre></div>
+
+<h2 id="configure-web-search">Configure Web Search:</h2>
+
+<ul>
+<li>Log in to Open WebUI:  <strong>http://localhost:3000</strong></li>
+<li>Navigate to Settings &gt; Admin Settings &gt; Connections.</li>
+<li>Set Ollama base to docker or bare metal 
+
+<ul>
+<li>URL: <strong>http://host.docker.internal:11434</strong> </li>
+<li>URL: <strong>http://localhost:11434</strong> </li>
+</ul></li>
+<li>Navigate to Settings &gt; Admin Settings &gt; Web Search.</li>
+<li>Enable SearXNG 
+
+<ul>
+<li>set the URL to SearXNG instance: 
+
+<ul>
+<li><strong>http://host.docker.internal:8080/search</strong></li>
+</ul></li>
+</ul></li>
+<li>Save settings. You can now toggle &quot;Web Search&quot; in individual chat sessions.</li>
+</ul>
+
+<h1 id="token-counts">Token counts</h1>
+
+<ul>
+<li><a href="https://medium.com/@manav.kumar87/understanding-tokens-in-chatgpt-32845987858d"> Understanding tokens </a></li>
+<li><a href="https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them"> what are tokens? </a></li>
+</ul>
 
 
-<script type="text/javascript">
-var _self="undefined"!=typeof window?window:"undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?self:{},Prism=function(){var e=/\blang(?:uage)?-(\w+)\b/i,t=0,n=_self.Prism={util:{encode:function(e){return e instanceof a?new a(e.type,n.util.encode(e.content),e.alias):"Array"===n.util.type(e)?e.map(n.util.encode):e.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/\u00a0/g," ")},type:function(e){return Object.prototype.toString.call(e).match(/\[object (\w+)\]/)[1]},objId:function(e){return e.__id||Object.defineProperty(e,"__id",{value:++t}),e.__id},clone:function(e){var t=n.util.type(e);switch(t){case"Object":var a={};for(var r in e)e.hasOwnProperty(r)&&(a[r]=n.util.clone(e[r]));return a;case"Array":return e.map&&e.map(function(e){return n.util.clone(e)})}return e}},languages:{extend:function(e,t){var a=n.util.clone(n.languages[e]);for(var r in t)a[r]=t[r];return a},insertBefore:function(e,t,a,r){r=r||n.languages;var l=r[e];if(2==arguments.length){a=arguments[1];for(var i in a)a.hasOwnProperty(i)&&(l[i]=a[i]);return l}var o={};for(var s in l)if(l.hasOwnProperty(s)){if(s==t)for(var i in a)a.hasOwnProperty(i)&&(o[i]=a[i]);o[s]=l[s]}return n.languages.DFS(n.languages,function(t,n){n===r[e]&&t!=e&&(this[t]=o)}),r[e]=o},DFS:function(e,t,a,r){r=r||{};for(var l in e)e.hasOwnProperty(l)&&(t.call(e,l,e[l],a||l),"Object"!==n.util.type(e[l])||r[n.util.objId(e[l])]?"Array"!==n.util.type(e[l])||r[n.util.objId(e[l])]||(r[n.util.objId(e[l])]=!0,n.languages.DFS(e[l],t,l,r)):(r[n.util.objId(e[l])]=!0,n.languages.DFS(e[l],t,null,r)))}},plugins:{},highlightAll:function(e,t){var a={callback:t,selector:'code[class*="language-"], [class*="language-"] code, code[class*="lang-"], [class*="lang-"] code'};n.hooks.run("before-highlightall",a);for(var r,l=a.elements||document.querySelectorAll(a.selector),i=0;r=l[i++];)n.highlightElement(r,e===!0,a.callback)},highlightElement:function(t,a,r){for(var l,i,o=t;o&&!e.test(o.className);)o=o.parentNode;o&&(l=(o.className.match(e)||[,""])[1],i=n.languages[l]),t.className=t.className.replace(e,"").replace(/\s+/g," ")+" language-"+l,o=t.parentNode,/pre/i.test(o.nodeName)&&(o.className=o.className.replace(e,"").replace(/\s+/g," ")+" language-"+l);var s=t.textContent,u={element:t,language:l,grammar:i,code:s};if(!s||!i)return n.hooks.run("complete",u),void 0;if(n.hooks.run("before-highlight",u),a&&_self.Worker){var c=new Worker(n.filename);c.onmessage=function(e){u.highlightedCode=e.data,n.hooks.run("before-insert",u),u.element.innerHTML=u.highlightedCode,r&&r.call(u.element),n.hooks.run("after-highlight",u),n.hooks.run("complete",u)},c.postMessage(JSON.stringify({language:u.language,code:u.code,immediateClose:!0}))}else u.highlightedCode=n.highlight(u.code,u.grammar,u.language),n.hooks.run("before-insert",u),u.element.innerHTML=u.highlightedCode,r&&r.call(t),n.hooks.run("after-highlight",u),n.hooks.run("complete",u)},highlight:function(e,t,r){var l=n.tokenize(e,t);return a.stringify(n.util.encode(l),r)},tokenize:function(e,t){var a=n.Token,r=[e],l=t.rest;if(l){for(var i in l)t[i]=l[i];delete t.rest}e:for(var i in t)if(t.hasOwnProperty(i)&&t[i]){var o=t[i];o="Array"===n.util.type(o)?o:[o];for(var s=0;s<o.length;++s){var u=o[s],c=u.inside,g=!!u.lookbehind,h=!!u.greedy,f=0,d=u.alias;u=u.pattern||u;for(var p=0;p<r.length;p++){var m=r[p];if(r.length>e.length)break e;if(!(m instanceof a)){u.lastIndex=0;var y=u.exec(m),v=1;if(!y&&h&&p!=r.length-1){var b=r[p+1].matchedStr||r[p+1],k=m+b;if(p<r.length-2&&(k+=r[p+2].matchedStr||r[p+2]),u.lastIndex=0,y=u.exec(k),!y)continue;var w=y.index+(g?y[1].length:0);if(w>=m.length)continue;var _=y.index+y[0].length,P=m.length+b.length;if(v=3,P>=_){if(r[p+1].greedy)continue;v=2,k=k.slice(0,P)}m=k}if(y){g&&(f=y[1].length);var w=y.index+f,y=y[0].slice(f),_=w+y.length,S=m.slice(0,w),O=m.slice(_),j=[p,v];S&&j.push(S);var A=new a(i,c?n.tokenize(y,c):y,d,y,h);j.push(A),O&&j.push(O),Array.prototype.splice.apply(r,j)}}}}}return r},hooks:{all:{},add:function(e,t){var a=n.hooks.all;a[e]=a[e]||[],a[e].push(t)},run:function(e,t){var a=n.hooks.all[e];if(a&&a.length)for(var r,l=0;r=a[l++];)r(t)}}},a=n.Token=function(e,t,n,a,r){this.type=e,this.content=t,this.alias=n,this.matchedStr=a||null,this.greedy=!!r};if(a.stringify=function(e,t,r){if("string"==typeof e)return e;if("Array"===n.util.type(e))return e.map(function(n){return a.stringify(n,t,e)}).join("");var l={type:e.type,content:a.stringify(e.content,t,r),tag:"span",classes:["token",e.type],attributes:{},language:t,parent:r};if("comment"==l.type&&(l.attributes.spellcheck="true"),e.alias){var i="Array"===n.util.type(e.alias)?e.alias:[e.alias];Array.prototype.push.apply(l.classes,i)}n.hooks.run("wrap",l);var o="";for(var s in l.attributes)o+=(o?" ":"")+s+'="'+(l.attributes[s]||"")+'"';return"<"+l.tag+' class="'+l.classes.join(" ")+'" '+o+">"+l.content+"</"+l.tag+">"},!_self.document)return _self.addEventListener?(_self.addEventListener("message",function(e){var t=JSON.parse(e.data),a=t.language,r=t.code,l=t.immediateClose;_self.postMessage(n.highlight(r,n.languages[a],a)),l&&_self.close()},!1),_self.Prism):_self.Prism;var r=document.currentScript||[].slice.call(document.getElementsByTagName("script")).pop();return r&&(n.filename=r.src,document.addEventListener&&!r.hasAttribute("data-manual")&&document.addEventListener("DOMContentLoaded",n.highlightAll)),_self.Prism}();"undefined"!=typeof module&&module.exports&&(module.exports=Prism),"undefined"!=typeof global&&(global.Prism=Prism);
+
+<script type="text/x-mathjax-config">
+(function () {
+
+MathJax.Hub.Config({
+	'showProcessingMessages': false,
+	'messageStyle': 'none'
+});
+
+if (typeof MathJaxListener !== 'undefined') {
+	MathJax.Hub.Register.StartupHook('End', function () {
+		MathJaxListener.invokeCallbackForKey_('End');
+	});
+}
+
+})();
 </script>
 
-<script type="text/javascript">
-!function(e){var t={variable:[{pattern:/\$?\(\([\w\W]+?\)\)/,inside:{variable:[{pattern:/(^\$\(\([\w\W]+)\)\)/,lookbehind:!0},/^\$\(\(/],number:/\b-?(?:0x[\dA-Fa-f]+|\d*\.?\d+(?:[Ee]-?\d+)?)\b/,operator:/--?|-=|\+\+?|\+=|!=?|~|\*\*?|\*=|\/=?|%=?|<<=?|>>=?|<=?|>=?|==?|&&?|&=|\^=?|\|\|?|\|=|\?|:/,punctuation:/\(\(?|\)\)?|,|;/}},{pattern:/\$\([^)]+\)|`[^`]+`/,inside:{variable:/^\$\(|^`|\)$|`$/}},/\$(?:[a-z0-9_#\?\*!@]+|\{[^}]+\})/i]};e.languages.bash={shebang:{pattern:/^#!\s*\/bin\/bash|^#!\s*\/bin\/sh/,alias:"important"},comment:{pattern:/(^|[^"{\\])#.*/,lookbehind:!0},string:[{pattern:/((?:^|[^<])<<\s*)(?:"|')?(\w+?)(?:"|')?\s*\r?\n(?:[\s\S])*?\r?\n\2/g,lookbehind:!0,inside:t},{pattern:/(["'])(?:\\\\|\\?[^\\])*?\1/g,inside:t}],variable:t.variable,"function":{pattern:/(^|\s|;|\||&)(?:alias|apropos|apt-get|aptitude|aspell|awk|basename|bash|bc|bg|builtin|bzip2|cal|cat|cd|cfdisk|chgrp|chmod|chown|chroot|chkconfig|cksum|clear|cmp|comm|command|cp|cron|crontab|csplit|cut|date|dc|dd|ddrescue|df|diff|diff3|dig|dir|dircolors|dirname|dirs|dmesg|du|egrep|eject|enable|env|ethtool|eval|exec|expand|expect|export|expr|fdformat|fdisk|fg|fgrep|file|find|fmt|fold|format|free|fsck|ftp|fuser|gawk|getopts|git|grep|groupadd|groupdel|groupmod|groups|gzip|hash|head|help|hg|history|hostname|htop|iconv|id|ifconfig|ifdown|ifup|import|install|jobs|join|kill|killall|less|link|ln|locate|logname|logout|look|lpc|lpr|lprint|lprintd|lprintq|lprm|ls|lsof|make|man|mkdir|mkfifo|mkisofs|mknod|more|most|mount|mtools|mtr|mv|mmv|nano|netstat|nice|nl|nohup|notify-send|nslookup|open|op|passwd|paste|pathchk|ping|pkill|popd|pr|printcap|printenv|printf|ps|pushd|pv|pwd|quota|quotacheck|quotactl|ram|rar|rcp|read|readarray|readonly|reboot|rename|renice|remsync|rev|rm|rmdir|rsync|screen|scp|sdiff|sed|seq|service|sftp|shift|shopt|shutdown|sleep|slocate|sort|source|split|ssh|stat|strace|su|sudo|sum|suspend|sync|tail|tar|tee|test|time|timeout|times|touch|top|traceroute|trap|tr|tsort|tty|type|ulimit|umask|umount|unalias|uname|unexpand|uniq|units|unrar|unshar|uptime|useradd|userdel|usermod|users|uuencode|uudecode|v|vdir|vi|vmstat|wait|watch|wc|wget|whereis|which|who|whoami|write|xargs|xdg-open|yes|zip)(?=$|\s|;|\||&)/,lookbehind:!0},keyword:{pattern:/(^|\s|;|\||&)(?:let|:|\.|if|then|else|elif|fi|for|break|continue|while|in|case|function|select|do|done|until|echo|exit|return|set|declare)(?=$|\s|;|\||&)/,lookbehind:!0},"boolean":{pattern:/(^|\s|;|\||&)(?:true|false)(?=$|\s|;|\||&)/,lookbehind:!0},operator:/&&?|\|\|?|==?|!=?|<<<?|>>|<=?|>=?|=~/,punctuation:/\$?\(\(?|\)\)?|\.\.|[{}[\];]/};var a=t.variable[1].inside;a["function"]=e.languages.bash["function"],a.keyword=e.languages.bash.keyword,a.boolean=e.languages.bash.boolean,a.operator=e.languages.bash.operator,a.punctuation=e.languages.bash.punctuation}(Prism);
-</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 
 </body>
