@@ -58,4 +58,17 @@ For 20 meters, a ~16.4 ft (5 m) wire is ideal.
 - tune to blank spot and turn variable capacitor
 ```
 
+# EFHW
+Harmonics: A 20-meter EFHW will also resonate naturally on 10 meters (2nd harmonic
+
+[Design of EFHW ](https://nexttechworld.com/radio-calculators/efhw-calculator/)
+
+## 9:1
+20m length is about 33 ft : counterpoise 3 feet (5% (0.05λ)
+40m lenght is about 66 ft 
+
+## 49:1
+20m length is about 33 ft : counterpoise 3 feet (5% (0.05λ)
+
+
 
