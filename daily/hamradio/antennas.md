@@ -24,7 +24,12 @@ Loop antennas
  - [ reddit/hamradio ](https://www.reddit.com/r/HamRadio/comments/1fg9oga/how_active_is_6m/)
 
 ## Vertical Element Antennas
-For JPC-7, JPC-12 , JPC-350 Chelegance  MC-750 
+For JPC-7, JPC-12 , JPC-350 Chelegance  MC-750
+ 
+<a href="https://www.youtube.com/watch?v=QwexpBJ4MyM&ab_channel=TechMinds" target="_blank">JPC-12 Quick Deploy </a><br>
+<a href="https://www.youtube.com/watch?v=unRUcBPyiBk" target="_blank"> JPC-12 Setup guide  </a> <br>
+<a href="https://drive.google.com/file/d/1ixZZtAUU_UX_79Xo0sBHtM1mKETp4XGo/view" target="_blank">  JPC-12 Sheet   </a> <br>
+<a href="https://chelegance.com/products/jpc-12-gp-portable-shortwave-antenna/" target="_blank"> JPC-12 Specs   </a> <br>
 
 ```
 10 metres: 28.000 – 29.700MHz
