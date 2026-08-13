@@ -13,7 +13,7 @@ c is the speed of light ( 3.00×10^8 m/s
 
 <table>
   <tr> <th> BAND λ </th> <th> Frequency      </th> <th> Freq.Range             </th>  <th>  CW Digital MHz  </th> <th> SSB           </th>    </tr>
-  <tr> <th> 180 m       </th> <th>   .9 MHz  </th> <th>   .530 -   1.700 MHz   </th>  <th>  AM broadcast    </th> <th> ------------- </th>    </tr>
+  <tr> <th> 180 m       </th> <th>   .9 MHz  </th> <th>   .530 -   1.700 MHz   </th>  <th>  AM broadcast    </th> <th> Medium Wave   </th>    </tr>
   <tr> <th> 160 m       </th> <th>  1.8 MHz  </th> <th>  1.800 -   2.000 MHz   </th>  <th>   1.800 - 2.000  </th> <th> Medium Freq   </th>    </tr>
   <tr> <th>  80 m       </th> <th>  3.5 MHz  </th> <th>  3.500 -   4.000 MHz   </th>  <th>   3.500 - 3.600  </th> <th> ------------- </th>    </tr>
   <tr> <th>  40 m       </th> <th>  7.0 MHz  </th> <th>  7.000 -   7.300 MHz   </th>  <th>   7.000 - 7.125  </th> <th> 7.125 - 7.300 </th>    </tr>
