@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h3>JSON saves</h3>
+  <h3> Used for saving online AI Chats as JSON files   </h3>
+  <label for="sentence">Sentence (User):</label><br>
+  <input type="text" id="sentence" placeholder="Enter Question"><br><br>
+  
+  <label for="paragraph">Paragraph (Assistant):</label><br>
+  <textarea id="paragraph" rows="4" cols="50" placeholder="Enter ANSWER"></textarea><br><br>
+  
+  <!-- Buttons -->
+  <button onclick="addRecord()">Add Another Record</button>
+  <button onclick="saveToJSON()">Save to File</button>
+  
+  <p id="status" style="color: blue;"></p>
+
+  <script>
+    // Global array to hold all records
+    let conversationData = [];
+
+    // Helper: Format date as YYYY-MM-DD HH:mm:ss
+    function getFormattedDate() {
+      const now = new Date();
+      const year = now.getFullYear();
+      const month = String(now.getMonth() + 1).padStart(2, '0');
+      const day = String(now.getDate()).padStart(2, '0');
+      const hours = String(now.getHours()).padStart(2, '0');
+      const minutes = String(now.getMinutes()).padStart(2, '0');
+      const seconds = String(now.getSeconds()).padStart(2, '0');
+      return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
+    }
+
+    function addRecord() {
+      const sentenceVal = document.getElementById('sentence').value;
+      const paragraphVal = document.getElementById('paragraph').value;
+      
+      if (!sentenceVal && !paragraphVal) {
+        alert("Please enter at least a sentence or a paragraph.");
+        return;
+      }
+
+      const timestamp = getFormattedDate();
+
+      // Add User Entry
+      if (sentenceVal) {
+        conversationData.push({
+          "role": "user",
+          "content": sentenceVal,
+          "timestamp": timestamp
+        });
+      }
+
+      // Add Assistant Entry
+      if (paragraphVal) {
+        conversationData.push({
+          "role": "assistant",
+          "content": paragraphVal,
+          "timestamp": timestamp
+        });
+      }
+
+      // Clear inputs for next entry
+      document.getElementById('sentence').value = '';
+      document.getElementById('paragraph').value = '';
+      
+      // Update status
+      const count = conversationData.length;
+      document.getElementById('status').innerText = `Records added: ${count}. Ready for next entry or save.`;
+    }
+
+    function saveToJSON() {
+      if (conversationData.length === 0) {
+        alert("No records to save. Please add a record first.");
+        return;
+      }
+
+      // Create JSON string
+      const jsonString = JSON.stringify(conversationData, null, 4);
+      const blob = new Blob([jsonString], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+
+      // Trigger Download
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'conversation_log.json';
+      document.body.appendChild(a);
+      a.click();
+      
+      // Cleanup
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+      
+      // Optional: Reset after save
+      // conversationData = []; 
+      // document.getElementById('status').innerText = "File saved. List cleared.";
+    }
+  </script>
+
+</body>
+</html>   
