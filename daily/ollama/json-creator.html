@@ -2,99 +2,90 @@
 <html>
 <body>
 
-  <h3>JSON saves</h3>
-  <h3> Used for saving online AI Chats as JSON files   </h3>
+  <h3>Conversation Logger</h3>
   <label for="sentence">Sentence (User):</label><br>
-  <input type="text" id="sentence" placeholder="Enter Question"><br><br>
+  <input type="text" id="sentence" placeholder="Enter sentence"><br><br>
   
   <label for="paragraph">Paragraph (Assistant):</label><br>
-  <textarea id="paragraph" rows="4" cols="50" placeholder="Enter ANSWER"></textarea><br><br>
+  <textarea id="paragraph" rows="4" cols="50" placeholder="Enter paragraph"></textarea><br><br>
   
-  <!-- Buttons -->
-  <button onclick="addRecord()">Add Another Record</button>
+  <button onclick="addRecord()">Submit Record</button>
   <button onclick="saveToJSON()">Save to File</button>
   
-  <p id="status" style="color: blue;"></p>
+  <p id="status" style="color: blue; font-weight: bold;"></p>
 
   <script>
-    // Global array to hold all records
+    // Global array persists as long as the page is not refreshed
     let conversationData = [];
 
-    // Helper: Format date as YYYY-MM-DD HH:mm:ss
     function getFormattedDate() {
       const now = new Date();
-      const year = now.getFullYear();
-      const month = String(now.getMonth() + 1).padStart(2, '0');
-      const day = String(now.getDate()).padStart(2, '0');
-      const hours = String(now.getHours()).padStart(2, '0');
-      const minutes = String(now.getMinutes()).padStart(2, '0');
-      const seconds = String(now.getSeconds()).padStart(2, '0');
-      return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
+      return `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')} ${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}:${String(now.getSeconds()).padStart(2, '0')}`;
     }
 
     function addRecord() {
-      const sentenceVal = document.getElementById('sentence').value;
-      const paragraphVal = document.getElementById('paragraph').value;
+      const sentenceInput = document.getElementById('sentence');
+      const paragraphInput = document.getElementById('paragraph');
+      const sentenceVal = sentenceInput.value.trim();
+      const paragraphVal = paragraphInput.value.trim();
       
       if (!sentenceVal && !paragraphVal) {
-        alert("Please enter at least a sentence or a paragraph.");
+        alert("Please enter text before adding.");
         return;
       }
 
       const timestamp = getFormattedDate();
+      let addedCount = 0;
 
-      // Add User Entry
+      // Add User Entry if present
       if (sentenceVal) {
         conversationData.push({
           "role": "user",
           "content": sentenceVal,
           "timestamp": timestamp
         });
+        addedCount++;
       }
 
-      // Add Assistant Entry
+      // Add Assistant Entry if present
       if (paragraphVal) {
         conversationData.push({
           "role": "assistant",
           "content": paragraphVal,
           "timestamp": timestamp
         });
+        addedCount++;
       }
 
-      // Clear inputs for next entry
-      document.getElementById('sentence').value = '';
-      document.getElementById('paragraph').value = '';
+      // Clear inputs
+      sentenceInput.value = '';
+      paragraphInput.value = '';
       
-      // Update status
-      const count = conversationData.length;
-      document.getElementById('status').innerText = `Records added: ${count}. Ready for next entry or save.`;
+      // Confirm to user
+      document.getElementById('status').innerText = `Success! ${addedCount} entries added.`;
+      // debug document.getElementById('status').innerText = `Success! ${addedCount} entries added. Total records in memory: ${conversationData.length}`;
+      console.log("Current Data:", conversationData); // Check browser console (F12) to verify
     }
 
     function saveToJSON() {
       if (conversationData.length === 0) {
-        alert("No records to save. Please add a record first.");
+        alert("Error: No records found in memory. Did you click 'Add Another Record' first?");
         return;
       }
 
-      // Create JSON string
       const jsonString = JSON.stringify(conversationData, null, 4);
       const blob = new Blob([jsonString], { type: 'application/json' });
       const url = URL.createObjectURL(blob);
 
-      // Trigger Download
       const a = document.createElement('a');
       a.href = url;
-      a.download = 'conversation_log.json';
+      a.download = `chat_log_${new Date().toISOString().slice(0,19).replace(/:/g,"-")}.json`;
       document.body.appendChild(a);
       a.click();
-      
-      // Cleanup
       document.body.removeChild(a);
       URL.revokeObjectURL(url);
       
-      // Optional: Reset after save
-      // conversationData = []; 
-      // document.getElementById('status').innerText = "File saved. List cleared.";
+      document.getElementById('status').innerText += " | File downloaded!";
     }
   </script>
 
