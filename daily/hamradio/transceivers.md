@@ -22,7 +22,6 @@
 
 ## Winlink
 <a href="https://winlink.org/">winlink.org/</a><br>
-<a href="https://youtu.be/kToTYiLbK5M">Winlink </a><br>
 <a href="https://youtu.be/P5Rp1dT_DsA?list=TLPQMzEwNTIwMjNRHrjz1QrLDg">Digirig Lab599 TX-500 </a><br>
 <a href="https://youtu.be/u1p39SQjXFo?list=TLPQMzEwNTIwMjMmTWZOXKyc_w">Digirig Lab599 TX-500 </a><br>
 <a href="https://www.youtube.com/watch?v=AwYZrkbvhPc&amp;ab_channel=Thomas%28K4SWL%29">Lab599 TX-500 kit thomas k4swl youtube</a><br>
