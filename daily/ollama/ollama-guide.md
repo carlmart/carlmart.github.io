@@ -3,24 +3,26 @@
 Author: CarlMart
 Date: Monday, July 27, 2026
 
-Abstract: A Step-by-step  User Guide for Installing and running Ollama using terminal window 
+Abstract: A Step-by-step  User Guide for Installing and running Ollama on terminal window 
 ---
 
-
-## Ollama Guide
+<center>
+<b><i> Work in Progress </b></i>
+</center>
 
 <center>
-**Work in Progress**
 <img  src="./img/wip-orange.png" alt="altimg" width=100 height=100" > 
 </center>
 
-## TOC
+# TOC
 
 - [Chapters](#Chapters)
-  - [ollama on macOS](#ollama-macOS)
+  - [Docker](#docker)
+  - [ollama on macOS](#ollama-on-macsS)
   - [Installation   ](#ollama-installation)
   - [Models ](#ollama-models)
-  - [ **edit in progress** ]()
+  - [Token Counts ](#token-counts)
+  - [ **Edit: Work in progress** ](# Token counts)
  
  
 Do ollama models grow and learn as they continue to interact with them?
@@ -31,12 +33,12 @@ However, when interacting with Ollama over time, Ollama will continue to learn a
 
 Ollama uses algorithms like reinforcement learning to improve itself over time. It learns from past interactions with you, using the feedback to make its next interaction better than any previous one. 
 
-## Docker or No Docker
+# Docker 
 Docker is an open-source platform that allows developers to build, ship, and run applications in standardized, lightweight units called containers.
 Installing and running it makes things somewhat easier to maintain but overall installing ollama without docker is simpler for daily use. 
 Both methods of deploying will be shown and choose the method that works best for you. 
 
-## ollama on Intel
+# Choosing a Model
 A basic Model to run depends on the amount of Ram you currently run on your PC.
 The Table below will help you decide on which model to choose.
 If you run NVIDIA card , you can utilize your GPU to run faster queries.
@@ -51,7 +53,7 @@ If you run NVIDIA card , you can utilize your GPU to run faster queries.
   <tr> <td> 16GB NVIDIA </td> <td> Qwen 2.5 7B       </td> <td> -----  </td>  </tr>
 </table>   
 
-## smallest ollama models 
+# Smallest ollama models 
 <table>
   <tr> <th> Model               </th> <th> Usage                 </th> <th> Notes  </th> </tr>
   <tr> <td> qwen2.5:0.5b        </td> <td> txt,chat,multilingual </td> <td> 398MB  </td> </tr>
@@ -67,11 +69,11 @@ on most tasks while being noticeably faster."
 - [ ref. reddit:LocalLLaMa](https://www.reddit.com/r/LocalLLaMA/comments/18d8lgz/some_solutions_that_work_on_older_intel_macs/) 
 
 
-## Model specs 
+# Model specs 
  - [ smallest model: smollm2](https://ollama.com/library/smollm2)
  - [ coder model: qwen2.5-coder ](https://ollama.com/library/qwen2.5-coder)
 
-## Installation
+# Installation
 Installs can be direct app or in a terminal window.
 Its a quick install since its only the wrapper app. 
 
@@ -101,7 +103,7 @@ Storage location:
      ln -s /mnt/NFS/ollama/models/ ~/.ollama/models 
 ```
 
-## CLI 
+# CLI Administration
 All you need is one model . The commands are shown below
 The models shown below are larger GB size models so will take some time dependending on  your download speed.
 The commands to run are shown below. You only pull one model , but you can download as many as you want. You will only run one instance.
@@ -132,7 +134,7 @@ ollama --version                           - self explanatory
 ollama stop <model>                        - to completely stop model
 ```
 
-## Interactive commands
+# Interactive commands
 ```
  > /?     - help
  > /bye   - to quit the interface , keeps running for 5 min unless you stop it
@@ -144,7 +146,7 @@ When saving chat, files on macOS are stored at
 ~/.ollama/models/manifests/registry.ollama.ai/library/<filedir>
 ```
 
-## Ask-ollama
+# Ask-ollama
 Installation for console app
 
 cp ~/.cargo/bin/ask ~/binapps/ or create a shell script ask
@@ -159,7 +161,7 @@ default model is mistral so make sure you specify model
       ask --help
 ```
 
-## Ask-ollama-JSON
+# Ask-ollama-JSON
 Custom console app - used for import/export JSON chats.
 Be sure to install **'md2term'**  to view output in nicely formatted markdown output to terminal
 
@@ -195,7 +197,7 @@ Assistant: Would you like to save this conversation? [y/n]: y
 ```
 
 
-## open-webui
+# open-webui
 Used for uploading pdf + other doc files to summarize
 Use conda activate ollama. md2term is to display markdown to a terminal window nicely formatted
 Install in a python environment like conda or venv
@@ -203,7 +205,7 @@ Install in a python environment like conda or venv
 pip install open-webui md2term rich requests
 ```
 
-## Starting open-webui
+# Starting open-webui
 There are two methods to start open WebUI
 1. Desktop Application : open /Applications/Open\ WebUI.app
 2. Browser : More complicated , but uses less resources
@@ -216,13 +218,13 @@ docker run -d -p 3000:8080 -v open-webui:/app/backend/data --name open-webui ghc
 ctrl-A , ctrl-D to leave screen
 pkill -f "open-webui serve" -- to stop server
 ```
-## Once running access UI :
+# Once running access UI :
 ```
 http://localhost:8080      - for open-webui serve  
 http://localhost:3000
 ```
 
-## Ollama terminal interface
+# Ollama terminal interface
 md2term displays markdown text to formatted  terminal 
 ```
 ollama run qwen2.5:7b-instruct-q4_K_M "hello world"
@@ -231,7 +233,7 @@ ollama run qwen2.5:7b-instruct-q4_K_M "hello world" --think=false | md2term
 ```
 
 
-## Web gui and Desktop app
+# Web gui and Desktop app
  - [ native desktop app 4 Windows/Linux/Macos ](https://github.com/open-webui/desktop)
  - [ native desktop app Docs ](https://docs.openwebui.com/)
  - [ inkeybit blog openwebui-ollama guide](https://www.inkeybit.com/blog/open-webui-ollama-guide)
@@ -243,11 +245,11 @@ WebUIs: Interfaces like Open WebUI automatically save chat histories to a databa
         
 When reloaded, the interface feeds the old messages back to the model to reconstruct the context. 
 
-## Install Docker first if not installed for web gui
+# Install Docker first if not installed for web gui
  - [ ollama and webui ](https://studyhub.net.in/techtools/ollama-open-webui-setup/)
  - [ localhost:3000](http://localhost:3000)
 
-## Docker scripts v1
+# Docker scripts v1
 ```
 docker run -d \
   -p 3000:8080 \
@@ -258,7 +260,7 @@ docker run -d \
   ghcr.io/open-webui/open-webui:main
 ```
 
-## Docker scripts v2
+# Docker scripts v2
 ```
 docker run -d --network=host \
   -e OLLAMA_BASE_URL=http://127.0.0.1:11434 \
@@ -270,27 +272,27 @@ docker run -d --network=host \
 ```
 
 
-## open-webui to ollama connections
+# open-webui to ollama connections
  - [ connection fix ](https://insiderllm.com/guides/open-webui-ollama-connection-fix/)
  
 ```bash
-## Step 1: Is Ollama running at all?
+# Step 1: Is Ollama running at all?
 curl http://localhost:11434
-## Should print "Ollama is running"
+# Should print "Ollama is running"
 
-## Step 2: Does Ollama have models?
+# Step 2: Does Ollama have models?
 curl http://localhost:11434/api/tags
-## Should print JSON with your model list
+# Should print JSON with your model list
 
-## Step 3: Can Open WebUI's container reach Ollama?
+# Step 3: Can Open WebUI's container reach Ollama?
 docker exec open-webui curl http://host.docker.internal:11434
-## should print
+# should print
 100    17  100    17    0     0   3839      0 --:--:-- --:--:-- --:--:--  4250Ollama is running 
-## Or if using --network=host:
+# Or if using --network=host:
 docker exec open-webui curl http://127.0.0.1:11434
 ```
 
-## More apps
+# More apps
  - [ Openclaw.ai assistant](https://docs.openclaw.ai/)
 
 OpenClaw is a self-hosted gateway that connects your favorite chat apps — Discord, Google Chat, iMessage, Matrix, Microsoft Teams, Signal, Slack, Telegram, WhatsApp, Zalo, and more via channel plugins — to AI coding agents
@@ -302,7 +304,7 @@ npm install openclaw
 
 
 
-## Free CLI Tools 
+# Free CLI Tools 
    tgpt -   supports engines like Phind without requiring an API key or login.  
    tgpt and similar open-source projects provide free access to AI capabilities directly in the terminal.  
    Savvy is mentioned as a free CLI tool for individual developers that does not require API keys. 
@@ -313,7 +315,7 @@ npm install openclaw
  - [ chatgpt shell cli](https://github.com/0xacx/chatGPT-shell-cli)
 
 
-## llama.cpp llama-server install
+# llama.cpp llama-server install
 Open-WebUI uses port 8080 
 so for llama.cpp server port use 8081  : 
  http://127.0.0.1:8081
@@ -321,7 +323,7 @@ Note: Ensure the port 8081 does not conflict with other services.
 ```bash
 /usr/local/bin/llama-server -m <path>/<model>.gguf --port 8081
 ```
-## llama-server run 
+# llama-server run 
 Running llama-server with model then connecting to open WebUI
 Point Open WebUI to llama.cpp server
 ```
@@ -332,7 +334,7 @@ Open WebUI -> Admin -> Settings -> Connections
 
  
 
-## llama-server start
+# llama-server start
 With or Without API Key : --api-key "123"   - some demo key
 or docker
 ```
@@ -342,7 +344,7 @@ llama-server -m ~/.ollama/models/gguf/smollm2/smollm2-1.7B-Q8_0.gguf --port 8081
 docker run -d --network host -v open-webui:/app/backend/data --name open-webui ghcr.io/open-webui/open-webui:main   
 ```
 
-## Test Connection with curl
+# Test Connection with curl
 ```bash
 curl http://127.0.0.1:8081/v1/models -H "Authorization: Bearer sk-llama-local-abc123"   
   or without key
@@ -352,7 +354,7 @@ curl http://127.0.0.1:8081/v1/models
     ...smollm2-1.7B-Q8_0.gguf","model":"modified_at":"","size":"model","description"....
 ```
 
-## Actual test case and output
+# Actual test case and output
 ```bash
 llama-server -m   ~/.ollama/models/gguf/smollm2/smollm2-1.7B-Q8_0.gguf    --port 8081
 
@@ -366,7 +368,7 @@ http://localhost:3000/?temporary-chat=true   // open WebGUI interface
 ```
 
 # Conversions and Downloads of gguf files
-## Download file manually from Hugging Face repositories 
+# Download file manually from Hugging Face repositories 
 eg. bartowski, TheBloke, or ggml-org then point llama.cpp  -m flag:
 -hf = hugging face
  - [ hugging face gguf-llamacpp ](https://huggingface.co/docs/hub/en/gguf-llamacpp)
@@ -376,7 +378,7 @@ llama-cli -m /path/to/your_model.gguf
 llama-server -hf bartowski/Llama-3.2-3B-Instruct-GGUF:Q8_0
 ```
 
-## huggingface
+# huggingface
 ```bash
 curl http://localhost:8080/v1/chat/completions \
 -H "Content-Type: application/json" \
@@ -395,7 +397,7 @@ curl http://localhost:8080/v1/chat/completions \
 }'
 ```
 
-## Converting ollama to llama.cpp format files
+# Converting ollama to llama.cpp format files
 OllamaToGGUF.py - script to convert from Ollama's split format to a single 
 GGUF (GPT General Unified Format) file. 
 reads model manifests and combines model layers stored in blob files to a GGUF file.
@@ -413,26 +415,26 @@ mkdir -p ~/.ollama/models/gguf/
 
 ```
 
-### You can also just use ollama to show you the exact file:
+## You can also just use ollama to show you the exact file:
 ```
 ollama show qwen2.5-coder:7b --modelfile | grep -v \# | grep FROM
    FROM ~/.ollama/models/blobs/sha256-60e05f2100071479f596b964f89f510f057ce397ea22f2833a0cfe029bfc2463
-## then just point llama.cpp to exact file
+# then just point llama.cpp to exact file
 llama-cli -m ~/.ollama/models/blobs/sha256-60e05f2100071479f596b964f89f510f057ce397ea22f2833a0cfe029bfc2463 
 
 ```
 
 
-## Running llama.cpp with api key and gguf file
+# Running llama.cpp with api key and gguf file
 ```
 llama-server -m ~/.ollama/models/gguf/smollm2/smollm2-1.7B-Q8_0.gguf --port 8081 --api-key "sk-llama-local-abc123" 
 ```
 
-## Running llama.cpp cli with ollama blobs
+# Running llama.cpp cli with ollama blobs
 ```
 llama-cli -m ~/.ollama/models/blobs/sha256-60e05f210064f89f510f057ce397ea22f2833a0cfe029bfc2463
 ```
-## Running llama.cpp with openWebUI and docker
+# Running llama.cpp with openWebUI and docker
 ```
 docker run -d --network host -v open-webui:/app/backend/data --name open-webui ghcr.io/open-webui/open-webui:main 
 ```
@@ -440,20 +442,20 @@ docker run -d --network host -v open-webui:/app/backend/data --name open-webui g
 
 # Daily ollama startup
 ollama starts at startup boot
-## is ollama running?
+# is ollama running?
 ```
   curl http://localhost:11434
     output : ollama is running
 ```
 
-## does ollama have models?
+# does ollama have models?
 ```
   curl http://localhost:11434/api/tags
     output: {"models":[{"name":"smollm2:latest" ... jason file with model list
 ```
 
 
-## ollama list
+# ollama list
 ```
 NAME                          ID              SIZE      MODIFIED     
 smollm2:latest                cef4a1e09247    1.8 GB    33 hours ago    
@@ -462,7 +464,7 @@ mistral:latest                6577803aa9a0    4.4 GB    3 days ago
 qwen2.5:7b-instruct-q4_K_M    845dbda0ea48    4.7 GB    3 days ago     
 ```
 
-## Starting open-webui 
+# Starting open-webui 
 Starting with llama-server and browser access
 ```
 screen -S ollama
@@ -470,18 +472,18 @@ llama-server -m ~/.ollama/models/gguf/<model>.gguf --port 8081
 open-webui serve              - starts baremetal
 ```
 
-## start llama.cpp
+# start llama.cpp
 ```
 screen -S llamacpp
 llama-server -m ~/.ollama/models/gguf/smollm2/smollm2-1.7B-Q8_0.gguf --port 8081 --api-key "sk-llama-local-abc123"
 ```
 
-## access open-webui via browser. login 
+# access open-webui via browser. login 
 ```
 http://localhost:8080/ to access open-webui  via browser
 ```
 
-## Complete Screen , Env , llama-serve and open-webui
+# Complete Screen , Env , llama-serve and open-webui
 ```
 conda activate ollama
 llama-server -m $MOD --port 8081 &
@@ -491,12 +493,12 @@ open-webui serve &
 ```
 
 
-## Import json files
+# Import json files
 First install a few libraries
 ```bash
 pip install pandas openpyxl
 ```
-## Python code
+# Python code
 ```python
 import pandas as pd
 df = pd.read_json('https://example.com/your-data.json')
@@ -520,7 +522,7 @@ Then Open Web UI v
 docker run -d --name open-webui -p 3000:8080 --add-host=host.docker.internal:host-gateway ghcr.io/open-webui/open-webui:main   
 ```
 
-## Configure Web Search:
+# Configure Web Search:
  - Log in to Open WebUI:  **http://localhost:3000**
  - Navigate to Settings > Admin Settings > Connections.
  - Set Ollama base to docker or bare metal 
@@ -532,9 +534,61 @@ docker run -d --name open-webui -p 3000:8080 --add-host=host.docker.internal:hos
      - **http://host.docker.internal:8080/search**
  - Save settings. You can now toggle "Web Search" in individual chat sessions.
 
+# Verbose output
+Tutorial's on Voice Virtual Assistant
+ - [ Build Your Own - medium ](https://medium.com/@vndee.huynh/build-your-own-voice-assistant-and-run-it-locally-whisper-ollama-bark-c80e6f815cba)
+ - [ JARVIS YouTube ](https://www.youtube.com/watch?v=aIg4-eL9ATc)
 
+# TinyLlama
+Yes you can install and run tinyllama on R Pi
+A few YouTube links:
+ - [ Rapsberry Pi 5 - YouTube ](https://www.youtube.com/watch?v=ewXANEIC8pY)
+ - [ Local AI assistant - YouTube](https://www.youtube.com/watch?v=XvbVePuP7NY)
 
-# Token counts
+# Token Counts
+When running your local ollama LLM you can use the --verbose to view output
  - [ Understanding tokens ](https://medium.com/@manav.kumar87/understanding-tokens-in-chatgpt-32845987858d)
  - [ what are tokens? ](https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them)
+```
+ollama run tinylama --verbose
+```
+
+# AI Agents
+AI agents are autonomous software systems designed to perceive their environment, reason through problems, and take independent action to achieve specific goals with minimal human oversight.
+
+AI agents can plan multi-step workflows, adapt to changing conditions, and utilize external tools or APIs to execute complex tasks
+
+[ infor.com What are AI Agents ](https://www.infor.com/platform/enterprise-ai/what-are-ai-agents)
+
+There are several open-source AI agent frameworks and sample projects specifically designed to work with Ollama.
+
+## Popular Open-Source Frameworks
+
+ - LangChain & LangGraph: Used for building agents with tool-calling and memory. LangChain provides ChatOllama integration
+   - Sample Use Case: Creating a RAG (Retrieval-Augmented Generation) bot that reads local PDFs or a voice assistant with short-term memory.
+ - CrewAI: Focuses on multi-agent systems where different agents have specific roles (e.g., "Researcher" and "Writer") and collaborate to solve tasks.
+   - Sample Use Case: An automated blog post generator where one agent researches a topic and another writes the content
+ - Goose: An open-source agent designed for local execution. It excels at developer workflows, such as writing code, running terminal commands, and editing files.
+   - Sample Use Case: An autonomous coding assistant that refactors code or debugs errors directly in your IDE.
+ - Open Interpreter: Allows LLMs to run code (Python, JavaScript, etc.) locally to complete tasks. It works seamlessly with Ollama for a fully offline experience
+   - Sample Use Case: "Analyze this CSV file and plot a graph of sales trends," where the agent writes and executes the Python script itself.
+ - TrustGraph: A framework with built-in agent flows and graph database integration, supporting Ollama out of the box for complex reasoning tasks.
+
+ ## Model links
+  - [ LangChain/LangGraph ](https://www.langchain.com/)
+  - [ CrewAI ](https://crewai.com/)
+  - [ Goose ](https://baeseokjae.github.io/posts/goose-ai-agent-review-2026/)
+  - [ OpenInterpreter ](https://www.brandeploy.io/en-open-interpreter/)
+  - [ TrustGraph](https://trustgraph.ai/press-releases/trustgraph-launches-version-1-2)
+
+
+ - [Build Your Own - Ollama and CUA ](https://medium.com/@vtrivedi9770/build-your-own-ai-agent-locally-at-zero-cost-with-ollama-and-cua-0ad4d2e375c0)
+ - [ Open-Source Stanford's ACE framework - learns by mistakes ](https://arxiv.org/pdf/2510.04618)
+
+## Minimal Ram Requirements
+
+<center>
+<img  src="./img/aiagentmem.png" alt="altimg" width=503 height=265" >
+</center>
+
 	
