@@ -3,6 +3,7 @@
  - [ Living in  Puerto Rico : Best Travel ](https://www.youtube.com/watch?v=UnfFKYzgQD0) 
  - [ one year after moving to Puerto Rico ](https://www.youtube.com/watch?v=fFRCBJlDRXY)
  - [ hidden reality of Puerto Rico   ](https://www.youtube.com/watch?v=IYTnMP3qHhk)
+ - [ Aug 2026 Zillow Homes ](https://www.zillow.com/homedetails/258-H-Bartolome-De-Las-Casas-Santurce-San-Juan-PR-00915/464442606_zpid/)
 
 ## Updates and Notes
 
