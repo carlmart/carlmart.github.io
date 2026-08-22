@@ -14,6 +14,10 @@
  - [clear browsing data ](https://addons.mozilla.org/en-US/firefox/addon/clear-browsing-data/)
 
 
-
+# search engines
+use the following for search.brave.com
+```
+https://search.brave.com/search?q=%s
+```
 
 
