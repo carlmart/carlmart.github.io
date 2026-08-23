@@ -20,4 +20,7 @@ use the following for search.brave.com
 https://search.brave.com/search?q=%s
 ```
 
-
+# Android apps not on App Store
+Use F-Droid then search
+ - WhoBIRD - works offline and no location services
+ 
