@@ -23,4 +23,9 @@ https://search.brave.com/search?q=%s
 # Android apps not on App Store
 Use F-Droid then search
  - WhoBIRD - works offline and no location services
+
+
+# Self Hosted Redlib
+https://github.com/redlib-org/redlib-instances/blob/main/instances.md?utm_source=akashrajpurohit.com
+https://akashrajpurohit.com/blog/redlib-selfhosted-reddit-browsing-without-the-bloat/
  
