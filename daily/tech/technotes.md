@@ -12,6 +12,9 @@
  - [cookie remover ](https://addons.mozilla.org/en-US/firefox/addon/cookie-remover/)
  - [adblocker for youtube ](https://addons.mozilla.org/en-US/firefox/addon/adblock-for-youtube/)
  - [clear browsing data ](https://addons.mozilla.org/en-US/firefox/addon/clear-browsing-data/)
+ - [ Firefox Download Manager s3](https://addons.mozilla.org/en-US/firefox/addon/s3download-statusbar/)
+    - || Add-ons Manager > Extensions and click Preference -> checkbox -> switch to downloads tab
+    - [ or install downloadmanagers3.txt](downloadmanages3.txt)
 
 
 # search engines
