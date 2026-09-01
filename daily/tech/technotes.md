@@ -17,6 +17,14 @@
     - [ or install downloadmanagers3.txt](downloadmanages3.txt)
 
 
+# Google Chrome extensions
+ - [JSON viewer Pro](https://chromewebstore.google.com/detail/json-viewer-pro/eifflpmocdbdmepbjaopkkhbfmdgijcc)
+ - [Markdown Viewer](https://chromewebstore.google.com/detail/markdown-viewer/ckkdlimhmcjmikdlpkmbgfkaikojcbjk)
+ - [Open Via Google maps](https://chromewebstore.google.com/detail/open-via-google-maps/klnpmiiahcfaocdklogefknajkpeolao)
+ - [Show Password](https://chromewebstore.google.com/detail/showpassword/bbiclfnbhommljbjcoelobnnnibemabl)
+ - [Cookie Remover](https://chromewebstore.google.com/detail/cookie-remover-clear-remo/kcgpggonjhmeaejebeoeomdlohicfhce)
+
+
 # search engines
 use the following for search.brave.com
 ```
