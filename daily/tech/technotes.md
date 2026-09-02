@@ -36,7 +36,9 @@ Use F-Droid then search
  - WhoBIRD - works offline and no location services
 
 
-# Self Hosted Redlib
-https://github.com/redlib-org/redlib-instances/blob/main/instances.md?utm_source=akashrajpurohit.com
-https://akashrajpurohit.com/blog/redlib-selfhosted-reddit-browsing-without-the-bloat/
+# Self Hosted redlib ;)
+ - [ redlib-instances ](https://github.com/redlib-org/redlib-instances/blob/main/instances.md?utm_source=akashrajpurohit.com)
+ - [ redlib-selfhosted  ](https://akashrajpurohit.com/blog/redlib-selfhosted-reddit-browsing-without-the-bloat/)
  
+# Self Hosted nit ;)
+ - [ github 1 ](https://github.com/zedeus/nitter)
