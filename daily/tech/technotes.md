@@ -24,6 +24,8 @@
  - [Show Password](https://chromewebstore.google.com/detail/showpassword/bbiclfnbhommljbjcoelobnnnibemabl)
  - [Cookie Remover](https://chromewebstore.google.com/detail/cookie-remover-clear-remo/kcgpggonjhmeaejebeoeomdlohicfhce)
 
+# Security links
+ - [ myactivity.google.com   ](https://myactivity.google.com/)
 
 # search engines
 use the following for search.brave.com
