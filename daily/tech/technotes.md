@@ -12,6 +12,7 @@
  - [cookie remover ](https://addons.mozilla.org/en-US/firefox/addon/cookie-remover/)
  - [adblocker for youtube ](https://addons.mozilla.org/en-US/firefox/addon/adblock-for-youtube/)
  - [clear browsing data ](https://addons.mozilla.org/en-US/firefox/addon/clear-browsing-data/)
+ - [clear cache ](https://addons.mozilla.org/en-US/firefox/addon/clearcache/)
  - [ Firefox Download Manager s3](https://addons.mozilla.org/en-US/firefox/addon/s3download-statusbar/)
     - || Add-ons Manager > Extensions and click Preference -> checkbox -> switch to downloads tab
     - [ or install downloadmanagers3.txt](downloadmanages3.txt)
@@ -44,3 +45,13 @@ Use F-Droid then search
  
 # Self Hosted nit ;)
  - [ github 1 ](https://github.com/zedeus/nitter)
+
+
+ - [ developer.apple.com download xcode tools  ](https://developer.apple.com/download/all/)
+If that doesn't show you any updates, run:
+  sudo rm -rf /Library/Developer/CommandLineTools
+  sudo xcode-select --install
+
+Alternatively, manually download them from:
+  https://developer.apple.com/download/all/.
+You should download the Command Line Tools for Xcode 26.3.
