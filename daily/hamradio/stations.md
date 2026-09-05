@@ -1,11 +1,24 @@
 
 # Radio stations
 
- - [30 meter 15298 am EastCoast Worldband](http://jp7fso-kiwisdr.sytes.net:8073/?f=15298am)
- - [30 meter  9395 am EastCoast Worldband](http://na5b.com:8901/)
- - [30 meter  0750 am NYC nightly](http://na5b.com:8901/)
+### SDR Ham Bands + 
+ - [Original Drake R8 Receiver - Reston , VA ](https://www.chilton.com/R8/receiver.html)
+ - [30 meter 15298 am Japan Worldband](http://jp7fso-kiwisdr.sytes.net:8073/?f=15298am)
+ - [30 meter  9395 am EastCoast na5b](http://na5b.com:8901/)
+ - [30 meter  0750 am NYC na5b](http://na5b.com:8901/)
+ - [Canada ](http://kiwisdr.ve6slp.ca:8173/)
  - [20 meter 14.046 cw Netherlands ](http://websdr.ewi.utwente.nl:8901/?tune=14046cw)
+ - [Netherlands ](http://websdr.ewi.utwente.nl:8901/)
+ - [K3FEF Pennsylvania ](https://ubersdr.k3fef.com/v2/)
+ - [W6KFS California ](http://kfs.wsprdaemon.org:8901/)
+ - [France ](http://aubjpla.myddns.me:8073/#freq=3675000,mod=lsb,sql=-150)
+ - [Argentina ](http://45.167.220.134:8073/#freq=14074000,mod=usb,secondary_mod=ft8,sql=-150)
+ - [England ](http://hackgreensdr.org:8901/)
+ - [Brazil ](http://appr.org.br:8905/)
+
  - [HF Numbers stations ](https://priyom.org/number-stations/station-schedule)
+
+### Radio Garden
  - [Radio Garden Vatican City, Rome Italy ](https://radio.garden/visit/vatican-city/szknbxME)
  - [Radio Garden Alexandroupuli Greece ](https://radio.garden/visit/alexandroupoli/7HWxbpCc)
  - [Radio Garden Beirut, Lebanon ](https://radio.garden/visit/beirut/cZnWRQfj)
