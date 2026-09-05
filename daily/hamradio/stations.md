@@ -15,7 +15,6 @@
  - [Argentina ](http://45.167.220.134:8073/#freq=14074000,mod=usb,secondary_mod=ft8,sql=-150)
  - [England ](http://hackgreensdr.org:8901/)
  - [Brazil ](http://appr.org.br:8905/)
-
  - [HF Numbers stations ](https://priyom.org/number-stations/station-schedule)
 
 ### Radio Garden
@@ -43,5 +42,6 @@
  - [Radio Garden Louisiana MO ](https://radio.garden/listen/my-blues-kbsp-wbbm-st-louis/w4wMIZ4j)
  - [Radio Garden New Orleans LA ](https://radio.garden/listen/wwno3-jazz/yuBCmvcB)
  - [Radio Garden Grand Marais MN ](https://radio.garden/visit/grand-marais-mn/owbMBxOI)
+ - [Radio Garden Ely MN ](https://radio.garden/listen/wely-94-5-fm/uoy3WaaT)
  - [Radio Garden ABN Oldtime Radio ](https://radio.garden/listen/abn-old-time-radio-am-1610/niBbz3BR)
  
