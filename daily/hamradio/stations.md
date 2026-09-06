@@ -6,7 +6,7 @@
  - [30 meter 15298 am Japan Worldband](http://jp7fso-kiwisdr.sytes.net:8073/?f=15298am)
  - [30 meter  9395 am EastCoast na5b](http://na5b.com:8901/)
  - [30 meter  0750 am NYC na5b](http://na5b.com:8901/)
- - [Canada ](http://kiwisdr.ve6slp.ca:8173/)
+ - [HF ham bands Canada ](http://kiwisdr.ve6slp.ca:8173/)
  - [20 meter 14.046 cw Netherlands ](http://websdr.ewi.utwente.nl:8901/?tune=14046cw)
  - [Netherlands ](http://websdr.ewi.utwente.nl:8901/)
  - [K3FEF Pennsylvania ](https://ubersdr.k3fef.com/v2/)
