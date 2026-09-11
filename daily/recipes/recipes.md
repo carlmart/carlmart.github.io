@@ -33,3 +33,11 @@ Return the inner pot to the Instant Pot base and lock the lid (the valve positio
 
 Simplified Method for UHT/Ultra-Pasteurized Milk
 If using ultra-pasteurized milk, you can skip the boiling and cooling steps entirely.  Simply whisk the starter culture directly into the cold milk in the Instant Pot, press Yogurt, and incubate for 8–10 hours. 
+
+Leaving yogurt to incubate for 12+ hours in an Instant Pot is generally safe and results in a tangier, more acidic product with lower lactose content.
+
+ - Safety: The high acidity developed during fermentation acts as a natural preservative, preventing the growth of harmful pathogens; users report no ill effects from leaving yogurt in the pot for 12–24 hours. 
+ - Texture and Taste: The yogurt will be thicker and sourer than the standard 8-hour batch, as the bacterial cultures continue to consume lactose and thicken the milk proteins. 
+ - Probiotics: Longer incubation can increase the number of probiotics up to a point, though some users note that bacteria may begin to die off after 24 hours once lactose is depleted. 
+ - Usage: If the yogurt is too sour for eating plain, it can be used for baking, smoothies, or made into buttermilk by adding water and salt.
+ 
