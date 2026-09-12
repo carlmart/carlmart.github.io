@@ -21,6 +21,13 @@
  - [ fried chicken recipe ](https://www.youtube.com/shorts/XIrI8yL453k)
 
 
+Enchilada Sauce
+ - Homemade sauces often prioritize dried chiles like guajillo or ancho
+ - Cumin is the backbone of flavor — even just a pinch really rounds out the whole thing. 
+ - A tiny pinch of smoked paprika 
+ - paprika, dried herbs , oregano - pinch of sugar
+ - Mix 1 tablespoon cornstarch + 1 tablespoon cold water per cup of sauce in a small bowl until smooth and lump-free.  
+
  Instapot Yogurt
 1. Heat the Milk
 Pour milk into the Instant Pot inner pot, seal the lid, and set the valve to Sealing.  Press the Yogurt button and then Adjust until the display reads "Boil." This process heats the milk to approximately 180–200°F (82–93°C) to denature proteins, which helps thicken the yogurt. 

@@ -2,6 +2,8 @@
 
 ## SDR Ham Bands 
  - [Original Drake R8 Receiver - Reston , VA ](https://www.chilton.com/R8/receiver.html)
+ - [kiwisdr ](http://kiwisdr.com/public/)
+ - [rx.linkfanel.net](http://rx.linkfanel.net/)
  - [30 meter 15298 am Japan Worldband](http://jp7fso-kiwisdr.sytes.net:8073/?f=15298am)
  - [30 meter  9395 am EastCoast na5b](http://na5b.com:8901/)
  - [30 meter  0750 am NYC na5b](http://na5b.com:8901/)
