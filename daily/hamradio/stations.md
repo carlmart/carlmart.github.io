@@ -27,7 +27,14 @@
  - [ Milan, Italy ](https://radio.garden/listen/105/barjy93I)
  - [ Turin, Italy ](https://radio.garden/listen/radio-bianconera/wACcUGji)
  - [ Luxembourg City, Luxembourg ](https://radio.garden/listen/radio-diddeleng-asbl/__fuP5NT)
+ - [ Differdange Luxembourg ](https://radio.garden/listen/fce-continuo/tjOn0qGk)
  - [ Copenhagen, Denmark ](https://radio.garden/listen/dr-p2/QO1Q3gRx)
+ - [ Cologne Germany ](https://radio.garden/listen/einslive/7gJoCMna)
+ - [ Prague Czechia ](https://radio.garden/listen/classicpraha/XWszQhwB)
+ - [ Warsaw Poland ](https://radio.garden/listen/slonskyradio/8p0e1ScK)
+ - [ Oslo Norway ](https://radio.garden/listen/nrk-folkemusikk/skmhAafO)
+ - [ Helsinki Finland ](https://radio.garden/listen/yle-klassinen/42OQ7cvD)
+ - [ Moscow Russia ](https://radio.garden/listen/101-ru-russkie-narodnye/PYsw1APK)
  - [ Budapest, Hungary ](https://radio.garden/listen/klubradio-fm-92-9/Qhg4EX3o)
  - [ Romania, Roman ](https://radio.garden/listen/europa-fm/TnB1EZBN)
  - [ Alexandroupuli Greece ](https://radio.garden/visit/alexandroupoli/7HWxbpCc)
@@ -53,6 +60,7 @@
  - [ Tecate, MX ](https://radio.garden/visit/tijuana/njGwJTgr)
  - [ Chihuahua, MX ](https://radio.garden/visit/chihuahua/QQJ2sgGN)
  - [ Mexico City, Mexico ](https://radio.garden/listen/radio-centro-el-fonografo-am-690/xNZ4GfTN)
+ - [ Havana Cuba ](https://radio.garden/listen/radio-progreso/sWO5ip8K)
  - [ San Diego, CA ](https://radio.garden/visit/san-diego-ca/Ho58GDOX)
  - [ New York NY ](https://radio.garden/listen/brooklyn-fm-bfm/DHWGnfCI)
  - [ Miami Florida ](https://radio.garden/listen/radio-latino-usa/ZpM8ubri)
@@ -62,4 +70,8 @@
  - [ Ely MN ](https://radio.garden/listen/wely-94-5-fm/uoy3WaaT)
  - [ Thunder Bay MN ](https://radio.garden/listen/wely-94-5-fm/uoy3WaaT)
  - [ ABN Oldtime Radio ](https://radio.garden/listen/abn-old-time-radio-am-1610/niBbz3BR)
+
+## Classic
  
+ - [ Copenhagen, Denmark ](https://radio.garden/listen/dr-p2/QO1Q3gRx)
+ - [ Helsinki Finland ](https://radio.garden/listen/yle-klassinen/42OQ7cvD)
