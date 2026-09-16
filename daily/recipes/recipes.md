@@ -18,6 +18,7 @@
 
 ## Meats
  - [ Real Barbacoa - Cachete and Tongue ](https://www.youtube.com/watch?v=TVbBZF33ApU)
+ - [Slow cooked Beef Barbacoa](https://www.youtube.com/watch?v=c0g1M9MQZnk)
  - [ Barbacoa w/ chuck roast ](https://www.youtube.com/shorts/1GNM2FCi02E)
  - [ fried chicken recipe ](https://www.youtube.com/shorts/XIrI8yL453k)
 
@@ -51,10 +52,9 @@ Leaving yogurt to incubate for 12+ hours in an Instant Pot is generally safe and
 
 
 ###  Cooking Beans 
- - 1lb beans/ 10 cups of water 
- - Soak at least 4 hours
- - Salt at start of boil
- - Do add 2 tablespoons Lard/Bacon Fat 
+<img  src="./img/bean-instapot.png" alt="altimg" style="width: 70%; height: auto;" >  
+<img  src="./img/beans-gas.png" alt="altimg" style="width: 60%; height: auto;" >  <br>
+
  - [Bean cooking AI](https://www.youtube.com/watch?v=T7xg9gDumX8)
  - [Instapot Pinto Beans ](https://www.youtube.com/watch?v=L8oKDUpup6E)
 
@@ -63,9 +63,6 @@ Leaving yogurt to incubate for 12+ hours in an Instant Pot is generally safe and
  - [Refried Bean Recipes ](https://www.youtube.com/watch?v=UPziyyZ1m9s)
  - [Charro beans](https://www.youtube.com/watch?v=H2adP10zvoE)
  
- 
-### Reducing oligosaccharieds 
-<img  src="./img/beans-gas.png" alt="altimg" style="width: 60%; height: auto;" >  <br>
 
 
  
