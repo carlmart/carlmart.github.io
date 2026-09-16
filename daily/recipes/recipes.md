@@ -17,18 +17,19 @@
  - [ Candied Grapes   ](https://www.youtube.com/watch?v=1Ylo-J4qKok)
 
 ## Meats
+ - [ Real Barbacoa - Cachete and Tongue ](https://www.youtube.com/watch?v=TVbBZF33ApU)
  - [ Barbacoa w/ chuck roast ](https://www.youtube.com/shorts/1GNM2FCi02E)
  - [ fried chicken recipe ](https://www.youtube.com/shorts/XIrI8yL453k)
 
 
-Enchilada Sauce
+### Enchilada Sauce
  - Homemade sauces often prioritize dried chiles like guajillo or ancho
  - Cumin is the backbone of flavor — even just a pinch really rounds out the whole thing. 
  - A tiny pinch of smoked paprika 
  - paprika, dried herbs , oregano - pinch of sugar
  - Mix 1 tablespoon cornstarch + 1 tablespoon cold water per cup of sauce in a small bowl until smooth and lump-free.  
 
- Instapot Yogurt
+### Instapot Yogurt
 1. Heat the Milk
 Pour milk into the Instant Pot inner pot, seal the lid, and set the valve to Sealing.  Press the Yogurt button and then Adjust until the display reads "Boil." This process heats the milk to approximately 180–200°F (82–93°C) to denature proteins, which helps thicken the yogurt. 
 
@@ -47,4 +48,24 @@ Leaving yogurt to incubate for 12+ hours in an Instant Pot is generally safe and
  - Texture and Taste: The yogurt will be thicker and sourer than the standard 8-hour batch, as the bacterial cultures continue to consume lactose and thicken the milk proteins. 
  - Probiotics: Longer incubation can increase the number of probiotics up to a point, though some users note that bacteria may begin to die off after 24 hours once lactose is depleted. 
  - Usage: If the yogurt is too sour for eating plain, it can be used for baking, smoothies, or made into buttermilk by adding water and salt.
+
+
+###  Cooking Beans 
+ - 1lb beans/ 10 cups of water 
+ - Soak at least 4 hours
+ - Salt at start of boil
+ - Do add 2 tablespoons Lard/Bacon Fat 
+ - [Bean cooking AI](https://www.youtube.com/watch?v=T7xg9gDumX8)
+ - [Instapot Pinto Beans ](https://www.youtube.com/watch?v=L8oKDUpup6E)
+
+### Bean recipes
+ - Frijoles de la Olla 
+ - [Refried Bean Recipes ](https://www.youtube.com/watch?v=UPziyyZ1m9s)
+ - [Charro beans](https://www.youtube.com/watch?v=H2adP10zvoE)
+ 
+ 
+### Reducing oligosaccharieds 
+<img  src="./img/beans-gas.png" alt="altimg" style="width: 60%; height: auto;" >  <br>
+
+
  
