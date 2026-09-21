@@ -23,10 +23,14 @@ Time from CST
  - [ Alexandroupuli Greece ](https://radio.garden/visit/alexandroupoli/7HWxbpCc)
  - [ Dublin, Ireland ](https://radio.garden/listen/rte-radio-2/4eOi8bQw)
  - [ Manchester, UK +6 ](https://radio.garden/listen/capitalfm/gL8DNdKU)
- - [ Tbilisi Georgia +9 ](https://radio.garden/visit/georgia/kxJ3uc4X)
- - [ Yerevan Armedia ](https://radio.garden/listen/armgospelradio/G7J546VJ)
+
+# Caucasus - Black Sea to Caspian Sea
  - [ Baku Azerbaijan ](https://radio.garden/listen/asan-radio/GGHLRFJE)
- - [ Istanbul Turkey ](https://radio.garden/listen/cgtn-tuerk/H4ReYT6O)
+ - [ Tbilisi Georgia +9 ](https://radio.garden/visit/georgia/kxJ3uc4X)
+ - [ Yerevan Armenia ](https://radio.garden/listen/armgospelradio/G7J546VJ)
+
+# Middle East
+ - [ Istanbul Turkey ](https://radio.garden/listen/istanbul-un-sesi-fm-91-8/JoAbgkP8)
  - [ As Suwayda, Syria ](https://radio.garden/visit/as-suwayda/fFegy78u)
  - [ Beirut, Lebanon +8 ](https://radio.garden/visit/beirut/cZnWRQfj)
  - [ Tripoli, Lebanon ](https://radio.garden/visit/tripoli/fjABlHAx)
@@ -42,6 +46,8 @@ Time from CST
  - [ Ramallah, Palestine ](https://radio.garden/visit/ramallah/CxvFOnZ5)
  - [ Thailand Xansiam ](https://radio.garden/listen/xansiam-radio/5Baa-9nA)
  - [ Quebec City Canada ](https://radio.garden/listen/choi-radio-x-98-1-fm/MEFLFnCg)
+
+# Latin America
  - [ Cd. Juarez, MX ](https://radio.garden/visit/ciudad-juarez/HZz68a0O)
  - [ Tijuana, MX ](https://radio.garden/visit/tijuana/njGwJTgr)
  - [ Tecate, MX ](https://radio.garden/visit/tijuana/njGwJTgr)
@@ -50,6 +56,8 @@ Time from CST
  - [ Mexico City, Mexico Dansoneras +2 ](https://radio.garden/listen/danzoneras-inmortales/zHDGpXWW)
  - [ Havana Cuba +1 ](https://radio.garden/listen/radio-progreso/sWO5ip8K)
  - [ San Juan , Puerto Rico ](https://radio.garden/listen/zeta-93-fm/9tfZ4TXh)
+
+# American
  - [ San Diego, CA -2 ](https://radio.garden/visit/san-diego-ca/Ho58GDOX)
  - [ New York NY +1 ](https://radio.garden/listen/brooklyn-fm-bfm/DHWGnfCI)
  - [ Miami Florida +1 ](https://radio.garden/listen/radio-latino-usa/ZpM8ubri)
@@ -60,7 +68,11 @@ Time from CST
  - [ Thunder Bay MN ](https://radio.garden/listen/wely-94-5-fm/uoy3WaaT)
  - [ ABN Oldtime Radio ](https://radio.garden/listen/abn-old-time-radio-am-1610/niBbz3BR)
 
-## Classic
+## Specialty (from above)
  
+ - [ Mexico City, Mexico Dansoneras +2 ](https://radio.garden/listen/danzoneras-inmortales/zHDGpXWW)
  - [ Copenhagen, Denmark ](https://radio.garden/listen/dr-p2/QO1Q3gRx)
  - [ Helsinki Finland ](https://radio.garden/listen/yle-klassinen/42OQ7cvD)
+
+# Local Language
+ - [ Istanbul Turkey ](https://radio.garden/listen/istanbul-un-sesi-fm-91-8/JoAbgkP8)
