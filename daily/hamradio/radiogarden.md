@@ -2,27 +2,41 @@
 Time from CST
 
 ## Radio Garden world band
+
+# Northern Europe - Norway Sweden Denmark Finland Iceland + Estonia Latvia Lihtuania
+ - [ Copenhagen, Denmark ](https://radio.garden/listen/dr-p2/QO1Q3gRx)
+ - [ Oslo Norway ](https://radio.garden/listen/nrk-folkemusikk/skmhAafO)
+ - [ Helsinki Finland ](https://radio.garden/listen/yle-klassinen/42OQ7cvD)
+ - [ Dublin, Ireland ](https://radio.garden/listen/rte-radio-2/4eOi8bQw)
+
+# Western Europe - UK, Ireland, France, Benelux-Belgium Netherlands Luxembourg Germany Austria
+ - [ Manchester, UK +6 ](https://radio.garden/listen/capitalfm/gL8DNdKU)
+ - [ Luxembourg City, Luxembourg +7 ](https://radio.garden/listen/radio-diddeleng-asbl/__fuP5NT)
+ - [ Differdange Luxembourg ](https://radio.garden/listen/fce-continuo/tjOn0qGk)
+ - [ Cologne Germany ](https://radio.garden/listen/einslive/7gJoCMna)
+
+# Southern Europe - Iberian Peninsula - Spain Portugal Italy - Balkan Greece Croatia Malta Cyprus
  - [ Seville, Spain +7 ](https://radio.garden/listen/canal-flamenco-radio/n7r8a3B7)
  - [ Barcelona, Spain ](https://radio.garden/listen/radiomarcabarcelona/iSkVgVmz)
  - [ Madrid, Spain](https://radio.garden/listen/esradio/HGMbdCXa)
  - [ Vatican City, Rome Italy ](https://radio.garden/visit/vatican-city/szknbxME)
  - [ Milan, Italy ](https://radio.garden/listen/105/barjy93I)
  - [ Turin, Italy +7 ](https://radio.garden/listen/radio-bianconera/wACcUGji)
- - [ Luxembourg City, Luxembourg +7 ](https://radio.garden/listen/radio-diddeleng-asbl/__fuP5NT)
- - [ Differdange Luxembourg ](https://radio.garden/listen/fce-continuo/tjOn0qGk)
- - [ Copenhagen, Denmark ](https://radio.garden/listen/dr-p2/QO1Q3gRx)
- - [ Cologne Germany ](https://radio.garden/listen/einslive/7gJoCMna)
+ - [ Alexandroupuli Greece ](https://radio.garden/visit/alexandroupoli/7HWxbpCc)
+
+# Central Europe Poland Czech Republic Slovakia Hungary Switzerland
  - [ Prague Czechia ](https://radio.garden/listen/classicpraha/XWszQhwB)
- - [ Warsaw Poland +7 ](https://radio.garden/listen/slonskyradio/8p0e1ScK)
- - [ Oslo Norway ](https://radio.garden/listen/nrk-folkemusikk/skmhAafO)
- - [ Helsinki Finland ](https://radio.garden/listen/yle-klassinen/42OQ7cvD)
- - [ Moscow Russia ](https://radio.garden/listen/101-ru-russkie-narodnye/PYsw1APK)
  - [ Budapest, Hungary ](https://radio.garden/listen/klubradio-fm-92-9/Qhg4EX3o)
+ - [ Warsaw Poland +7 ](https://radio.garden/listen/slonskyradio/8p0e1ScK)
+
+# Eastern Europe - South East- Transylvania Wallachia Moldavia Dobruja
  - [ Bravia , Romania + 8](https://radio.garden/listen/bravia-fm/4hVr7sda)
  - [ Roman, Romania +8](https://radio.garden/listen/europa-fm/TnB1EZBN)
- - [ Alexandroupuli Greece ](https://radio.garden/visit/alexandroupoli/7HWxbpCc)
- - [ Dublin, Ireland ](https://radio.garden/listen/rte-radio-2/4eOi8bQw)
- - [ Manchester, UK +6 ](https://radio.garden/listen/capitalfm/gL8DNdKU)
+
+# Eastern Europe - Russia Ukraine Belarus
+ - [ Moscow Russia ](https://radio.garden/listen/101-ru-russkie-narodnye/PYsw1APK)
+
+
 
 # Caucasus - Black Sea to Caspian Sea
  - [ Baku Azerbaijan ](https://radio.garden/listen/asan-radio/GGHLRFJE)
@@ -45,7 +59,6 @@ Time from CST
  - [ Shibam, Yemen ](https://radio.garden/visit/shibam/np9Yxn33)
  - [ Ramallah, Palestine ](https://radio.garden/visit/ramallah/CxvFOnZ5)
  - [ Thailand Xansiam ](https://radio.garden/listen/xansiam-radio/5Baa-9nA)
- - [ Quebec City Canada ](https://radio.garden/listen/choi-radio-x-98-1-fm/MEFLFnCg)
 
 # Latin America
  - [ Cd. Juarez, MX ](https://radio.garden/visit/ciudad-juarez/HZz68a0O)
@@ -57,7 +70,8 @@ Time from CST
  - [ Havana Cuba +1 ](https://radio.garden/listen/radio-progreso/sWO5ip8K)
  - [ San Juan , Puerto Rico ](https://radio.garden/listen/zeta-93-fm/9tfZ4TXh)
 
-# American
+# America
+ - [ Quebec City Canada ](https://radio.garden/listen/choi-radio-x-98-1-fm/MEFLFnCg)
  - [ San Diego, CA -2 ](https://radio.garden/visit/san-diego-ca/Ho58GDOX)
  - [ New York NY +1 ](https://radio.garden/listen/brooklyn-fm-bfm/DHWGnfCI)
  - [ Miami Florida +1 ](https://radio.garden/listen/radio-latino-usa/ZpM8ubri)
@@ -69,7 +83,6 @@ Time from CST
  - [ ABN Oldtime Radio ](https://radio.garden/listen/abn-old-time-radio-am-1610/niBbz3BR)
 
 ## Specialty (from above)
- 
  - [ Mexico City, Mexico Dansoneras +2 ](https://radio.garden/listen/danzoneras-inmortales/zHDGpXWW)
  - [ Copenhagen, Denmark ](https://radio.garden/listen/dr-p2/QO1Q3gRx)
  - [ Helsinki Finland ](https://radio.garden/listen/yle-klassinen/42OQ7cvD)
