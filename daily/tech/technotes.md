@@ -1,7 +1,7 @@
 # Tech notes
 
 # Firefox extensions
-
+ - [ multi-account containers ](https://addons.mozilla.org/en-US/firefox/addon/multi-account-containers/)
  - [ selective bookmarks export tool firefox ](https://addons.mozilla.org/en-US/firefox/addon/bookmarks-export-tool/)
  - [ selective bookmarks export tool brave ](https://chromewebstore.google.com/detail/selective-bookmarks-expor/dkbihgadoohejmlhpffffbmbhmkhjbfi)
  - [ ublock origin 4 blocking google login](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
@@ -55,3 +55,6 @@ If that doesn't show you any updates, run:
 Alternatively, manually download them from:
   https://developer.apple.com/download/all/.
 You should download the Command Line Tools for Xcode 26.3.
+
+# Reddit  Curate your profile
+ - [  /settings/profile ](https://www.reddit.com/settings/profile)

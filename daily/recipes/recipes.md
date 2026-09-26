@@ -15,6 +15,8 @@
  - [ chickpeas, cocoa, dates pistachio recipe ](https://www.youtube.com/shorts/I7FhM_wpZJg)
  - [ Burger sauce ](https://www.youtube.com/shorts/cLuOnLb1lOc)
  - [ Candied Grapes   ](https://www.youtube.com/watch?v=1Ylo-J4qKok)
+ - [ Ginger and Red Date tea ](https://www.youtube.com/watch?v=PT5mVfIgTe4)
+ - [ Date Seed Coffee ](https://www.youtube.com/watch?v=N5yCuLfZez4)
 
 ## Meats
  - [ Real Barbacoa - Cachete and Tongue ](https://www.youtube.com/watch?v=TVbBZF33ApU)
@@ -63,6 +65,15 @@ Leaving yogurt to incubate for 12+ hours in an Instant Pot is generally safe and
  - [Refried Bean Recipes ](https://www.youtube.com/watch?v=UPziyyZ1m9s)
  - [Charro beans](https://www.youtube.com/watch?v=H2adP10zvoE)
  
+### Lactate Enzyme on raw milk
+Can lactose supplement caplet lactase enzyme be used to convert raw milk into lactose free milk
 
+**Yes**, lactase enzyme supplement caplets (such as Lactaid) can be used to convert raw milk into lactose-free milk at home by adding the enzyme directly to the milk.
+
+To achieve this, follow these steps:
+*   **Preparation**: Crush the caplets into a fine powder and dissolve them in a small amount of warm water.
+*   **Dosage**: Add the solution to the milk; typical recommendations suggest roughly **7 drops of liquid equivalent** or one crushed caplet per pint/liter, though bulk powder may require adjustment.
+*   **Incubation**: Refrigerate the milk for **24 to 48 hours** to allow the lactase enzyme to break down the lactose into glucose and galactose.
+*   **Safety Note**: While the enzymatic process makes the lactose digestible, **raw milk itself carries significant bacterial risks**. Lactase treatment **does not** pasteurize the milk or kill pathogens like Salmonella or E. coli; therefore, using raw milk for this purpose remains unsafe regardless of lactose content.
 
  
