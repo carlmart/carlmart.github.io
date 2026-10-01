@@ -53,9 +53,21 @@ Leaving yogurt to incubate for 12+ hours in an Instant Pot is generally safe and
  - Usage: If the yogurt is too sour for eating plain, it can be used for baking, smoothies, or made into buttermilk by adding water and salt.
 
 
-###  Cooking Beans 
+### Instapot Pinto Beans 
+Cups of water to cups of pinto beans ratio
+
+For **unsoaked** pinto beans, use **6 cups of water for every 1 pound** (approximately 2 to 2.25 cups) of beans. If you are measuring by volume rather than weight, the general ratio is **3 to 4 cups of water per 1 cup of dry beans**.
+
+For **soaked** pinto beans, reduce the water to **4 cups per 1 pound** of beans, or **2 to 3 cups of water per 1 cup of dry beans**.
+
+*   **Unsoaked (No Soak):** 6 cups water per 1 lb (approx. 2–2.25 cups) beans.
+*   **Soaked:** 4 cups water per 1 lb (approx. 2–3 cups) beans.
+*   **Volume Ratio:** 3:1 to 4:1 water to beans.
+
+Using sufficient water is critical because dry pinto beans are high in starch and expand significantly, absorbing much of the liquid during cooking.
+
 <img  src="./img/bean-instapot.png" alt="altimg" style="width: 70%; height: auto;" >  
-<img  src="./img/beans-gas.png" alt="altimg" style="width: 60%; height: auto;" >  <br>
+
 
  - [Bean cooking AI](https://www.youtube.com/watch?v=T7xg9gDumX8)
  - [Instapot Pinto Beans ](https://www.youtube.com/watch?v=L8oKDUpup6E)
