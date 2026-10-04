@@ -19,6 +19,7 @@
 
 
 # Google Chrome extensions
+ - [ clear mail ](https://chromewebstore.google.com/detail/clear-mail-for-gmail-priv/mjdjakmpongidgdifgmaenfgmacppknm)
  - [JSON viewer Pro](https://chromewebstore.google.com/detail/json-viewer-pro/eifflpmocdbdmepbjaopkkhbfmdgijcc)
  - [Markdown Viewer](https://chromewebstore.google.com/detail/markdown-viewer/ckkdlimhmcjmikdlpkmbgfkaikojcbjk)
  - [Open Via Google maps](https://chromewebstore.google.com/detail/open-via-google-maps/klnpmiiahcfaocdklogefknajkpeolao)
