@@ -15,7 +15,8 @@ Work in Progress!
  - [ Manchester, UK +6 ](https://radio.garden/listen/capitalfm/gL8DNdKU)
  - [ Luxembourg City, Luxembourg +7 ](https://radio.garden/listen/radio-diddeleng-asbl/__fuP5NT)
  - [ Differdange Luxembourg ](https://radio.garden/listen/fce-continuo/tjOn0qGk)
- - [ Dublin, Ireland ](https://radio.garden/listen/rte-radio-2/4eOi8bQw)
+ - [ Waterford, Ireland ](https://radio.garden/listen/absolute-irish/KmS2JFdN)
+ - [ Dublin, Ireland ](https://radio.garden/listen/irish-country-music-radio/tUZBnelc)
  - [ Cologne Germany ](https://radio.garden/listen/einslive/7gJoCMna)
 
 ### Southern Europe - Iberian Peninsula - Spain Portugal Italy - Balkan Greece Croatia Malta Cyprus
