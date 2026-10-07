@@ -90,4 +90,12 @@ To achieve this, follow these steps:
 *   **Incubation**: Refrigerate the milk for **24 to 48 hours** to allow the lactase enzyme to break down the lactose into glucose and galactose.
 *   **Safety Note**: While the enzymatic process makes the lactose digestible, **raw milk itself carries significant bacterial risks**. Lactase treatment **does not** pasteurize the milk or kill pathogens like Salmonella or E. coli; therefore, using raw milk for this purpose remains unsafe regardless of lactose content.
 
- 
+## current sourdough testing
+Time | Temp | Notes
+38 min | temp 380F  | soft
+45 min | temp 380F  | somewhat soft 
+
+| Left | Center | Right |
+|:-----|:------:|------:|
+| 1    |   2    |     3 |
+| 4    |   5    |     6 |   
