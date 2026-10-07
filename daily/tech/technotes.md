@@ -1,8 +1,12 @@
 # Tech notes
-# macOS WebCatalog for mac
- - [ wrapper ](https://webcatalog.io/en/desktop/download/macos)
+
+ - [ myactivity.google ](https://myactivity.google.com/)
+
+# Bookmarklets
+ - [ bookmarklet.md ](bookmarklet.md)
 
 # Firefox extensions
+ - [ BrowserSelector choose Profile ](https://addons.mozilla.org/en-US/firefox/addon/browserselector/)
  - [ multi-account containers ](https://addons.mozilla.org/en-US/firefox/addon/multi-account-containers/)
  - [ selective bookmarks export tool firefox ](https://addons.mozilla.org/en-US/firefox/addon/bookmarks-export-tool/)
  - [ selective bookmarks export tool brave ](https://chromewebstore.google.com/detail/selective-bookmarks-expor/dkbihgadoohejmlhpffffbmbhmkhjbfi)
