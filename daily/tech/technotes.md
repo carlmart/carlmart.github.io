@@ -1,4 +1,6 @@
 # Tech notes
+# macOS WebCatalog for mac
+ - [ wrapper ](https://webcatalog.io/en/desktop/download/macos)
 
 # Firefox extensions
  - [ multi-account containers ](https://addons.mozilla.org/en-US/firefox/addon/multi-account-containers/)
