@@ -1,5 +1,5 @@
 # Mac Tech notes
-
+<small>
 **For Intel Mac, MacPorts is now the recommended path.** 
 The Homebrew team itself says this in its own warning:
 
@@ -15,7 +15,7 @@ Here's the timeline :
 | **Fall 2026** | macOS 27 Golden Gate ships — Apple Silicon only |
 | **~2028** | Final security updates for Intel Macs on macOS 26 |
 
-**MacPorts still publishes prebuilt x86_64 binaries** for every macOS an Intel Mac can run (11 through 26), so you get fast installs without compiling.
+**MacPorts still publishes prebuilt x86_64 binaries** for every macOS an Intel Mac can run (11 through 26) - fast installs without compiling.
 
 **Practical caveats:**
 - MacPorts has **fewer graphical apps** than Homebrew casks — you'll install those manually.
@@ -48,7 +48,25 @@ about:config     - caution
  - [Google maps   ](https://addons.mozilla.org/en-US/firefox/addon/route-with-google-maps/)
  - [Firefox:selective bookmarks export tool ](https://addons.mozilla.org/en-US/firefox/addon/bookmarks-export-tool/)
  - [ublock origin 4 blocking google login](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
-    - ||accounts.google.com/gsi/iframe/select$subdocument
+<small>
+  - Add custom filters in **uBlock Origin**: 
+  - open the dashboard by clicking the extension icon 
+  - select  **dashboard** icon (four squares). 
+  - Navigate to the **My filters** tab
+  - check the **Enable my custom filters** box if not already active
+  - paste  rules into the text editor. Click **Apply changes** to save.
+
+Common filter examples include:
+
+*   **Block specific google docs:** `||accounts.google.com/gsi/iframe/select$subdocument`
+*   **Block a specific page or directory:** `||example.com/unwanted-page^$document`
+*   **Hide a specific HTML element (cosmetic filter):** `example.com##div.ad-banner`
+*   **Block network requests:** `||ads.example.com^$third-party`
+*   **Allow a blocked item (exception):** `@@||ads.example.com^$third-party`
+
+For advanced filtering, you can use the **Logger** (accessible via the logger icon in the dashboard) to inspect specific requests and generate filters automatically. If you are using **uBlock Origin Lite**, navigate to **Custom filters** instead of "My filters" and paste your rules there.
+
+
  - [facebook container ](https://addons.mozilla.org/en-US/firefox/addon/facebook-container/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
  - [cookie remover ](https://addons.mozilla.org/en-US/firefox/addon/cookie-remover/)
  - [adblocker for youtube ](https://addons.mozilla.org/en-US/firefox/addon/adblock-for-youtube/)
