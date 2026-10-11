@@ -44,10 +44,11 @@ about:addons     - all your addons
 about:config     - caution 
 ```
  - [markdown viewer - first! ](https://addons.mozilla.org/en-US/firefox/addon/markdown-viewer-chrome/)
- - [new tab override - open your page ](https://addons.mozilla.org/en-US/firefox/addon/new-tab-override/)
+ - [website-to-markdown 4 chrome?](https://chromewebstore.google.com/detail/website-to-markdown/gkdeknibhnogcjjegnamlhibnhpdbbei)
  - [Google maps   ](https://addons.mozilla.org/en-US/firefox/addon/route-with-google-maps/)
  - [Firefox:selective bookmarks export tool ](https://addons.mozilla.org/en-US/firefox/addon/bookmarks-export-tool/)
  - [ublock origin 4 blocking google login](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
+ - [new tab override - open your page ](https://addons.mozilla.org/en-US/firefox/addon/new-tab-override/)
 <small>
   - Add custom filters in **uBlock Origin**: 
   - open the dashboard by clicking the extension icon 
