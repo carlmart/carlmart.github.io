@@ -92,12 +92,13 @@ Topics : Vicente Fernandez, Javier Solis, Rancheras, Antonio Aguilar ,
  - [ ABN Oldtime Radio ](https://radio.garden/listen/abn-old-time-radio-am-1610/niBbz3BR)
 
 ### Specialty (from above)
- - [ Seville-Spain flamenco ](https://radio.garden/listen/canal-flamenco-radio/n7r8a3B7) 
- - [ Augsburg, Germany ](https://radio.garden/listen/klassik-radio-bach/6qSWI6qV)
+ - [ Augsburg, Germany - Klassik-Bach](https://radio.garden/listen/klassik-radio-bach/6qSWI6qV)
+ - [ Leeuwarde, Netherlands - Organ / Classic ](https://radio.garden/listen/draaiorgel-radio-barrel-organ-radio/UfhcdcMs)
  - [ Mexico City, Mexico Dansoneras +2 ](https://radio.garden/listen/danzoneras-inmortales/zHDGpXWW)
- - [ Copenhagen, Denmark ](https://radio.garden/listen/dr-p2/QO1Q3gRx)
- - [ Helsinki Finland ](https://radio.garden/listen/yle-klassinen/42OQ7cvD)
- - [ corrner radio Paris France ](https://radio.garden/listen/crooner-radio/OSwlN53V)
+ - [ Copenhagen, Denmark - Classic ](https://radio.garden/listen/dr-p2/QO1Q3gRx)
+ - [ Helsinki Finland - Classic ](https://radio.garden/listen/yle-klassinen/42OQ7cvD)
+ - [ Paris France Crooner ](https://radio.garden/listen/crooner-radio/OSwlN53V)
+ - [ Seville-Spain Flamenco ](https://radio.garden/listen/canal-flamenco-radio/n7r8a3B7) 
 
 ### Local Language
  - [ Istanbul Turkey ](https://radio.garden/listen/istanbul-un-sesi-fm-91-8/JoAbgkP8)
