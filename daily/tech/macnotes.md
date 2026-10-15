@@ -44,30 +44,26 @@ about:addons     - all your addons
 about:config     - caution 
 ```
  - [markdown viewer - first! ](https://addons.mozilla.org/en-US/firefox/addon/markdown-viewer-chrome/)
- - [website-to-markdown 4 chrome?](https://chromewebstore.google.com/detail/website-to-markdown/gkdeknibhnogcjjegnamlhibnhpdbbei)
+ - [website-to-markdown 4 chrome](https://chromewebstore.google.com/detail/website-to-markdown/gkdeknibhnogcjjegnamlhibnhpdbbei)
+ - [website-to-markdown 4 firefox](https://addons.mozilla.org/en-US/firefox/addon/markdown-viewer-webext/)
  - [Google maps   ](https://addons.mozilla.org/en-US/firefox/addon/route-with-google-maps/)
  - [Firefox:selective bookmarks export tool ](https://addons.mozilla.org/en-US/firefox/addon/bookmarks-export-tool/)
- - [ublock origin 4 blocking google login](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
  - [new tab override - open your page ](https://addons.mozilla.org/en-US/firefox/addon/new-tab-override/)
-<small>
-  - Add custom filters in **uBlock Origin**: 
-  - open the dashboard by clicking the extension icon 
-  - select  **dashboard** icon (four squares). 
-  - Navigate to the **My filters** tab
-  - check the **Enable my custom filters** box if not already active
-  - paste  rules into the text editor. Click **Apply changes** to save.
-
-Common filter examples include:
-
+ - [ublock origin 4 blocking google login](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
+   - Add custom filters in **uBlock Origin**: 
+   - open the dashboard by clicking the extension icon 
+   - select  **dashboard** icon (four squares). 
+   - Navigate to the **My filters** tab
+   - check the **Enable my custom filters** box if not already active
+   - paste  rules into the text editor. Click **Apply changes** to save.
+   - Common filter examples include:
+```
 *   **Block specific google docs:** `||accounts.google.com/gsi/iframe/select$subdocument`
 *   **Block a specific page or directory:** `||example.com/unwanted-page^$document`
 *   **Hide a specific HTML element (cosmetic filter):** `example.com##div.ad-banner`
 *   **Block network requests:** `||ads.example.com^$third-party`
 *   **Allow a blocked item (exception):** `@@||ads.example.com^$third-party`
-
-For advanced filtering, you can use the **Logger** (accessible via the logger icon in the dashboard) to inspect specific requests and generate filters automatically. If you are using **uBlock Origin Lite**, navigate to **Custom filters** instead of "My filters" and paste your rules there.
-
-
+```
  - [facebook container ](https://addons.mozilla.org/en-US/firefox/addon/facebook-container/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
  - [cookie remover ](https://addons.mozilla.org/en-US/firefox/addon/cookie-remover/)
  - [adblocker for youtube ](https://addons.mozilla.org/en-US/firefox/addon/adblock-for-youtube/)
@@ -88,6 +84,10 @@ For advanced filtering, you can use the **Logger** (accessible via the logger ic
  - [Google maps](https://chromewebstore.google.com/detail/open-via-google-maps/klnpmiiahcfaocdklogefknajkpeolao)
  - [Show Password](https://chromewebstore.google.com/detail/showpassword/bbiclfnbhommljbjcoelobnnnibemabl)
  - [Cookie Remover](https://chromewebstore.google.com/detail/cookie-remover-clear-remo/kcgpggonjhmeaejebeoeomdlohicfhce)
+
+
+### MacApps
+ - [ blackhole ](https://existential.audio/blackhole/)
 
 ### Security links
  - [ myactivity.google.com   ](https://myactivity.google.com/)
