@@ -90,6 +90,7 @@ Topics : Vicente Fernandez, Javier Solis, Rancheras, Antonio Aguilar ,
  - [ Louisiana MO ](https://radio.garden/listen/my-blues-kbsp-wbbm-st-louis/w4wMIZ4j)
  - [ New Orleans LA ](https://radio.garden/listen/wwno3-jazz/yuBCmvcB)
  - [ Grand Marais MN ](https://radio.garden/visit/grand-marais-mn/owbMBxOI)
+ - [ Grand Marais MN WTIP ](https://radio.garden/listen/wtip/qgaRQcUh)
  - [ Ely MN ](https://radio.garden/listen/wely-94-5-fm/uoy3WaaT)
  - [ Thunder Bay MN ](https://radio.garden/listen/wely-94-5-fm/uoy3WaaT)
  - [ ABN Oldtime Radio ](https://radio.garden/listen/abn-old-time-radio-am-1610/niBbz3BR)
