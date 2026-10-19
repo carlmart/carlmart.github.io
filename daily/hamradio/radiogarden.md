@@ -7,12 +7,24 @@ Topics : Vicente Fernandez, Javier Solis, Rancheras, Antonio Aguilar ,
  - [ Javier Solis ](https://www.jango.com/music/Javier+Solis/_full_bio)
 
 ## Radio Garden 
+### Specialty 
+ - [ Mexico City, Mexico Dansoneras +2 ](https://radio.garden/listen/danzoneras-inmortales/zHDGpXWW)
+ - [ Copenhagen, Denmark - Classic ](https://radio.garden/listen/dr-p2/QO1Q3gRx)
+ - [ Augsburg, Germany - Klassik-Bach](https://radio.garden/listen/klassik-radio-bach/6qSWI6qV)
+ - [ Ultrecht, Netherlands - Classic  ](https://radio.garden/listen/concertzender-live/ZWIHrper)
+ - [ Heraklion, Greece Classic ](https://radio.garden/visit/heraklion/lQBWYLWa)
+ - [ St. Paul, MN - YourClassical Holiday ](https://radio.garden/listen/your-classical-holiday/wQaGPxAR)
+ - [ Leeuwarde, Netherlands - Organ / Classic ](https://radio.garden/listen/draaiorgel-radio-barrel-organ-radio/UfhcdcMs)
+ - [ Cheboksary, Russia  - Orthodox Chants](https://radio.garden/listen/orthodox-chants/EsXWQHxy)
+ - [ Helsinki Finland - Classic ](https://radio.garden/listen/yle-klassinen/42OQ7cvD)
+ - [ Paris France Crooner ](https://radio.garden/listen/crooner-radio/OSwlN53V)
+ - [ Seville-Spain Flamenco ](https://radio.garden/listen/canal-flamenco-radio/n7r8a3B7) 
+ - [ Istanbul Turkey  Turk](https://radio.garden/listen/istanbul-un-sesi-fm-91-8/JoAbgkP8)
 
 ### Northern Europe - Norway Sweden Denmark Finland Iceland + Estonia Latvia Lihtuania
- - [ Oslo Norway ](https://radio.garden/listen/radio-metro/Cj0HBsnE)
- - [ Oslo Norway ](https://radio.garden/listen/nrk-folkemusikk/skmhAafO)
- - [ Stockholm Sweden ](https://radio.garden/listen/sr/ZEUX9E8a)
- - [ Copenhagen, Denmark ](https://radio.garden/listen/dr-p2/QO1Q3gRx)
+ - [ Oslo Norway Folk ](https://radio.garden/listen/nrk-folkemusikk/skmhAafO)
+ - [ Stockholm Sweden Klasik ](https://radio.garden/listen/sr/ZEUX9E8a)
+ - [ Copenhagen, Denmark Klasik ](https://radio.garden/listen/dr-p2/QO1Q3gRx)
  - [ Helsinki Finland ](https://radio.garden/listen/yle-klassinen/42OQ7cvD)
  - [ Reykjavik Iceland ](https://radio.garden/listen/gull-bylgjan-fm-90-9/09xmqMCl)
 
@@ -95,20 +107,5 @@ Topics : Vicente Fernandez, Javier Solis, Rancheras, Antonio Aguilar ,
  - [ Thunder Bay MN ](https://radio.garden/listen/wely-94-5-fm/uoy3WaaT)
  - [ ABN Oldtime Radio ](https://radio.garden/listen/abn-old-time-radio-am-1610/niBbz3BR)
 
-### Specialty (from above)
- - [ Mexico City, Mexico Dansoneras +2 ](https://radio.garden/listen/danzoneras-inmortales/zHDGpXWW)
- - [ Copenhagen, Denmark - Classic ](https://radio.garden/listen/dr-p2/QO1Q3gRx)
- - [ Augsburg, Germany - Klassik-Bach](https://radio.garden/listen/klassik-radio-bach/6qSWI6qV)
- - [ Ultrecht, Netherlands - Classic  ](https://radio.garden/listen/concertzender-live/ZWIHrper)
- - [ Heraklion, Greece Classic ](https://radio.garden/visit/heraklion/lQBWYLWa)
- - [ St. Paul, MN - YourClassical Holiday ](https://radio.garden/listen/your-classical-holiday/wQaGPxAR)
- - [ Leeuwarde, Netherlands - Organ / Classic ](https://radio.garden/listen/draaiorgel-radio-barrel-organ-radio/UfhcdcMs)
- - [ Cheboksary, Russia  - Orthodox Chants](https://radio.garden/listen/orthodox-chants/EsXWQHxy)
- - [ Helsinki Finland - Classic ](https://radio.garden/listen/yle-klassinen/42OQ7cvD)
- - [ Paris France Crooner ](https://radio.garden/listen/crooner-radio/OSwlN53V)
- - [ Seville-Spain Flamenco ](https://radio.garden/listen/canal-flamenco-radio/n7r8a3B7) 
-
-### Local Language
- - [ Istanbul Turkey ](https://radio.garden/listen/istanbul-un-sesi-fm-91-8/JoAbgkP8)
 
 
