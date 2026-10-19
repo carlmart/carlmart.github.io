@@ -3,6 +3,7 @@
 
 ### Bookmarklets
  - [ bookmarklet.md ](bookmarklet.md)
+ - [ Bookmarklet to Browser extension ](https://sandbox.self.li/bookmarklet-to-extension/)
 
 ### Firefox 
 ```

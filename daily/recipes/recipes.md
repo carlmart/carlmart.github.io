@@ -99,3 +99,7 @@ Time | Temp | Notes
 |:-----|:------:|------:|
 | 1    |   2    |     3 |
 | 4    |   5    |     6 |   
+
+
+### Random Links
+ - [ Wild Rice vs Brown Rice ](https://avzri.com/which-is-healthier-brown-rice-or-wild-rice)
