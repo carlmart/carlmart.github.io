@@ -1,11 +1,6 @@
 # Radio stations
 Work in Progress!
 
-## Jango
-Topics : Vicente Fernandez, Javier Solis, Rancheras, Antonio Aguilar , 
- - [ Canciones Romanticas - Spanish language ](https://www.jango.com/stations/325435334)
- - [ Javier Solis ](https://www.jango.com/music/Javier+Solis/_full_bio)
-
 ## Radio Garden 
 ### Specialty 
  - [ Mexico City, Mexico Dansoneras +2 ](https://radio.garden/listen/danzoneras-inmortales/zHDGpXWW)
@@ -108,4 +103,9 @@ Topics : Vicente Fernandez, Javier Solis, Rancheras, Antonio Aguilar ,
  - [ ABN Oldtime Radio ](https://radio.garden/listen/abn-old-time-radio-am-1610/niBbz3BR)
 
 
+# Other WebRadio Sites
+### Jango
+Topics : Vicente Fernandez, Javier Solis, Rancheras, Antonio Aguilar , 
+ - [ Canciones Romanticas - Spanish language ](https://www.jango.com/stations/325435334)
+ - [ Javier Solis ](https://www.jango.com/music/Javier+Solis/_full_bio)
 
