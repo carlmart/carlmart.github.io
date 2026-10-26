@@ -109,3 +109,6 @@ Topics : Vicente Fernandez, Javier Solis, Rancheras, Antonio Aguilar ,
  - [ Canciones Romanticas - Spanish language ](https://www.jango.com/stations/325435334)
  - [ Javier Solis ](https://www.jango.com/music/Javier+Solis/_full_bio)
 
+
+# Playlists
+ - [ Palestrina Chois ](https://music.youtube.com/watch?v=Aj7o9Q24C20&list=RDAO6_NRvKtvcd9E1Dy9lq23dw)
