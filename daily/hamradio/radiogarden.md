@@ -4,6 +4,8 @@ Work in Progress!
 ## Radio Garden 
 ### Specialty 
  - [ Mexico City, Mexico Dansoneras +2 ](https://radio.garden/listen/danzoneras-inmortales/zHDGpXWW)
+ - [ Miami, Florida - Salsa ](https://radio.garden/listen/salsa-amorissima/eflHb-WI)
+ - [ Havana Cuba ](https://radio.garden/visit/cuba/YSzMv24A)
  - [ Copenhagen, Denmark - Classic ](https://radio.garden/listen/dr-p2/QO1Q3gRx)
  - [ Augsburg, Germany - Klassik-Bach](https://radio.garden/listen/klassik-radio-bach/6qSWI6qV)
  - [ Ultrecht, Netherlands - Classic  ](https://radio.garden/listen/concertzender-live/ZWIHrper)
