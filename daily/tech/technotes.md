@@ -35,6 +35,7 @@ about:config     - caution
 
 
 ### Google Chrome extensions
+ - [Phone simulator mobile view ](https://chromewebstore.google.com/detail/phone-simulator-mobile-vi/hahdnalbjglbhcnjdkjhdkmhjkkgjkcd)
  - [Brave: selective bookmarks export tool ](https://chromewebstore.google.com/detail/selective-bookmarks-expor/dkbihgadoohejmlhpffffbmbhmkhjbfi)
  - [Clear mail ](https://chromewebstore.google.com/detail/clear-mail-for-gmail-priv/mjdjakmpongidgdifgmaenfgmacppknm)
  - [JSON viewer Pro](https://chromewebstore.google.com/detail/json-viewer-pro/eifflpmocdbdmepbjaopkkhbfmdgijcc)
