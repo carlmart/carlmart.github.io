@@ -13,6 +13,7 @@ about:support    - displays current browser profile
 about:addons     - all your addons
 about:config     - caution 
 ```
+ - [ markdown viewer for android ](https://addons.mozilla.org/en-US/firefox/addon/markdown-viewer-webext/)
  - [markdown viewer - first! ](https://addons.mozilla.org/en-US/firefox/addon/markdown-viewer-chrome/)
  - [uBlock filters ublock.md ](ublock.md)
  - [website-to-markdown 4 chrome](https://chromewebstore.google.com/detail/website-to-markdown/gkdeknibhnogcjjegnamlhibnhpdbbei)
