@@ -45,3 +45,6 @@ about:config     - caution
  - [Show Password](https://chromewebstore.google.com/detail/showpassword/bbiclfnbhommljbjcoelobnnnibemabl)
  - [Cookie Remover](https://chromewebstore.google.com/detail/cookie-remover-clear-remo/kcgpggonjhmeaejebeoeomdlohicfhce)
 
+
+### AI Movie Editing
+ - [ yt list ](https://www.youtube.com/shorts/GiI7FNoPaHI)
